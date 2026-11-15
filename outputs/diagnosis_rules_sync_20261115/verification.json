@@ -1,0 +1,248 @@
+{
+  "target": "E:\\SWMM_Agentic\\SWMM-Agentic4",
+  "contract": "joint_mechanisms_v2",
+  "active_mechanisms": [
+    "M1",
+    "M2",
+    "M3",
+    "M5",
+    "M6"
+  ],
+  "rules": "Latest Agentic3 diagnostic rules already present; Agentic4 lossless transport instruction and service preserved.",
+  "source_prompt_paragraphs_match_except_transport": true,
+  "system_prompt_sha256": "d09e0e5527dfa27696d3caf482e1d54d1cd3b7bbea52bf148862eb7d3dd194d7",
+  "files": {
+    "workflow_agents/diagnosis/prompts.py": "4e797f031e16f82c68d35f1e8389a6fe12c59cdba7b43a586362f5c438a398e8",
+    "workflow_agents/diagnosis/contract.py": "d0b77dcd434cca061cfdb648f63550341fc7a28c82e9c934f32ed436fe084168",
+    "workflow_agents/diagnosis/service.py": "0da05c943b34d079067bb07d596583fa1b52a37ba513632cf8aced8dc7569183",
+    "workflow_agents/diagnosis/series_transport.py": "62e5590ad64fa32e54a874e616b0fd9be3162800209d2690279ec44c449fc931",
+    "workflow_agents/evidence/rainfall_context.py": "cef7f6e84a267171ddfd262ca28352c3e31554f1fd78b006b6b87676f4d6e966",
+    "workflow_agents/evidence/diagnostic_context.py": "19bb01c6b9173b8664febfb57aeb9d65ced6481c3fb12aaa37b83d95b0e9c59a"
+  },
+  "model_calls": 0,
+  "simulation_calls": 0,
+  "cases": [
+    {
+      "case": "12_Example1_C03",
+      "label": "EPA小型示例管网｜双脉冲，总量20 mm（分量峰时相隔120 min；10+10 mm）",
+      "all_selected_records_roundtrip_equal": true,
+      "original_records_unchanged": true,
+      "tables": 2,
+      "samples_preserved": 268,
+      "full_rainfall_points": 45,
+      "payload_characters_without_table": 282238,
+      "payload_characters_with_table": 140998,
+      "character_reduction_percent": 50.04,
+      "rainfall_timing": [
+        {
+          "method": "event_rainfall_position_v2",
+          "rainfall_evidence_id": "CTX_RAINFALL_TIMELINE",
+          "event_start": "2024-01-01 01:06:20",
+          "event_end": "2024-01-01 01:16:25",
+          "interpretation": "Earlier rain is temporal context, not proof of residual in-network water.",
+          "status": "available",
+          "phase_at_start": "during_recorded_wet_period",
+          "elapsed_minutes_from_record_start": 66.33333333333333,
+          "recorded_rain_before_event_mm": 5.7317277777777775,
+          "current_wet_period": {
+            "start": "2024-01-01 00:40:00",
+            "end": "2024-01-01 01:40:00",
+            "rainfall_mm": 9.999916666666666
+          },
+          "minutes_since_current_wet_period_start": 26.333333333333332,
+          "zero_rain_interval_before_current_wet_period": {
+            "start": "2024-01-01 00:00:00",
+            "end": "2024-01-01 00:40:00",
+            "rainfall_mm": 0.0,
+            "duration_minutes": 40.0
+          },
+          "prior_peak_count": 1,
+          "latest_prior_peak": {
+            "peak_time": "2024-01-01 01:00:00",
+            "plateau_end": "2024-01-01 01:05:00",
+            "intensity_mm_per_h": 40.215,
+            "left_boundary_peak": false
+          },
+          "peak_before_latest_prior_peak": null,
+          "minutes_since_latest_prior_peak": 6.333333333333333,
+          "next_recorded_peak": {
+            "peak_time": "2024-01-01 03:00:00",
+            "plateau_end": "2024-01-01 03:05:00",
+            "intensity_mm_per_h": 40.215,
+            "left_boundary_peak": false
+          },
+          "last_completed_wet_period": null,
+          "minutes_since_last_completed_wet_period": null,
+          "elapsed_from_previous_rain_end_note": "Elapsed time can include current rainfall; it is not the zero-rain gap duration. Read the separately bounded dry interval.",
+          "history_before_record": "not_provided",
+          "previous_same_node_overflow": null
+        },
+        {
+          "method": "event_rainfall_position_v2",
+          "rainfall_evidence_id": "CTX_RAINFALL_TIMELINE",
+          "event_start": "2024-01-01 03:05:05",
+          "event_end": "2024-01-01 03:16:50",
+          "interpretation": "Earlier rain is temporal context, not proof of residual in-network water.",
+          "status": "available",
+          "phase_at_start": "during_recorded_wet_period",
+          "elapsed_minutes_from_record_start": 185.08333333333334,
+          "recorded_rain_before_event_mm": 15.208540277777779,
+          "current_wet_period": {
+            "start": "2024-01-01 02:40:00",
+            "end": "2024-01-01 03:40:00",
+            "rainfall_mm": 9.999916666666666
+          },
+          "minutes_since_current_wet_period_start": 25.083333333333332,
+          "zero_rain_interval_before_current_wet_period": {
+            "start": "2024-01-01 01:40:00",
+            "end": "2024-01-01 02:40:00",
+            "rainfall_mm": 0.0,
+            "duration_minutes": 60.0
+          },
+          "prior_peak_count": 2,
+          "latest_prior_peak": {
+            "peak_time": "2024-01-01 03:00:00",
+            "plateau_end": "2024-01-01 03:05:00",
+            "intensity_mm_per_h": 40.215,
+            "left_boundary_peak": false
+          },
+          "peak_before_latest_prior_peak": {
+            "peak_time": "2024-01-01 01:00:00",
+            "plateau_end": "2024-01-01 01:05:00",
+            "intensity_mm_per_h": 40.215,
+            "left_boundary_peak": false
+          },
+          "minutes_since_latest_prior_peak": 5.083333333333333,
+          "next_recorded_peak": null,
+          "last_completed_wet_period": {
+            "start": "2024-01-01 00:40:00",
+            "end": "2024-01-01 01:40:00",
+            "rainfall_mm": 9.999916666666666
+          },
+          "minutes_since_last_completed_wet_period": 85.08333333333333,
+          "elapsed_from_previous_rain_end_note": "Elapsed time can include current rainfall; it is not the zero-rain gap duration. Read the separately bounded dry interval.",
+          "history_before_record": "not_provided",
+          "previous_same_node_overflow": {
+            "event_id": "10:E001",
+            "end": "2024-01-01 01:16:25",
+            "interpretation": "Overflow ending does not establish complete drainage."
+          }
+        }
+      ]
+    },
+    {
+      "case": "14_Example1_C05",
+      "label": "EPA小型示例管网｜双脉冲，总量20 mm（分量峰时相隔60 min；15+5 mm）",
+      "all_selected_records_roundtrip_equal": true,
+      "original_records_unchanged": true,
+      "tables": 2,
+      "samples_preserved": 297,
+      "full_rainfall_points": 33,
+      "payload_characters_without_table": 304492,
+      "payload_characters_with_table": 147420,
+      "character_reduction_percent": 51.58,
+      "rainfall_timing": [
+        {
+          "method": "event_rainfall_position_v2",
+          "rainfall_evidence_id": "CTX_RAINFALL_TIMELINE",
+          "event_start": "2024-01-01 01:03:40",
+          "event_end": "2024-01-01 01:22:10",
+          "interpretation": "Earlier rain is temporal context, not proof of residual in-network water.",
+          "status": "available",
+          "phase_at_start": "during_recorded_wet_period",
+          "elapsed_minutes_from_record_start": 63.666666666666664,
+          "recorded_rain_before_event_mm": 6.420155555555555,
+          "current_wet_period": {
+            "start": "2024-01-01 00:40:00",
+            "end": "2024-01-01 02:40:00",
+            "rainfall_mm": 19.999833333333335
+          },
+          "minutes_since_current_wet_period_start": 23.666666666666668,
+          "zero_rain_interval_before_current_wet_period": {
+            "start": "2024-01-01 00:00:00",
+            "end": "2024-01-01 00:40:00",
+            "rainfall_mm": 0.0,
+            "duration_minutes": 40.0
+          },
+          "prior_peak_count": 1,
+          "latest_prior_peak": {
+            "peak_time": "2024-01-01 01:00:00",
+            "plateau_end": "2024-01-01 01:05:00",
+            "intensity_mm_per_h": 60.323,
+            "left_boundary_peak": false
+          },
+          "peak_before_latest_prior_peak": null,
+          "minutes_since_latest_prior_peak": 3.6666666666666665,
+          "next_recorded_peak": {
+            "peak_time": "2024-01-01 02:00:00",
+            "plateau_end": "2024-01-01 02:05:00",
+            "intensity_mm_per_h": 20.108,
+            "left_boundary_peak": false
+          },
+          "last_completed_wet_period": null,
+          "minutes_since_last_completed_wet_period": null,
+          "elapsed_from_previous_rain_end_note": "Elapsed time can include current rainfall; it is not the zero-rain gap duration. Read the separately bounded dry interval.",
+          "history_before_record": "not_provided",
+          "previous_same_node_overflow": null
+        },
+        {
+          "method": "event_rainfall_position_v2",
+          "rainfall_evidence_id": "CTX_RAINFALL_TIMELINE",
+          "event_start": "2024-01-01 01:05:15",
+          "event_end": "2024-01-01 01:11:00",
+          "interpretation": "Earlier rain is temporal context, not proof of residual in-network water.",
+          "status": "available",
+          "phase_at_start": "during_recorded_wet_period",
+          "elapsed_minutes_from_record_start": 65.25,
+          "recorded_rain_before_event_mm": 7.917599999999999,
+          "current_wet_period": {
+            "start": "2024-01-01 00:40:00",
+            "end": "2024-01-01 02:40:00",
+            "rainfall_mm": 19.999833333333335
+          },
+          "minutes_since_current_wet_period_start": 25.25,
+          "zero_rain_interval_before_current_wet_period": {
+            "start": "2024-01-01 00:00:00",
+            "end": "2024-01-01 00:40:00",
+            "rainfall_mm": 0.0,
+            "duration_minutes": 40.0
+          },
+          "prior_peak_count": 1,
+          "latest_prior_peak": {
+            "peak_time": "2024-01-01 01:00:00",
+            "plateau_end": "2024-01-01 01:05:00",
+            "intensity_mm_per_h": 60.323,
+            "left_boundary_peak": false
+          },
+          "peak_before_latest_prior_peak": null,
+          "minutes_since_latest_prior_peak": 5.25,
+          "next_recorded_peak": {
+            "peak_time": "2024-01-01 02:00:00",
+            "plateau_end": "2024-01-01 02:05:00",
+            "intensity_mm_per_h": 20.108,
+            "left_boundary_peak": false
+          },
+          "last_completed_wet_period": null,
+          "minutes_since_last_completed_wet_period": null,
+          "elapsed_from_previous_rain_end_note": "Elapsed time can include current rainfall; it is not the zero-rain gap duration. Read the separately bounded dry interval.",
+          "history_before_record": "not_provided",
+          "previous_same_node_overflow": null
+        }
+      ]
+    }
+  ],
+  "metric_note": "Character reduction, not measured tokenizer reduction.",
+  "tests": {
+    "command": ".venv/Scripts/python.exe -m unittest discover -s tests -q",
+    "final_run": {
+      "tests": 265,
+      "failures": 0,
+      "errors": 0
+    },
+    "first_run": {
+      "tests": 265,
+      "errors": 2,
+      "reason": "Windows WinError 5 during temporary JSON replacement; full rerun passed without changes to production code."
+    }
+  }
+}

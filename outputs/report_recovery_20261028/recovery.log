@@ -1,0 +1,15 @@
+{
+  "status": "completed",
+  "html_file": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\RedChicoSur\\runs\\diagnostic_single_4h_20mm_5min__baseline__20261028_110806_17f8f882\\diagnosis_tasks\\7b0e19a074f441729ec212ec3bd0825c\\display_reports\\r1\\20261028_112515_105dc04a\\模拟诊断报告.html",
+  "quality_checks": {
+    "status": "passed",
+    "sections": 6,
+    "events": 2,
+    "embedded_images": 8,
+    "all_images_verified": true,
+    "numeric_policy": "supplied_fact_tokens",
+    "causal_policy": "current_diagnosis_statuses",
+    "verification_scope": "structure, source identity and references; not causal certification"
+  },
+  "model_api_calls": 0
+}

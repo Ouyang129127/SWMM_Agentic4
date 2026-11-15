@@ -1,0 +1,89 @@
+{
+  "source_attempt": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\RedChicoSur\\runs\\diagnostic_single_4h_20mm_5min__baseline__20261028_110806_17f8f882\\diagnosis_tasks\\7b0e19a074f441729ec212ec3bd0825c\\display_reports\\r1\\20261028_111432_1e30a564\\narrative_attempt_3.json",
+  "source_attempt_sha256": "33f029f22e9ddcfe88f54507576859c486d8fd4eba72ef040cf4edeadc846d77",
+  "immutable_sources_before": {
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\RedChicoSur\\runs\\diagnostic_single_4h_20mm_5min__baseline__20261028_110806_17f8f882\\diagnosis_tasks\\7b0e19a074f441729ec212ec3bd0825c\\diagnosis.json": "9609cc646091b36196faebe66b5cedd544035007825ae8c452a2a498252cb965",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\RedChicoSur\\runs\\diagnostic_single_4h_20mm_5min__baseline__20261028_110806_17f8f882\\diagnosis_tasks\\7b0e19a074f441729ec212ec3bd0825c\\verification.json": "2be1e460395ccb1b3603bae2bc8e3bed88e6155db943496ae586bf6aba440cae",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\RedChicoSur\\runs\\diagnostic_single_4h_20mm_5min__baseline__20261028_110806_17f8f882\\diagnosis_tasks\\7b0e19a074f441729ec212ec3bd0825c\\evidence_snapshot.json": "14364733872496325fcaa5d1675f48306df9bc37575e1e8f18716296b2da8a9b",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\RedChicoSur\\runs\\diagnostic_single_4h_20mm_5min__baseline__20261028_110806_17f8f882\\summary.json": "cf2a6ed88d367cfc28e9a38e8e05370c6016b6382386189d8976453f1ea710b3",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\RedChicoSur\\runs\\diagnostic_single_4h_20mm_5min__baseline__20261028_110806_17f8f882\\evidence\\evidence_package.json": "f5370763e496b9674e05497c59e819191e7605bf6a936c409df34a8e9d7b2f13"
+  },
+  "repairs": [
+    {
+      "field": "response.sections.surface[2]",
+      "before": "积水主要分布在道路和绿地。[[F0017]]；[[F0018]]。达到15厘米的积水同样出现在这两类地表，[[F0023]]；[[F0024]]。建筑物周边没有记录到达到统计阈值的积水，[[F0019]]。",
+      "after": "积水主要分布在道路和绿地。[[F0017]]；[[F0018]]。[[F0078]]同样出现在这两类地表，[[F0023]]；[[F0024]]。建筑物周边没有记录到达到统计阈值的积水，[[F0019]]。",
+      "kind": "source_bound_depth_category_label"
+    },
+    {
+      "field": "response.sections.surface[3]",
+      "before": "雨停后积水范围没有收缩，[[F0028]]；[[F0029]]。达到15厘米的区域在降雨结束时已经形成并持续到模拟结束；在PMP92900附近的道路，注入网格自早段起水深达到15厘米以上，[[F0049]]。",
+      "after": "雨停后积水范围没有收缩，[[F0028]]；[[F0029]]。[[F0078]]在降雨结束时已经形成并持续到模拟结束；在PMP92900附近的道路，注入网格自早段起达到重点关注阈值，[[F0049]]。",
+      "kind": "source_bound_depth_category_label"
+    },
+    {
+      "field": "response.sections.conclusions[2]",
+      "before": "地表积水以道路和绿地为主，浅积水范围在雨停后保持不变，[[F0015]]；达到15厘米的区域没有消退，[[F0021]]。",
+      "after": "地表积水以道路和绿地为主，浅积水范围在雨停后保持不变，[[F0015]]；[[F0078]]没有消退，[[F0021]]。",
+      "kind": "source_bound_depth_category_label"
+    }
+  ],
+  "existing_fact_ids_unchanged": true,
+  "model_api_calls": 0,
+  "simulation_rerun": false,
+  "diagnosis_rewritten": false,
+  "preflight_validation": "passed",
+  "result": "completed",
+  "immutable_sources_unchanged": true,
+  "display_report": {
+    "status": "completed",
+    "version": "report_agent_v1.10_surface_basis_palette",
+    "task_id": "7b0e19a074f441729ec212ec3bd0825c",
+    "revision": 1,
+    "generated_at": "2026-10-28T11:25:15+08:00",
+    "output_dir": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\RedChicoSur\\runs\\diagnostic_single_4h_20mm_5min__baseline__20261028_110806_17f8f882\\diagnosis_tasks\\7b0e19a074f441729ec212ec3bd0825c\\display_reports\\r1\\20261028_112515_105dc04a",
+    "producer_hashes": {
+      "E:\\SWMM_Agentic\\SWMM-Agentic3\\workflow_agents\\reporting\\agent.py": "9ffd9046633b7b503ddbae68204a588a46a1560a6657fe1f5da70d3bd8fcdf03",
+      "E:\\SWMM_Agentic\\SWMM-Agentic3\\workflow_agents\\reporting\\delivery.py": "0477dd795da319b3feed17ba93628662c53518da7607f56ee29efff95dafce01",
+      "E:\\SWMM_Agentic\\SWMM-Agentic3\\workflow_agents\\reporting\\internal_report.py": "bc71f890724bf23f0359ead338dd77cf7712c41b8f622401b9ad84ff4b1ba1e4",
+      "E:\\SWMM_Agentic\\SWMM-Agentic3\\workflow_agents\\reporting\\labels.py": "76310e01266031a1b5612dd7ce568f33acc77b53b78e759bfcfc0c9d2356e5ea",
+      "E:\\SWMM_Agentic\\SWMM-Agentic3\\workflow_agents\\reporting\\materials.py": "fb6d3559b9430530492318e7309e02919e85339a37c8f0210b78925563a2cd3b",
+      "E:\\SWMM_Agentic\\SWMM-Agentic3\\workflow_agents\\reporting\\narrative.py": "934061b709fe81e8465d03f581918f99d0d136338af4b709efba29e9a0df2266",
+      "E:\\SWMM_Agentic\\SWMM-Agentic3\\workflow_agents\\reporting\\pipeline.py": "bdf2589c5a1658724bb50f69460dcfdf1b7b0bba6f214c461da8a436668511c5",
+      "E:\\SWMM_Agentic\\SWMM-Agentic3\\workflow_agents\\reporting\\plots.py": "79c2ffaef98e7046a2df6e5390746df86c2a7a09c4dbace120f39f0d09de2214",
+      "E:\\SWMM_Agentic\\SWMM-Agentic3\\workflow_agents\\reporting\\rain.py": "24564eb5c52098e081681c451bc1c621498804513b4299e8f5b5261ee4a089a0",
+      "E:\\SWMM_Agentic\\SWMM-Agentic3\\workflow_agents\\reporting\\render.py": "5b411326f3a6cc3488035761ad1643899d13b1a130eef87c39219686a3e5d1a7",
+      "E:\\SWMM_Agentic\\SWMM-Agentic3\\workflow_agents\\reporting\\scene.py": "3afb370cc0ba568b2a7a1e7a3000794170fc7e9c8d09767c589fd75de344e1a8",
+      "E:\\SWMM_Agentic\\SWMM-Agentic3\\workflow_agents\\reporting\\surface.py": "93220f7eeafc2bde808a00a261dd2030e7fd78aa81d91e4e0b14ac4d2f218ec6",
+      "E:\\SWMM_Agentic\\SWMM-Agentic3\\workflow_agents\\reporting\\__init__.py": "558c41869e14aa07e52b56254449ba970eca3fa8898f01e1c28ed2fdb38f46f5",
+      "E:\\SWMM_Agentic\\SWMM-Agentic3\\workflow_agents\\reporting\\prompts\\causes_overview_v1.md": "835dbc89bfdc03bc6b6e17921df42b9efadfb373cc36a2ec63d25050d520c7c3",
+      "E:\\SWMM_Agentic\\SWMM-Agentic3\\workflow_agents\\reporting\\prompts\\event_example_lateral_v1.json": "1b4c365a414c1b6b1ab87d7c8f6803bc5ab3525eaa0927166ca8988a7fe99568",
+      "E:\\SWMM_Agentic\\SWMM-Agentic3\\workflow_agents\\reporting\\prompts\\event_example_outflow_v1.json": "53adc6cda947bb1e470c1c6ff08b51249a9ba1fbc30be99053e43e5c5836d410",
+      "E:\\SWMM_Agentic\\SWMM-Agentic3\\workflow_agents\\reporting\\prompts\\event_example_P7_v1.json": "4c91bd95de3dd3a7a834d7a3569145d8ed009ee6adae2c612aadb88f450c4c29",
+      "E:\\SWMM_Agentic\\SWMM-Agentic3\\workflow_agents\\reporting\\prompts\\event_example_v1.json": "5669ef0489f98c024505bbeb10adab1817cdda647ea9aad43c883f35a77acaf9",
+      "E:\\SWMM_Agentic\\SWMM-Agentic3\\workflow_agents\\reporting\\prompts\\event_rewrite_v2.md": "2d8261b92ad14d63e21785730052de7cebcd206779080b0dada0c4a324c42a39",
+      "E:\\SWMM_Agentic\\SWMM-Agentic3\\workflow_agents\\reporting\\prompts\\intro_rewrite_v1.md": "743ccf6a353518006c20ad402d108e556859c54c93c347a3f66e85788fd27521",
+      "E:\\SWMM_Agentic\\SWMM-Agentic3\\workflow_agents\\reporting\\prompts\\rain_fixed_v1.md": "3c95b99632e43db9e24d461d10fed0ff263b6c0bca7a6b2ec1057831425421fe",
+      "E:\\SWMM_Agentic\\SWMM-Agentic3\\workflow_agents\\reporting\\prompts\\rain_template_v1.json": "305c1bde691ed85b632b02178353e7e24b88e6713bd5aecb13e1a9851b0cdef1",
+      "E:\\SWMM_Agentic\\SWMM-Agentic3\\workflow_agents\\reporting\\prompts\\scene_fixed_v1.md": "8183aafbb123c547472b29bc0e841770943615805cd4c1e7395e0b047e96b37f",
+      "E:\\SWMM_Agentic\\SWMM-Agentic3\\workflow_agents\\reporting\\prompts\\scene_template_v1.json": "98c6059fdc95e4829739cc471b3406b8718785f360a81fbad784973b761ff89a",
+      "E:\\SWMM_Agentic\\SWMM-Agentic3\\workflow_agents\\reporting\\prompts\\surface_basis_v1.json": "3e8b20b7b7e681fd4788106c887b04a2b9709f4dd17639b459b3ac82224ac224",
+      "E:\\SWMM_Agentic\\SWMM-Agentic3\\workflow_agents\\reporting\\prompts\\surface_basis_v1.md": "d6f2471451d62cc0596a4d6b413368b31320e71a03fc418bf0a9cf71e5b84cd8",
+      "E:\\SWMM_Agentic\\SWMM-Agentic3\\workflow_agents\\common\\llm.py": "8db0748f99dc983b8161af21b4e9f2ba0fc070952ad89f266401bd882e0bca9a"
+    },
+    "html_file": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\RedChicoSur\\runs\\diagnostic_single_4h_20mm_5min__baseline__20261028_110806_17f8f882\\diagnosis_tasks\\7b0e19a074f441729ec212ec3bd0825c\\display_reports\\r1\\20261028_112515_105dc04a\\模拟诊断报告.html",
+    "html_sha256": "acd5a7029f8a60db333c42836bda4b239abecb2288da6d60528bfdceb991c0d7",
+    "materials_file": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\RedChicoSur\\runs\\diagnostic_single_4h_20mm_5min__baseline__20261028_110806_17f8f882\\diagnosis_tasks\\7b0e19a074f441729ec212ec3bd0825c\\display_reports\\r1\\20261028_112515_105dc04a\\report_materials.json",
+    "quality_checks": {
+      "status": "passed",
+      "sections": 6,
+      "events": 2,
+      "embedded_images": 8,
+      "all_images_verified": true,
+      "numeric_policy": "supplied_fact_tokens",
+      "causal_policy": "current_diagnosis_statuses",
+      "verification_scope": "structure, source identity and references; not causal certification"
+    },
+    "elapsed_seconds": 3.875
+  }
+}
