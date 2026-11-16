@@ -153,7 +153,7 @@ def install_request_gate(batch, plan):
     real_completion = service.configured_completion
     slots = RequestSlots(batch/"runtime/llm_slots", plan["llm_concurrency"])
     async def bounded_completion(prompt, audit=None):
-        serialized = service.SYSTEM_PROMPT + service.serialize_prompt(prompt)
+        serialized = service.diagnosis_system_prompt(prompt) + service.serialize_prompt(prompt)
         preflight = {"request_utf8_bytes": len(serialized.encode("utf-8")), "request_characters": len(serialized),
                      "request_body_sha256": __import__("hashlib").sha256(serialized.encode("utf-8")).hexdigest(),
                      "context_preflight_policy": "measure only; never truncate, silently rescope, or reject by approximate tokenizer"}

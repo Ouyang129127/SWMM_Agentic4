@@ -1,0 +1,330 @@
+[TITLE]
+;;Project Title/Notes
+Example  1
+SI equivalent; anonymous map coordinates use an assumed area-informed local scale.
+Working scenario baseline: DYNWAVE, 5-second reports and max routing step.
+
+[OPTIONS]
+;;Option             Value
+FLOW_UNITS           LPS
+INFILTRATION         HORTON
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS         DEPTH
+MIN_SLOPE            0
+ALLOW_PONDING        NO
+SKIP_STEADY_STATE    NO
+
+START_DATE           01/01/1998
+START_TIME           00:00:00
+REPORT_START_DATE    01/01/1998
+REPORT_START_TIME    00:00:00
+END_DATE             01/02/1998
+END_TIME             12:00:00
+SWEEP_START          01/01
+SWEEP_END            12/31
+DRY_DAYS             5
+REPORT_STEP          00:00:05
+WET_STEP             00:01:00
+DRY_STEP             01:00:00
+ROUTING_STEP         0:00:05 
+RULE_STEP            00:00:00
+
+INERTIAL_DAMPING     PARTIAL
+NORMAL_FLOW_LIMITED  BOTH
+FORCE_MAIN_EQUATION  H-W
+VARIABLE_STEP        0.75
+LENGTHENING_STEP     0
+MIN_SURFAREA         1.167
+MAX_TRIALS           8
+HEAD_TOLERANCE       0.0015
+SYS_FLOW_TOL         5
+LAT_FLOW_TOL         5
+MINIMUM_STEP         0.5
+THREADS              1
+
+[EVAPORATION]
+;;Data Source    Parameters
+;;-------------- ----------------
+CONSTANT         0
+DRY_ONLY         NO
+
+[RAINGAGES]
+;;Name           Format    Interval SCF      Source    
+;;-------------- --------- ------ ------ ----------
+RG1              INTENSITY 1:00     1.0      TIMESERIES TS1             
+
+[SUBCATCHMENTS]
+;;Name           Rain Gage        Outlet           Area     %Imperv  Width    %Slope   CurbLen  SnowPack        
+;;-------------- ---------------- ---------------- -------- -------- -------- -------- -------- ----------------
+1                RG1              9                4.0468564224 50       152.4    0.01     0                        
+2                RG1              10               4.0468564224 50       152.4    0.01     0                        
+3                RG1              13               2.0234282112 50       152.4    0.01     0                        
+4                RG1              22               2.0234282112 50       152.4    0.01     0                        
+5                RG1              15               6.0702846336 50       152.4    0.01     0                        
+6                RG1              23               4.85622770688 10       152.4    0.01     0                        
+7                RG1              19               1.61874256896 10       152.4    0.01     0                        
+8                RG1              18               4.0468564224 10       152.4    0.01     0                        
+
+[SUBAREAS]
+;;Subcatchment   N-Imperv   N-Perv     S-Imperv   S-Perv     PctZero    RouteTo    PctRouted 
+;;-------------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+1                0.001      0.10       1.27       1.27       25         OUTLET    
+2                0.001      0.10       1.27       1.27       25         OUTLET    
+3                0.001      0.10       1.27       1.27       25         OUTLET    
+4                0.001      0.10       1.27       1.27       25         OUTLET    
+5                0.001      0.10       1.27       1.27       25         OUTLET    
+6                0.001      0.10       1.27       1.27       25         OUTLET    
+7                0.001      0.10       1.27       1.27       25         OUTLET    
+8                0.001      0.10       1.27       1.27       25         OUTLET    
+
+[INFILTRATION]
+;;Subcatchment   Param1     Param2     Param3     Param4     Param5    
+;;-------------- ---------- ---------- ---------- ---------- ----------
+1                8.89       6.35       4.14       0.50       0         
+2                17.78      7.62       4.14       0.50       0         
+3                17.78      7.62       4.14       0.50       0         
+4                17.78      7.62       4.14       0.50       0         
+5                17.78      7.62       4.14       0.50       0         
+6                17.78      7.62       4.14       0.50       0         
+7                17.78      7.62       4.14       0.50       0         
+8                17.78      7.62       4.14       0.50       0         
+
+[JUNCTIONS]
+;;Name           Elevation  MaxDepth   InitDepth  SurDepth   Aponded   
+;;-------------- ---------- ---------- ---------- ---------- ----------
+9                304.8      0.9144     0          0          0         
+10               303.276    0.9144     0          0          0         
+13               303.276    0.9144     0          0          0         
+14               301.752    0.9144     0          0          0         
+15               300.8376   0.9144     0          0          0         
+16               300.228    0.9144     0          0          0         
+17               298.704    0.9144     0          0          0         
+19               307.848    0.9144     0          0          0         
+20               306.324    0.9144     0          0          0         
+21               301.752    0.9144     0          0          0         
+22               300.8376   0.9144     0          0          0         
+23               301.752    0.9144     0          0          0         
+24               299.9232   0.9144     0          0          0         
+
+[OUTFALLS]
+;;Name           Elevation  Type       Stage Data       Gated    Route To        
+;;-------------- ---------- ---------- ---------------- -------- ----------------
+18               297.18     FREE                        NO                       
+
+[CONDUITS]
+;;Name           From Node        To Node          Length     Roughness  InOffset   OutOffset  InitFlow   MaxFlow   
+;;-------------- ---------------- ---------------- ---------- ---------- ---------- ---------- ---------- ----------
+1                9                10               121.92     0.01       0          0          0          0         
+4                19               20               60.96      0.01       0          0          0          0         
+5                20               21               60.96      0.01       0          0          0          0         
+6                10               21               121.92     0.01       0          0.3048     0          0         
+7                21               22               91.44      0.01       0.3048     0.3048     0          0         
+8                22               16               91.44      0.01       0          0          0          0         
+10               17               18               121.92     0.01       0          0          0          0         
+11               13               14               121.92     0.01       0          0          0          0         
+12               14               15               121.92     0.01       0          0          0          0         
+13               15               16               121.92     0.01       0          0          0          0         
+14               23               24               121.92     0.01       0          0          0          0         
+15               16               24               30.48      0.01       0          0          0          0         
+16               24               17               121.92     0.01       0          0          0          0         
+
+[XSECTIONS]
+;;Link           Shape        Geom1            Geom2      Geom3      Geom4      Barrels    Culvert   
+;;-------------- ------------ ---------------- ---------- ---------- ---------- ---------- ----------
+1                CIRCULAR     0.4572           0          0          0          1                    
+4                CIRCULAR     0.3048           0          0          0          1                    
+5                CIRCULAR     0.3048           0          0          0          1                    
+6                CIRCULAR     0.3048           0          0          0          1                    
+7                CIRCULAR     0.6096           0          0          0          1                    
+8                CIRCULAR     0.6096           0          0          0          1                    
+10               CIRCULAR     0.6096           0          0          0          1                    
+11               CIRCULAR     0.4572           0          0          0          1                    
+12               CIRCULAR     0.4572           0          0          0          1                    
+13               CIRCULAR     0.4572           0          0          0          1                    
+14               CIRCULAR     0.3048           0          0          0          1                    
+15               CIRCULAR     0.6096           0          0          0          1                    
+16               CIRCULAR     0.6096           0          0          0          1                    
+
+[POLLUTANTS]
+;;Name           Units  Crain      Cgw        Crdii      Kdecay     SnowOnly   Co-Pollutant     Co-Frac    Cdwf       Cinit     
+;;-------------- ------ ---------- ---------- ---------- ---------- ---------- ---------------- ---------- ---------- ----------
+TSS              MG/L   0.0        0.0        0          0.0        NO         *                0.0        0          0         
+Lead             UG/L   0.0        0.0        0          0.0        NO         TSS              0.2        0          0         
+
+[LANDUSES]
+;;               Sweeping   Fraction   Last      
+;;Name           Interval   Available  Swept     
+;;-------------- ---------- ---------- ----------
+Residential                                      
+Undeveloped                                      
+
+[COVERAGES]
+;;Subcatchment   Land Use         Percent   
+;;-------------- ---------------- ----------
+1                Residential      100.00    
+2                Residential      50.00     
+2                Undeveloped      50.00     
+3                Residential      100.00    
+4                Residential      50.00     
+4                Undeveloped      50.00     
+5                Residential      100.00    
+6                Undeveloped      100.00    
+7                Undeveloped      100.00    
+8                Undeveloped      100.00    
+
+[LOADINGS]
+;;Subcatchment   Pollutant        Buildup   
+;;-------------- ---------------- ----------
+
+[BUILDUP]
+;;Land Use       Pollutant        Function   Coeff1     Coeff2     Coeff3     Per Unit  
+;;-------------- ---------------- ---------- ---------- ---------- ---------- ----------
+Residential      TSS              SAT        56.042557809723 0          2          AREA      
+Residential      Lead             NONE       0          0          0          AREA      
+Undeveloped      TSS              SAT        112.08511561945 0          3          AREA      
+Undeveloped      Lead             NONE       0          0          0          AREA      
+
+[WASHOFF]
+;;Land Use       Pollutant        Function   Coeff1     Coeff2     SweepRmvl  BmpRmvl   
+;;-------------- ---------------- ---------- ---------- ---------- ---------- ----------
+Residential      TSS              EXP        0.0039370078740157 1          0          0         
+Residential      Lead             EMC        0          0          0          0         
+Undeveloped      TSS              EXP        0.010390020354651 0.7        0          0         
+Undeveloped      Lead             EMC        0          0          0          0         
+
+[TIMESERIES]
+;;Name           Date       Time       Value     
+;;-------------- ---------- ---------- ----------
+TS1                         0:00       0         
+TS1                         1:00       6.35      
+TS1                         2:00       12.7      
+TS1                         3:00       20.32     
+TS1                         4:00       10.16     
+TS1                         5:00       2.54      
+TS1                         6:00       0         
+TS1                         27:00      0         
+TS1                         28:00      10.16     
+TS1                         29:00      5.08      
+TS1                         30:00      0         
+
+[REPORT]
+;;Reporting Options
+SUBCATCHMENTS ALL
+NODES ALL
+LINKS ALL
+
+[TAGS]
+
+[MAP]
+DIMENSIONS -6.070 -4.739 677.471 649.528
+Units      Meters
+
+[COORDINATES]
+;;Node           X-Coord            Y-Coord           
+;;-------------- ------------------ ------------------
+9                264.513            611.805           
+10               268.504            444.146           
+13               156.732            280.479           
+14               208.626            276.488           
+15               212.618            209.957           
+16               313.745            215.279           
+17               404.228            140.764           
+19               500.033            430.840           
+20               385.599            421.525           
+21               320.399            390.921           
+22               288.463            303.100           
+23               418.865            256.529           
+24               349.672            196.650           
+18               428.179            36.975            
+
+[VERTICES]
+;;Link           X-Coord            Y-Coord           
+;;-------------- ------------------ ------------------
+10               430.840            91.531            
+
+[Polygons]
+;;Subcatchment   X-Coord            Y-Coord           
+;;-------------- ------------------ ------------------
+1                257.859            441.485           
+1                229.916            400.236           
+1                26.330             405.558           
+1                25.000             543.943           
+1                38.306             586.523           
+1                82.217             619.789           
+1                261.851            618.458           
+2                489.388            615.797           
+2                496.041            430.840           
+2                382.938            428.179           
+2                320.399            402.897           
+2                273.826            460.114           
+2                269.835            613.135           
+3                158.062            385.599           
+3                160.724            279.149           
+3                200.642            273.826           
+3                197.981            219.271           
+3                28.992             220.602           
+3                27.662             384.268           
+4                228.585            390.921           
+4                256.529            410.881           
+4                272.496            428.179           
+4                291.125            413.542           
+4                313.745            388.260           
+4                287.133            337.697           
+4                284.471            285.802           
+4                296.447            239.230           
+4                261.851            221.932           
+4                219.271            217.940           
+4                213.949            228.585           
+4                207.295            331.043           
+4                172.699            332.374           
+4                172.699            388.260           
+4                216.610            388.260           
+4                243.222            398.905           
+4                269.835            429.509           
+5                171.369            207.295           
+5                319.068            203.303           
+5                339.027            184.675           
+5                372.293            158.062           
+5                417.534            104.838           
+5                426.849            66.249            
+5                425.517            36.975            
+5                91.531             35.645            
+5                70.241             26.330            
+5                28.992             54.274            
+5                28.992             201.973           
+6                581.201            267.174           
+6                508.017            269.834           
+6                416.204            264.512           
+6                382.938            235.239           
+6                345.681            208.626           
+6                301.770            272.496           
+6                297.778            321.729           
+6                317.737            369.631           
+6                348.342            402.897           
+6                390.922            420.195           
+6                575.878            417.534           
+7                561.241            614.466           
+7                578.540            598.498           
+7                578.540            550.596           
+7                581.201            433.501           
+7                501.363            434.832           
+7                497.372            614.466           
+8                582.531            135.442           
+8                581.201            54.274            
+8                546.604            26.330            
+8                478.743            25.000            
+8                477.412            35.645            
+8                441.485            36.975            
+8                441.485            42.298            
+8                440.154            79.556            
+8                422.857            120.805           
+8                397.575            155.401           
+8                362.978            199.311           
+8                425.517            251.206           
+8                569.225            256.529           
+
+[SYMBOLS]
+;;Gage           X-Coord            Y-Coord           
+;;-------------- ------------------ ------------------
+RG1              646.401            523.984           
+

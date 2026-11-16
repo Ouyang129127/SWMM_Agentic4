@@ -1,0 +1,1897 @@
+{
+  "kind": "offline_proxy_tokenization_not_model_or_provider_test",
+  "comparison": "First-class tables versus first-class tables plus the implemented shallow sharing; extra shared instructions included only when sharing is active.",
+  "historical_runs": 45,
+  "historical_calls": 81,
+  "historical_system_note": "Frozen historical system text held fixed between paired views, with only shared-format instructions added to the shared view.",
+  "historical_sharing_calls": 81,
+  "aggregate": {
+    "cl100k_base": {
+      "before": 11099727,
+      "after": 10568722,
+      "additional_reduction_vs_series_only_pct": 4.784
+    },
+    "o200k_base": {
+      "before": 10928997,
+      "after": 10388448,
+      "additional_reduction_vs_series_only_pct": 4.946
+    }
+  },
+  "current_m6_previews": [
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic4\\outputs\\m6_antecedent_window_20261115\\12_Example1_C03_prompt.json",
+      "sharing_enabled": true,
+      "shared_definitions": 5,
+      "before_characters": 168090,
+      "after_characters": 165587,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 76118,
+          "after": 75320,
+          "reduction_pct": 1.048
+        },
+        "o200k_base": {
+          "before": 73577,
+          "after": 72734,
+          "reduction_pct": 1.146
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic4\\outputs\\m6_antecedent_window_20261115\\14_Example1_C05_prompt.json",
+      "sharing_enabled": true,
+      "shared_definitions": 0,
+      "before_characters": 174814,
+      "after_characters": 173392,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 79071,
+          "after": 78603,
+          "reduction_pct": 0.592
+        },
+        "o200k_base": {
+          "before": 76513,
+          "after": 76002,
+          "reduction_pct": 0.668
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    }
+  ],
+  "calls": [
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_A02_14mm\\diagnosis_tasks\\27646de31a1144619300cca572ea7f58\\diagnosis_attempt_19056680a648486a96a5dc58615c28f0.json",
+      "sharing_enabled": true,
+      "shared_definitions": 0,
+      "before_characters": 70146,
+      "after_characters": 69300,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 30499,
+          "after": 30268,
+          "reduction_pct": 0.757
+        },
+        "o200k_base": {
+          "before": 28476,
+          "after": 28202,
+          "reduction_pct": 0.962
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_A02_14mm\\diagnosis_tasks\\27646de31a1144619300cca572ea7f58\\diagnosis_attempt_550c69433541458dadf35bb527a3cf09.json",
+      "sharing_enabled": true,
+      "shared_definitions": 0,
+      "before_characters": 163566,
+      "after_characters": 162656,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 90457,
+          "after": 90203,
+          "reduction_pct": 0.281
+        },
+        "o200k_base": {
+          "before": 87410,
+          "after": 87113,
+          "reduction_pct": 0.34
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_A03_20mm\\diagnosis_tasks\\a676d55e22624c9a9665c4367889c110\\diagnosis_attempt_ab7aea9b9d9647d0a503a1a978f8583f.json",
+      "sharing_enabled": true,
+      "shared_definitions": 0,
+      "before_characters": 104228,
+      "after_characters": 103382,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 47619,
+          "after": 47388,
+          "reduction_pct": 0.485
+        },
+        "o200k_base": {
+          "before": 45598,
+          "after": 45324,
+          "reduction_pct": 0.601
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_A03_20mm\\diagnosis_tasks\\a676d55e22624c9a9665c4367889c110\\diagnosis_attempt_13f0fa6686f4465c90ef5c6f07dfc6cb.json",
+      "sharing_enabled": true,
+      "shared_definitions": 0,
+      "before_characters": 326511,
+      "after_characters": 325537,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 189926,
+          "after": 189649,
+          "reduction_pct": 0.146
+        },
+        "o200k_base": {
+          "before": 186823,
+          "after": 186503,
+          "reduction_pct": 0.171
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_A04_22mm\\diagnosis_tasks\\bd6fc2198ee5424ba09525bb1b34b716\\diagnosis_attempt_eed020641f4a4f12841e19c6442e0742.json",
+      "sharing_enabled": true,
+      "shared_definitions": 0,
+      "before_characters": 124676,
+      "after_characters": 123446,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 56002,
+          "after": 55633,
+          "reduction_pct": 0.659
+        },
+        "o200k_base": {
+          "before": 54053,
+          "after": 53641,
+          "reduction_pct": 0.762
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_A04_22mm\\diagnosis_tasks\\bd6fc2198ee5424ba09525bb1b34b716\\diagnosis_attempt_e7341a67c06848a5b9fc658bef0c08aa.json",
+      "sharing_enabled": true,
+      "shared_definitions": 0,
+      "before_characters": 141253,
+      "after_characters": 140023,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 65485,
+          "after": 65116,
+          "reduction_pct": 0.563
+        },
+        "o200k_base": {
+          "before": 62331,
+          "after": 61920,
+          "reduction_pct": 0.659
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_A04_22mm\\diagnosis_tasks\\bd6fc2198ee5424ba09525bb1b34b716\\diagnosis_attempt_bacb96da6f0845c281453e021ad00e69.json",
+      "sharing_enabled": true,
+      "shared_definitions": 0,
+      "before_characters": 181595,
+      "after_characters": 180237,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 90022,
+          "after": 89607,
+          "reduction_pct": 0.461
+        },
+        "o200k_base": {
+          "before": 86759,
+          "after": 86301,
+          "reduction_pct": 0.528
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_A05_40mm\\diagnosis_tasks\\de496e260f924c12b1b8efd7b4f1ad29\\diagnosis_attempt_5536e3f036c041ecae90bef35020fe12.json",
+      "sharing_enabled": true,
+      "shared_definitions": 5,
+      "before_characters": 266880,
+      "after_characters": 264209,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 126376,
+          "after": 125517,
+          "reduction_pct": 0.68
+        },
+        "o200k_base": {
+          "before": 124514,
+          "after": 123610,
+          "reduction_pct": 0.726
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_B03_sharp20\\diagnosis_tasks\\7266fad9e3b2422d9f591f929ff5f9f1\\diagnosis_attempt_8752e2d349454afda6ce3435d8caf7b4.json",
+      "sharing_enabled": true,
+      "shared_definitions": 5,
+      "before_characters": 173704,
+      "after_characters": 170933,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 78955,
+          "after": 78094,
+          "reduction_pct": 1.09
+        },
+        "o200k_base": {
+          "before": 77084,
+          "after": 76178,
+          "reduction_pct": 1.175
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_B03_sharp20\\diagnosis_tasks\\7266fad9e3b2422d9f591f929ff5f9f1\\diagnosis_attempt_e9a662ca116342eeb80cdb3fa980350c.json",
+      "sharing_enabled": true,
+      "shared_definitions": 5,
+      "before_characters": 218538,
+      "after_characters": 215700,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 105280,
+          "after": 104396,
+          "reduction_pct": 0.84
+        },
+        "o200k_base": {
+          "before": 102070,
+          "after": 101141,
+          "reduction_pct": 0.91
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_B04_rev20\\diagnosis_tasks\\ae77eac429364e1f844ad714ce12a244\\diagnosis_attempt_b39f42e9910d46d3b4734ddd63eaafbe.json",
+      "sharing_enabled": true,
+      "shared_definitions": 0,
+      "before_characters": 102035,
+      "after_characters": 101168,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 46343,
+          "after": 46133,
+          "reduction_pct": 0.453
+        },
+        "o200k_base": {
+          "before": 44319,
+          "after": 44066,
+          "reduction_pct": 0.571
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_B04_rev20\\diagnosis_tasks\\ae77eac429364e1f844ad714ce12a244\\diagnosis_attempt_36f9b3fa3d8043c69def84158816e39a.json",
+      "sharing_enabled": true,
+      "shared_definitions": 0,
+      "before_characters": 311758,
+      "after_characters": 310826,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 183874,
+          "after": 183642,
+          "reduction_pct": 0.126
+        },
+        "o200k_base": {
+          "before": 180944,
+          "after": 180669,
+          "reduction_pct": 0.152
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C01_d30_20\\diagnosis_tasks\\2ee15d11026f423d92e643896d8258c9\\diagnosis_attempt_b2bedfaf38f34c0d8f2396f1cbd3bd06.json",
+      "sharing_enabled": true,
+      "shared_definitions": 5,
+      "before_characters": 170126,
+      "after_characters": 167388,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 77179,
+          "after": 76285,
+          "reduction_pct": 1.158
+        },
+        "o200k_base": {
+          "before": 75309,
+          "after": 74370,
+          "reduction_pct": 1.247
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C01_d30_20\\diagnosis_tasks\\2ee15d11026f423d92e643896d8258c9\\diagnosis_attempt_5605f1802b3a4384a1f04fe12a82b41f.json",
+      "sharing_enabled": true,
+      "shared_definitions": 5,
+      "before_characters": 730515,
+      "after_characters": 727315,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 435037,
+          "after": 433975,
+          "reduction_pct": 0.244
+        },
+        "o200k_base": {
+          "before": 431161,
+          "after": 430054,
+          "reduction_pct": 0.257
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C01_d30_20\\diagnosis_tasks\\2ee15d11026f423d92e643896d8258c9\\diagnosis_attempt_e91ff89b0c574599ac053921f16d54dd.json",
+      "sharing_enabled": true,
+      "shared_definitions": 5,
+      "before_characters": 752459,
+      "after_characters": 749259,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 449004,
+          "after": 447942,
+          "reduction_pct": 0.237
+        },
+        "o200k_base": {
+          "before": 443458,
+          "after": 442352,
+          "reduction_pct": 0.249
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C02_d60_20\\diagnosis_tasks\\ad250ee1e3324548ba38dc690c456d7d\\diagnosis_attempt_9207859ccca94a63a0e11494a306e4ae.json",
+      "sharing_enabled": true,
+      "shared_definitions": 5,
+      "before_characters": 132546,
+      "after_characters": 130204,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 60040,
+          "after": 59290,
+          "reduction_pct": 1.249
+        },
+        "o200k_base": {
+          "before": 58095,
+          "after": 57300,
+          "reduction_pct": 1.368
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C03_d120_20\\diagnosis_tasks\\b797648f621e43b29ef66bcc54bc2e56\\diagnosis_attempt_dc0b92ddb226427f861db4857adca03a.json",
+      "sharing_enabled": true,
+      "shared_definitions": 5,
+      "before_characters": 129932,
+      "after_characters": 127563,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 58651,
+          "after": 57901,
+          "reduction_pct": 1.279
+        },
+        "o200k_base": {
+          "before": 56703,
+          "after": 55908,
+          "reduction_pct": 1.402
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C03_d120_20\\diagnosis_tasks\\b797648f621e43b29ef66bcc54bc2e56\\diagnosis_attempt_076566a5ba9b4f12bd739d82c681bbb3.json",
+      "sharing_enabled": true,
+      "shared_definitions": 5,
+      "before_characters": 358823,
+      "after_characters": 356320,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 205933,
+          "after": 205135,
+          "reduction_pct": 0.388
+        },
+        "o200k_base": {
+          "before": 202550,
+          "after": 201707,
+          "reduction_pct": 0.416
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C04_5_15\\diagnosis_tasks\\22ee14c4c0ad42bb99de0a87480549b1\\diagnosis_attempt_54bca80119af446d943a427b5e032c40.json",
+      "sharing_enabled": true,
+      "shared_definitions": 0,
+      "before_characters": 145363,
+      "after_characters": 144133,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 66578,
+          "after": 66182,
+          "reduction_pct": 0.595
+        },
+        "o200k_base": {
+          "before": 64645,
+          "after": 64206,
+          "reduction_pct": 0.679
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C04_5_15\\diagnosis_tasks\\22ee14c4c0ad42bb99de0a87480549b1\\diagnosis_attempt_6fb712988e384ee892be13c1305b987c.json",
+      "sharing_enabled": true,
+      "shared_definitions": 0,
+      "before_characters": 344652,
+      "after_characters": 343294,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 193565,
+          "after": 193121,
+          "reduction_pct": 0.229
+        },
+        "o200k_base": {
+          "before": 190403,
+          "after": 189916,
+          "reduction_pct": 0.256
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C05_15_5\\diagnosis_tasks\\d32f04309a99482981390ccbf434e72e\\diagnosis_attempt_a69d6c38430641b3aca7c99b9e123bce.json",
+      "sharing_enabled": true,
+      "shared_definitions": 0,
+      "before_characters": 137698,
+      "after_characters": 136468,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 62695,
+          "after": 62299,
+          "reduction_pct": 0.632
+        },
+        "o200k_base": {
+          "before": 60752,
+          "after": 60313,
+          "reduction_pct": 0.723
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C05_15_5\\diagnosis_tasks\\d32f04309a99482981390ccbf434e72e\\diagnosis_attempt_77a95afe10e04ef0a0a2c08a324bb7aa.json",
+      "sharing_enabled": true,
+      "shared_definitions": 0,
+      "before_characters": 283185,
+      "after_characters": 281827,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 154418,
+          "after": 153974,
+          "reduction_pct": 0.288
+        },
+        "o200k_base": {
+          "before": 150744,
+          "after": 150257,
+          "reduction_pct": 0.323
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C06_tri20\\diagnosis_tasks\\9a40e511b271469f94cb7829e40a5fd6\\diagnosis_attempt_ea2cb3ff53ed468eadeea8fae17d852e.json",
+      "sharing_enabled": true,
+      "shared_definitions": 5,
+      "before_characters": 69715,
+      "after_characters": 67400,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 28193,
+          "after": 27497,
+          "reduction_pct": 2.469
+        },
+        "o200k_base": {
+          "before": 26251,
+          "after": 25510,
+          "reduction_pct": 2.823
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C06_tri20\\diagnosis_tasks\\9a40e511b271469f94cb7829e40a5fd6\\diagnosis_attempt_66e630ba3eb149498310963c66589c33.json",
+      "sharing_enabled": true,
+      "shared_definitions": 5,
+      "before_characters": 86771,
+      "after_characters": 84456,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 38190,
+          "after": 37494,
+          "reduction_pct": 1.822
+        },
+        "o200k_base": {
+          "before": 35085,
+          "after": 34345,
+          "reduction_pct": 2.109
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C06_tri20\\diagnosis_tasks\\9a40e511b271469f94cb7829e40a5fd6\\diagnosis_attempt_e9bb81cc34c44ab3bc87fdac4feaad1f.json",
+      "sharing_enabled": true,
+      "shared_definitions": 5,
+      "before_characters": 759748,
+      "after_characters": 757173,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 475526,
+          "after": 474742,
+          "reduction_pct": 0.165
+        },
+        "o200k_base": {
+          "before": 472265,
+          "after": 471436,
+          "reduction_pct": 0.176
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_A02\\diagnosis_tasks\\ba4b0697fe754e6eafa48dbc98b116d3\\diagnosis_attempt_222e2464aa0e4bd8897d02cc6954098b.json",
+      "sharing_enabled": true,
+      "shared_definitions": 5,
+      "before_characters": 68233,
+      "after_characters": 65739,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 27415,
+          "after": 26625,
+          "reduction_pct": 2.882
+        },
+        "o200k_base": {
+          "before": 25509,
+          "after": 24676,
+          "reduction_pct": 3.266
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_A02\\diagnosis_tasks\\ba4b0697fe754e6eafa48dbc98b116d3\\diagnosis_attempt_6b8fa00e8f9e48cb94c99d2328d6e7e4.json",
+      "sharing_enabled": true,
+      "shared_definitions": 5,
+      "before_characters": 123548,
+      "after_characters": 120918,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 60900,
+          "after": 60064,
+          "reduction_pct": 1.373
+        },
+        "o200k_base": {
+          "before": 57525,
+          "after": 56646,
+          "reduction_pct": 1.528
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_A03\\diagnosis_tasks\\3459aa42c8c44bbb9617e76df167ec91\\diagnosis_attempt_4567efce2e554d1f96612c466cb02788.json",
+      "sharing_enabled": true,
+      "shared_definitions": 14,
+      "before_characters": 131780,
+      "after_characters": 124524,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 49347,
+          "after": 46876,
+          "reduction_pct": 5.007
+        },
+        "o200k_base": {
+          "before": 47881,
+          "after": 45364,
+          "reduction_pct": 5.257
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_A03\\diagnosis_tasks\\3459aa42c8c44bbb9617e76df167ec91\\diagnosis_attempt_178896c1b6874984ac4b70979b539889.json",
+      "sharing_enabled": true,
+      "shared_definitions": 14,
+      "before_characters": 161587,
+      "after_characters": 154331,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 66471,
+          "after": 64000,
+          "reduction_pct": 3.717
+        },
+        "o200k_base": {
+          "before": 63579,
+          "after": 61063,
+          "reduction_pct": 3.957
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_A03\\diagnosis_tasks\\3459aa42c8c44bbb9617e76df167ec91\\diagnosis_attempt_7342d502678a47c188cec5f71d83ead0.json",
+      "sharing_enabled": true,
+      "shared_definitions": 14,
+      "before_characters": 561708,
+      "after_characters": 553500,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 299699,
+          "after": 296906,
+          "reduction_pct": 0.932
+        },
+        "o200k_base": {
+          "before": 298475,
+          "after": 295636,
+          "reduction_pct": 0.951
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_A04\\diagnosis_tasks\\1604fc6db7a8405d9307c66e2faad04c\\diagnosis_attempt_741c1a5c794a4aacaabbef1405be8647.json",
+      "sharing_enabled": true,
+      "shared_definitions": 19,
+      "before_characters": 208921,
+      "after_characters": 197042,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 78562,
+          "after": 74446,
+          "reduction_pct": 5.239
+        },
+        "o200k_base": {
+          "before": 77516,
+          "after": 73350,
+          "reduction_pct": 5.374
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_A04\\diagnosis_tasks\\1604fc6db7a8405d9307c66e2faad04c\\diagnosis_attempt_6de76f89bc0d4330b3b243c7ddd6d0ce.json",
+      "sharing_enabled": true,
+      "shared_definitions": 19,
+      "before_characters": 245401,
+      "after_characters": 233522,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 98377,
+          "after": 94261,
+          "reduction_pct": 4.184
+        },
+        "o200k_base": {
+          "before": 95531,
+          "after": 91366,
+          "reduction_pct": 4.36
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_A04\\diagnosis_tasks\\1604fc6db7a8405d9307c66e2faad04c\\diagnosis_attempt_fcbab44477f140b6bd65a70590b435eb.json",
+      "sharing_enabled": true,
+      "shared_definitions": 19,
+      "before_characters": 263475,
+      "after_characters": 251528,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 109509,
+          "after": 105370,
+          "reduction_pct": 3.78
+        },
+        "o200k_base": {
+          "before": 106623,
+          "after": 102434,
+          "reduction_pct": 3.929
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_A05\\diagnosis_tasks\\e0b0bcccfcbc4954999f29aa185c7b00\\diagnosis_attempt_0c1b1ec9f84b4d6c8e977c4b1c4badbe.json",
+      "sharing_enabled": true,
+      "shared_definitions": 17,
+      "before_characters": 242953,
+      "after_characters": 231886,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 93972,
+          "after": 90169,
+          "reduction_pct": 4.047
+        },
+        "o200k_base": {
+          "before": 93023,
+          "after": 89172,
+          "reduction_pct": 4.14
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_A05\\diagnosis_tasks\\e0b0bcccfcbc4954999f29aa185c7b00\\diagnosis_attempt_4c1bf1148f5d43e58bc6402d5c395faa.json",
+      "sharing_enabled": true,
+      "shared_definitions": 17,
+      "before_characters": 279206,
+      "after_characters": 268139,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 115144,
+          "after": 111341,
+          "reduction_pct": 3.303
+        },
+        "o200k_base": {
+          "before": 112009,
+          "after": 108159,
+          "reduction_pct": 3.437
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_A05\\diagnosis_tasks\\e0b0bcccfcbc4954999f29aa185c7b00\\diagnosis_attempt_4a39851964ea4f7abc30edacc6d54ac7.json",
+      "sharing_enabled": true,
+      "shared_definitions": 17,
+      "before_characters": 372794,
+      "after_characters": 361591,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 173470,
+          "after": 169621,
+          "reduction_pct": 2.219
+        },
+        "o200k_base": {
+          "before": 170458,
+          "after": 166561,
+          "reduction_pct": 2.286
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_B03\\diagnosis_tasks\\2aa3c7f38bc946c69c4e45e54b40b7e4\\diagnosis_attempt_8923d3a6afad438d82dcbdb69ff1f3df.json",
+      "sharing_enabled": true,
+      "shared_definitions": 21,
+      "before_characters": 232355,
+      "after_characters": 218429,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 86152,
+          "after": 81305,
+          "reduction_pct": 5.626
+        },
+        "o200k_base": {
+          "before": 85310,
+          "after": 80410,
+          "reduction_pct": 5.744
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_B03\\diagnosis_tasks\\2aa3c7f38bc946c69c4e45e54b40b7e4\\diagnosis_attempt_a2269244bf6943f086f58f0d05c657d9.json",
+      "sharing_enabled": true,
+      "shared_definitions": 21,
+      "before_characters": 519750,
+      "after_characters": 505620,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 240804,
+          "after": 235888,
+          "reduction_pct": 2.041
+        },
+        "o200k_base": {
+          "before": 238787,
+          "after": 233818,
+          "reduction_pct": 2.081
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_B03\\diagnosis_tasks\\2aa3c7f38bc946c69c4e45e54b40b7e4\\diagnosis_attempt_5b97e8b2c7da483793ea2ceed7156bfa.json",
+      "sharing_enabled": true,
+      "shared_definitions": 21,
+      "before_characters": 562826,
+      "after_characters": 548696,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 265108,
+          "after": 260192,
+          "reduction_pct": 1.854
+        },
+        "o200k_base": {
+          "before": 261040,
+          "after": 256072,
+          "reduction_pct": 1.903
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_B04\\diagnosis_tasks\\d680014815a44656af4fe4771786b9fe\\diagnosis_attempt_4f17724ec6564a37a031d3272a6f1428.json",
+      "sharing_enabled": true,
+      "shared_definitions": 11,
+      "before_characters": 123017,
+      "after_characters": 117395,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 46626,
+          "after": 44741,
+          "reduction_pct": 4.043
+        },
+        "o200k_base": {
+          "before": 45106,
+          "after": 43177,
+          "reduction_pct": 4.277
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_B04\\diagnosis_tasks\\d680014815a44656af4fe4771786b9fe\\diagnosis_attempt_5a752d62a5c3477c8ce17f2746228fc2.json",
+      "sharing_enabled": true,
+      "shared_definitions": 11,
+      "before_characters": 185567,
+      "after_characters": 179741,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 82798,
+          "after": 80844,
+          "reduction_pct": 2.36
+        },
+        "o200k_base": {
+          "before": 79273,
+          "after": 77275,
+          "reduction_pct": 2.52
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C02\\diagnosis_tasks\\e2e492f167a842b8bf81a5bb2e51d819\\diagnosis_attempt_60f5c5fe147a436d90307aea3db2defa.json",
+      "sharing_enabled": true,
+      "shared_definitions": 9,
+      "before_characters": 112911,
+      "after_characters": 108367,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 43610,
+          "after": 42109,
+          "reduction_pct": 3.442
+        },
+        "o200k_base": {
+          "before": 41989,
+          "after": 40445,
+          "reduction_pct": 3.677
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C02\\diagnosis_tasks\\e2e492f167a842b8bf81a5bb2e51d819\\diagnosis_attempt_8d77e25df38a4f7cb48b8b4922bef0ae.json",
+      "sharing_enabled": true,
+      "shared_definitions": 9,
+      "before_characters": 139845,
+      "after_characters": 135301,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 58929,
+          "after": 57428,
+          "reduction_pct": 2.547
+        },
+        "o200k_base": {
+          "before": 55736,
+          "after": 54193,
+          "reduction_pct": 2.768
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C02\\diagnosis_tasks\\e2e492f167a842b8bf81a5bb2e51d819\\diagnosis_attempt_a285dd935fef41fda1eeee8cb13ac221.json",
+      "sharing_enabled": true,
+      "shared_definitions": 9,
+      "before_characters": 162722,
+      "after_characters": 158042,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 71758,
+          "after": 70211,
+          "reduction_pct": 2.156
+        },
+        "o200k_base": {
+          "before": 68658,
+          "after": 67068,
+          "reduction_pct": 2.316
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C02\\diagnosis_tasks\\e2e492f167a842b8bf81a5bb2e51d819\\diagnosis_attempt_e4aa00ff5d4c4f89999adb187385aa31.json",
+      "sharing_enabled": true,
+      "shared_definitions": 9,
+      "before_characters": 185172,
+      "after_characters": 180356,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 84746,
+          "after": 83153,
+          "reduction_pct": 1.88
+        },
+        "o200k_base": {
+          "before": 81390,
+          "after": 79754,
+          "reduction_pct": 2.01
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C03\\diagnosis_tasks\\e7af1a567ff6435babe2eef055fc028b\\diagnosis_attempt_f9f9e89872ba49ceb09dc81a5d56dde4.json",
+      "sharing_enabled": true,
+      "shared_definitions": 26,
+      "before_characters": 237154,
+      "after_characters": 218633,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 90016,
+          "after": 83460,
+          "reduction_pct": 7.283
+        },
+        "o200k_base": {
+          "before": 89154,
+          "after": 82537,
+          "reduction_pct": 7.422
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C03\\diagnosis_tasks\\e7af1a567ff6435babe2eef055fc028b\\diagnosis_attempt_13126616a612465a8a6107b2717a4a1e.json",
+      "sharing_enabled": true,
+      "shared_definitions": 26,
+      "before_characters": 275595,
+      "after_characters": 257074,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 110896,
+          "after": 104340,
+          "reduction_pct": 5.912
+        },
+        "o200k_base": {
+          "before": 108029,
+          "after": 101413,
+          "reduction_pct": 6.124
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C03\\diagnosis_tasks\\e7af1a567ff6435babe2eef055fc028b\\diagnosis_attempt_c4f6f9edd12f4f53aae00aac812fc283.json",
+      "sharing_enabled": true,
+      "shared_definitions": 26,
+      "before_characters": 526405,
+      "after_characters": 507272,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 259877,
+          "after": 253114,
+          "reduction_pct": 2.602
+        },
+        "o200k_base": {
+          "before": 258085,
+          "after": 251261,
+          "reduction_pct": 2.644
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C03\\diagnosis_tasks\\e7af1a567ff6435babe2eef055fc028b\\diagnosis_attempt_958727f4874347198a9e2b77f04a20df.json",
+      "sharing_enabled": true,
+      "shared_definitions": 26,
+      "before_characters": 566580,
+      "after_characters": 547447,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 282948,
+          "after": 276185,
+          "reduction_pct": 2.39
+        },
+        "o200k_base": {
+          "before": 278992,
+          "after": 272169,
+          "reduction_pct": 2.446
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C05\\diagnosis_tasks\\b4cad5f3234844d0be6a82bf593afef7\\diagnosis_attempt_f317055ee3884beaba4ad083c242f6e8.json",
+      "sharing_enabled": true,
+      "shared_definitions": 9,
+      "before_characters": 111096,
+      "after_characters": 106552,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 42655,
+          "after": 41154,
+          "reduction_pct": 3.519
+        },
+        "o200k_base": {
+          "before": 41039,
+          "after": 39495,
+          "reduction_pct": 3.762
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C05\\diagnosis_tasks\\b4cad5f3234844d0be6a82bf593afef7\\diagnosis_attempt_a8ee6e1560df454b842e3dde4ddf60c3.json",
+      "sharing_enabled": true,
+      "shared_definitions": 9,
+      "before_characters": 265769,
+      "after_characters": 260885,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 136999,
+          "after": 135383,
+          "reduction_pct": 1.18
+        },
+        "o200k_base": {
+          "before": 133808,
+          "after": 132149,
+          "reduction_pct": 1.24
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C06\\diagnosis_tasks\\b008540f11674790ae50d1b5bb7df462\\diagnosis_attempt_0006bcd7b38b4d2fb1e69982d0b94971.json",
+      "sharing_enabled": true,
+      "shared_definitions": 24,
+      "before_characters": 230956,
+      "after_characters": 213085,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 85468,
+          "after": 79163,
+          "reduction_pct": 7.377
+        },
+        "o200k_base": {
+          "before": 84618,
+          "after": 78254,
+          "reduction_pct": 7.521
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C06\\diagnosis_tasks\\b008540f11674790ae50d1b5bb7df462\\diagnosis_attempt_a0a4807d1db040a99c1591f81d89ad73.json",
+      "sharing_enabled": true,
+      "shared_definitions": 24,
+      "before_characters": 272912,
+      "after_characters": 255041,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 108224,
+          "after": 101919,
+          "reduction_pct": 5.826
+        },
+        "o200k_base": {
+          "before": 104985,
+          "after": 98622,
+          "reduction_pct": 6.061
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C06\\diagnosis_tasks\\b008540f11674790ae50d1b5bb7df462\\diagnosis_attempt_c1d512323c8d440f96f549c03128b845.json",
+      "sharing_enabled": true,
+      "shared_definitions": 24,
+      "before_characters": 296688,
+      "after_characters": 278681,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 122083,
+          "after": 115732,
+          "reduction_pct": 5.202
+        },
+        "o200k_base": {
+          "before": 118906,
+          "after": 112496,
+          "reduction_pct": 5.391
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C06\\diagnosis_tasks\\b008540f11674790ae50d1b5bb7df462\\diagnosis_attempt_773ad608e19e490cb3dfdfaa48ce6621.json",
+      "sharing_enabled": true,
+      "shared_definitions": 24,
+      "before_characters": 811300,
+      "after_characters": 793021,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 464621,
+          "after": 458178,
+          "reduction_pct": 1.387
+        },
+        "o200k_base": {
+          "before": 462123,
+          "after": 455621,
+          "reduction_pct": 1.407
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_A04\\diagnosis_tasks\\edd05acf58e8481c8aece1f9f8849477\\diagnosis_attempt_a9e3b70ab1b3476ea8aa4da9951bad85.json",
+      "sharing_enabled": true,
+      "shared_definitions": 9,
+      "before_characters": 430947,
+      "after_characters": 369942,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 151203,
+          "after": 129748,
+          "reduction_pct": 14.19
+        },
+        "o200k_base": {
+          "before": 152250,
+          "after": 130447,
+          "reduction_pct": 14.321
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_A04\\diagnosis_tasks\\edd05acf58e8481c8aece1f9f8849477\\diagnosis_attempt_54681554596b4486b8c98755152757e9.json",
+      "sharing_enabled": true,
+      "shared_definitions": 9,
+      "before_characters": 495918,
+      "after_characters": 434913,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 186507,
+          "after": 165052,
+          "reduction_pct": 11.504
+        },
+        "o200k_base": {
+          "before": 184588,
+          "after": 162786,
+          "reduction_pct": 11.811
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_A04\\diagnosis_tasks\\edd05acf58e8481c8aece1f9f8849477\\diagnosis_attempt_ac92219e6dac4010a4f9f95391317459.json",
+      "sharing_enabled": true,
+      "shared_definitions": 9,
+      "before_characters": 636177,
+      "after_characters": 574904,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 263554,
+          "after": 242003,
+          "reduction_pct": 8.177
+        },
+        "o200k_base": {
+          "before": 261587,
+          "after": 239688,
+          "reduction_pct": 8.372
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_A05\\diagnosis_tasks\\379f63ceeac141f987c1f2cbe0709100\\diagnosis_attempt_3748a4f0057b4bbf896a79f88b1de63f.json",
+      "sharing_enabled": true,
+      "shared_definitions": 21,
+      "before_characters": 918328,
+      "after_characters": 764902,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 318254,
+          "after": 264221,
+          "reduction_pct": 16.978
+        },
+        "o200k_base": {
+          "before": 323447,
+          "after": 268493,
+          "reduction_pct": 16.99
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_A05\\diagnosis_tasks\\379f63ceeac141f987c1f2cbe0709100\\diagnosis_attempt_16b3cd8737154a28a796d829af863084.json",
+      "sharing_enabled": true,
+      "shared_definitions": 21,
+      "before_characters": 1025611,
+      "after_characters": 872185,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 370647,
+          "after": 316614,
+          "reduction_pct": 14.578
+        },
+        "o200k_base": {
+          "before": 372064,
+          "after": 317111,
+          "reduction_pct": 14.77
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_A06\\diagnosis_tasks\\a69edf4b89014568ba7553b9cddca1b7\\diagnosis_attempt_7fe642bd19734401b83b5a0f418dde65.json",
+      "sharing_enabled": true,
+      "shared_definitions": 52,
+      "before_characters": 2063911,
+      "after_characters": 1752873,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 729824,
+          "after": 619447,
+          "reduction_pct": 15.124
+        },
+        "o200k_base": {
+          "before": 743055,
+          "after": 631052,
+          "reduction_pct": 15.073
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_A06\\diagnosis_tasks\\a69edf4b89014568ba7553b9cddca1b7\\diagnosis_attempt_dc45456c5faf474e8db34fb33690fbd1.json",
+      "sharing_enabled": true,
+      "shared_definitions": 52,
+      "before_characters": 2163679,
+      "after_characters": 1852641,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 773120,
+          "after": 662743,
+          "reduction_pct": 14.277
+        },
+        "o200k_base": {
+          "before": 783750,
+          "after": 671748,
+          "reduction_pct": 14.291
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_B01\\diagnosis_tasks\\f49acc71a67e4f258a26b5bb3da27d91\\diagnosis_attempt_80c2cb29bd624004832421ce336eaccd.json",
+      "sharing_enabled": true,
+      "shared_definitions": 0,
+      "before_characters": 59029,
+      "after_characters": 58120,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 25198,
+          "after": 24946,
+          "reduction_pct": 1.0
+        },
+        "o200k_base": {
+          "before": 23174,
+          "after": 22879,
+          "reduction_pct": 1.273
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_B01\\diagnosis_tasks\\f49acc71a67e4f258a26b5bb3da27d91\\diagnosis_attempt_70261bd00ec0461d9a74824331bce2ad.json",
+      "sharing_enabled": true,
+      "shared_definitions": 0,
+      "before_characters": 72965,
+      "after_characters": 72056,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 33597,
+          "after": 33345,
+          "reduction_pct": 0.75
+        },
+        "o200k_base": {
+          "before": 30518,
+          "after": 30224,
+          "reduction_pct": 0.963
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_B01\\diagnosis_tasks\\f49acc71a67e4f258a26b5bb3da27d91\\diagnosis_attempt_35e5ae1b81b44916ac48f6b375daf4a6.json",
+      "sharing_enabled": true,
+      "shared_definitions": 0,
+      "before_characters": 137059,
+      "after_characters": 135949,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 68695,
+          "after": 68371,
+          "reduction_pct": 0.472
+        },
+        "o200k_base": {
+          "before": 65341,
+          "after": 64974,
+          "reduction_pct": 0.562
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_B02\\diagnosis_tasks\\d873a267d061428ba9ca765abe5c3ae1\\diagnosis_attempt_fd3e035488a949f4ae9cb01d4e178c01.json",
+      "sharing_enabled": true,
+      "shared_definitions": 5,
+      "before_characters": 98633,
+      "after_characters": 95369,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 39851,
+          "after": 38763,
+          "reduction_pct": 2.73
+        },
+        "o200k_base": {
+          "before": 38066,
+          "after": 36933,
+          "reduction_pct": 2.976
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_B02\\diagnosis_tasks\\d873a267d061428ba9ca765abe5c3ae1\\diagnosis_attempt_b0b54d171a7a46498c55d068662fff60.json",
+      "sharing_enabled": true,
+      "shared_definitions": 5,
+      "before_characters": 163928,
+      "after_characters": 160396,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 77321,
+          "after": 76137,
+          "reduction_pct": 1.531
+        },
+        "o200k_base": {
+          "before": 73556,
+          "after": 72327,
+          "reduction_pct": 1.671
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_B03\\diagnosis_tasks\\1073b42eb2df4fb591d5110e2f31bd98\\diagnosis_attempt_6174881f5aeb49bf8a4d71c6634a3028.json",
+      "sharing_enabled": true,
+      "shared_definitions": 0,
+      "before_characters": 61815,
+      "after_characters": 60906,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 26506,
+          "after": 26254,
+          "reduction_pct": 0.951
+        },
+        "o200k_base": {
+          "before": 24503,
+          "after": 24208,
+          "reduction_pct": 1.204
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_B03\\diagnosis_tasks\\1073b42eb2df4fb591d5110e2f31bd98\\diagnosis_attempt_1926b146376f4c349f7a85c077a72138.json",
+      "sharing_enabled": true,
+      "shared_definitions": 0,
+      "before_characters": 107414,
+      "after_characters": 106438,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 53499,
+          "after": 53223,
+          "reduction_pct": 0.516
+        },
+        "o200k_base": {
+          "before": 50408,
+          "after": 50089,
+          "reduction_pct": 0.633
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_C01\\diagnosis_tasks\\57b2406ba71b48d3a661c89725e9baca\\diagnosis_attempt_4ec9bd7435c44cfebec89b6aa5e644e9.json",
+      "sharing_enabled": true,
+      "shared_definitions": 1,
+      "before_characters": 80088,
+      "after_characters": 78667,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 33557,
+          "after": 33130,
+          "reduction_pct": 1.272
+        },
+        "o200k_base": {
+          "before": 31668,
+          "after": 31198,
+          "reduction_pct": 1.484
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_C01\\diagnosis_tasks\\57b2406ba71b48d3a661c89725e9baca\\diagnosis_attempt_b43b3f1cb7d8459b8475032fcd8752e7.json",
+      "sharing_enabled": true,
+      "shared_definitions": 1,
+      "before_characters": 159067,
+      "after_characters": 157378,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 77392,
+          "after": 76869,
+          "reduction_pct": 0.676
+        },
+        "o200k_base": {
+          "before": 73780,
+          "after": 73214,
+          "reduction_pct": 0.767
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_C01\\diagnosis_tasks\\57b2406ba71b48d3a661c89725e9baca\\diagnosis_attempt_eec7eed285de447bad9fd9b9b828c243.json",
+      "sharing_enabled": true,
+      "shared_definitions": 1,
+      "before_characters": 165735,
+      "after_characters": 163979,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 80846,
+          "after": 80299,
+          "reduction_pct": 0.677
+        },
+        "o200k_base": {
+          "before": 77176,
+          "after": 76586,
+          "reduction_pct": 0.764
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_C02\\diagnosis_tasks\\22f884bb1a9945c0af6364de44f786d9\\diagnosis_attempt_01ee682b77b2401880483efaef12d664.json",
+      "sharing_enabled": true,
+      "shared_definitions": 3,
+      "before_characters": 81073,
+      "after_characters": 78724,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 33008,
+          "after": 32244,
+          "reduction_pct": 2.315
+        },
+        "o200k_base": {
+          "before": 31125,
+          "after": 30315,
+          "reduction_pct": 2.602
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_C02\\diagnosis_tasks\\22f884bb1a9945c0af6364de44f786d9\\diagnosis_attempt_c0bb194722a048998947619707955b19.json",
+      "sharing_enabled": true,
+      "shared_definitions": 3,
+      "before_characters": 157601,
+      "after_characters": 155118,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 77553,
+          "after": 76741,
+          "reduction_pct": 1.047
+        },
+        "o200k_base": {
+          "before": 73773,
+          "after": 72915,
+          "reduction_pct": 1.163
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_C02\\diagnosis_tasks\\22f884bb1a9945c0af6364de44f786d9\\diagnosis_attempt_db9994ced7364601b358f8b3475ca0f4.json",
+      "sharing_enabled": true,
+      "shared_definitions": 3,
+      "before_characters": 178046,
+      "after_characters": 175563,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 90245,
+          "after": 89433,
+          "reduction_pct": 0.9
+        },
+        "o200k_base": {
+          "before": 84740,
+          "after": 83883,
+          "reduction_pct": 1.011
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_C04\\diagnosis_tasks\\35dfabdb1dee4009a40e4c6903302285\\diagnosis_attempt_850cbcc7ade74677bcfe44d6e69e1c09.json",
+      "sharing_enabled": true,
+      "shared_definitions": 2,
+      "before_characters": 89162,
+      "after_characters": 87186,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 36500,
+          "after": 35877,
+          "reduction_pct": 1.707
+        },
+        "o200k_base": {
+          "before": 34670,
+          "after": 34007,
+          "reduction_pct": 1.912
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_C04\\diagnosis_tasks\\35dfabdb1dee4009a40e4c6903302285\\diagnosis_attempt_b68a3a931aaa4539b2df6e30b7f820bc.json",
+      "sharing_enabled": true,
+      "shared_definitions": 2,
+      "before_characters": 144408,
+      "after_characters": 142231,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 66598,
+          "after": 65903,
+          "reduction_pct": 1.044
+        },
+        "o200k_base": {
+          "before": 62894,
+          "after": 62159,
+          "reduction_pct": 1.169
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_C04\\diagnosis_tasks\\35dfabdb1dee4009a40e4c6903302285\\diagnosis_attempt_4495d617f8e943fd8f6356116365322b.json",
+      "sharing_enabled": true,
+      "shared_definitions": 2,
+      "before_characters": 155125,
+      "after_characters": 152881,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 72800,
+          "after": 72081,
+          "reduction_pct": 0.988
+        },
+        "o200k_base": {
+          "before": 68823,
+          "after": 68064,
+          "reduction_pct": 1.103
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_C05\\diagnosis_tasks\\c574bbeced9c4b99998d2523fb29463b\\diagnosis_attempt_57fbcb2a2017449d9be56a7c65368869.json",
+      "sharing_enabled": true,
+      "shared_definitions": 0,
+      "before_characters": 59135,
+      "after_characters": 58226,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 25221,
+          "after": 24969,
+          "reduction_pct": 0.999
+        },
+        "o200k_base": {
+          "before": 23201,
+          "after": 22906,
+          "reduction_pct": 1.271
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_C05\\diagnosis_tasks\\c574bbeced9c4b99998d2523fb29463b\\diagnosis_attempt_65b44aa614774be58afcb3d515b24179.json",
+      "sharing_enabled": true,
+      "shared_definitions": 0,
+      "before_characters": 104164,
+      "after_characters": 103188,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 53137,
+          "after": 52861,
+          "reduction_pct": 0.519
+        },
+        "o200k_base": {
+          "before": 50041,
+          "after": 49722,
+          "reduction_pct": 0.637
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    },
+    {
+      "label": "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_C05\\diagnosis_tasks\\c574bbeced9c4b99998d2523fb29463b\\diagnosis_attempt_b6ae064d21284825beeb55cce806972a.json",
+      "sharing_enabled": true,
+      "shared_definitions": 0,
+      "before_characters": 119435,
+      "after_characters": 118459,
+      "tokenizers": {
+        "cl100k_base": {
+          "before": 62063,
+          "after": 61787,
+          "reduction_pct": 0.445
+        },
+        "o200k_base": {
+          "before": 57840,
+          "after": 57522,
+          "reduction_pct": 0.55
+        }
+      },
+      "sharing_roundtrip_equal": true,
+      "input_unchanged": true
+    }
+  ],
+  "all_roundtrips_equal": true,
+  "source_hashes_unchanged": true,
+  "source_hashes": {
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_A01_8mm\\diagnosis_tasks\\8032b51d4d034c38973581698f577452\\evidence_snapshot.json": "b841f22c497b8dcd93799465d8aafdccf52e09f377cf5e2b71fb28b60422b71e",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_A02_14mm\\diagnosis_tasks\\27646de31a1144619300cca572ea7f58\\diagnosis_attempt_19056680a648486a96a5dc58615c28f0.json": "695fd3048339067590efd852fb6a5030cd3e08409d848a004df56633cb659381",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_A02_14mm\\diagnosis_tasks\\27646de31a1144619300cca572ea7f58\\diagnosis_attempt_550c69433541458dadf35bb527a3cf09.json": "431818046492ada0f1826c598df8c6adfa7e6ec61ba9c78e87dd1471c1cb416a",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_A02_14mm\\diagnosis_tasks\\27646de31a1144619300cca572ea7f58\\evidence_snapshot.json": "6b5ec3189d6286d2d709a90cecab6764f806fa8bc251c671f7ca0a1497f3cf0e",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_A03_20mm\\diagnosis_tasks\\a676d55e22624c9a9665c4367889c110\\diagnosis_attempt_ab7aea9b9d9647d0a503a1a978f8583f.json": "5085e3a3a071c76863bcfc7a06ae422e3f8f0d2751210de0a7e349e4c830606a",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_A03_20mm\\diagnosis_tasks\\a676d55e22624c9a9665c4367889c110\\diagnosis_attempt_13f0fa6686f4465c90ef5c6f07dfc6cb.json": "2378018efe98583765184c7275eb9083c07be72569a85100f1c99f1422bfee56",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_A03_20mm\\diagnosis_tasks\\a676d55e22624c9a9665c4367889c110\\evidence_snapshot.json": "fb6cc16484b6ed958949490e523cc230a8470922c2d6ae7cbd181e51af47d8d5",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_A04_22mm\\diagnosis_tasks\\bd6fc2198ee5424ba09525bb1b34b716\\diagnosis_attempt_eed020641f4a4f12841e19c6442e0742.json": "dff3b532d4134686a5c232b2d51cef96b5d8e77c79b52b96257f2d778a9ea4b7",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_A04_22mm\\diagnosis_tasks\\bd6fc2198ee5424ba09525bb1b34b716\\diagnosis_attempt_e7341a67c06848a5b9fc658bef0c08aa.json": "b01f9a97ac1f228040b5d50a13bea626ec6e365d82a9f6d09e8fd2fcc983d7a9",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_A04_22mm\\diagnosis_tasks\\bd6fc2198ee5424ba09525bb1b34b716\\diagnosis_attempt_bacb96da6f0845c281453e021ad00e69.json": "92d38adbda2e85505e711b3c37d2e7078d05ac138a7b36833a9f88aad5db7831",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_A04_22mm\\diagnosis_tasks\\bd6fc2198ee5424ba09525bb1b34b716\\evidence_snapshot.json": "d4e22c12d5eebccad1b6cf73ad9539cfefba71c8a699bc6ea59e8ee74a24d868",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_A05_40mm\\diagnosis_tasks\\de496e260f924c12b1b8efd7b4f1ad29\\diagnosis_attempt_5536e3f036c041ecae90bef35020fe12.json": "27cfbe1ac9dd578d08041f4b1da2904ee6b9ec88bad9339f9d3afcfdb67e01f8",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_A05_40mm\\diagnosis_tasks\\de496e260f924c12b1b8efd7b4f1ad29\\evidence_snapshot.json": "598b2535740de0f4b3e2e1fa8c044ea13c4e1d000df55f6ebcf472c7fb21081c",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_B01_flat20\\diagnosis_tasks\\a6a7b2deb17e4fc992c87982e6ca59bd\\evidence_snapshot.json": "c577c725ca13896ceacabf5137f4b43136d7462d5c60dcf48d1aa7bc9c4e50d4",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_B02_wide20\\diagnosis_tasks\\4ed722e8d9104e88aeddecbf30701d01\\evidence_snapshot.json": "311e929284f95c152aca27ae19bc169560ebf29b47133e1978256681f84e6157",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_B03_sharp20\\diagnosis_tasks\\7266fad9e3b2422d9f591f929ff5f9f1\\diagnosis_attempt_8752e2d349454afda6ce3435d8caf7b4.json": "a96ef30dd8105745ca644f228421ce962635a248535bd71b334d22a45dc49586",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_B03_sharp20\\diagnosis_tasks\\7266fad9e3b2422d9f591f929ff5f9f1\\diagnosis_attempt_e9a662ca116342eeb80cdb3fa980350c.json": "1b9eb093d40c42716ff59c2151b0f39fc5c1ec6bb5a4e91d59dec71f2abf705d",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_B03_sharp20\\diagnosis_tasks\\7266fad9e3b2422d9f591f929ff5f9f1\\evidence_snapshot.json": "62a5b3e888c06b1f1676bed77059c1949f5889f7785f3440fa4f64e579dd5a07",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_B04_rev20\\diagnosis_tasks\\ae77eac429364e1f844ad714ce12a244\\diagnosis_attempt_b39f42e9910d46d3b4734ddd63eaafbe.json": "a6396180d3d2e056dc77994c7c75f3e1fb221c2e0824db04c5a5e6b13745bd28",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_B04_rev20\\diagnosis_tasks\\ae77eac429364e1f844ad714ce12a244\\diagnosis_attempt_36f9b3fa3d8043c69def84158816e39a.json": "0aa5dcd8095f524143b65660439e9f250ee587b4382d0740b367ef68563304a4",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_B04_rev20\\diagnosis_tasks\\ae77eac429364e1f844ad714ce12a244\\evidence_snapshot.json": "a1df3f24b5fe2a387d2ac5353e5d6b4102f2de086eab395fa953110ed9affae8",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C01_d30_20\\diagnosis_tasks\\2ee15d11026f423d92e643896d8258c9\\diagnosis_attempt_b2bedfaf38f34c0d8f2396f1cbd3bd06.json": "c36df6c4740cccc6924a9f739a1cd2b2f2097338db2eb7480a20cde4fb392fc3",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C01_d30_20\\diagnosis_tasks\\2ee15d11026f423d92e643896d8258c9\\diagnosis_attempt_5605f1802b3a4384a1f04fe12a82b41f.json": "fb31f0d362f70b12d66c95e85d09e9c14746a50710838f207d81075eb7c96283",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C01_d30_20\\diagnosis_tasks\\2ee15d11026f423d92e643896d8258c9\\diagnosis_attempt_e91ff89b0c574599ac053921f16d54dd.json": "65146ada51f7397c35cf4a64d649f0c91e434e63a83f21b8d41ee095038868af",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C01_d30_20\\diagnosis_tasks\\2ee15d11026f423d92e643896d8258c9\\evidence_snapshot.json": "486c060b72786c764c6c830036a33180a604878d1436daa4097fb3f48ee60731",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C02_d60_20\\diagnosis_tasks\\ad250ee1e3324548ba38dc690c456d7d\\diagnosis_attempt_9207859ccca94a63a0e11494a306e4ae.json": "7c9d163de84e8b29e5219a8729f341fa7dab407579107bc00eda6a9a908ce0e7",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C02_d60_20\\diagnosis_tasks\\ad250ee1e3324548ba38dc690c456d7d\\evidence_snapshot.json": "7240d39998fda3bf8b7c9921061fab54e014562fa9f83772beaa9689a8d1a091",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C03_d120_20\\diagnosis_tasks\\b797648f621e43b29ef66bcc54bc2e56\\diagnosis_attempt_dc0b92ddb226427f861db4857adca03a.json": "2eca07d462947bfcced7e9c6c6c0acdec9c04ecb4c72a818951b9baeb765a91b",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C03_d120_20\\diagnosis_tasks\\b797648f621e43b29ef66bcc54bc2e56\\diagnosis_attempt_076566a5ba9b4f12bd739d82c681bbb3.json": "2cd5f2f01f8769fc6c37562e8dfc91a4288abe4464e8aa88c8e79ae19ffd63d2",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C03_d120_20\\diagnosis_tasks\\b797648f621e43b29ef66bcc54bc2e56\\evidence_snapshot.json": "0d2d7542078c43bd7f7eb16b2058cef0e10b06ada467340a24dd0650791afcf1",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C04_5_15\\diagnosis_tasks\\22ee14c4c0ad42bb99de0a87480549b1\\diagnosis_attempt_54bca80119af446d943a427b5e032c40.json": "68d71b4499a162f9a7f9ac6959592794d6ddad6eec3ac9d7814bd8e7d03f372f",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C04_5_15\\diagnosis_tasks\\22ee14c4c0ad42bb99de0a87480549b1\\diagnosis_attempt_6fb712988e384ee892be13c1305b987c.json": "41b6e9505756f1f032ed7faefb1393f5fc45294240eb3351c39f8c662f380160",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C04_5_15\\diagnosis_tasks\\22ee14c4c0ad42bb99de0a87480549b1\\evidence_snapshot.json": "2a87aa3050a127f9e22508cdf385f16bb8a33c9fc8e2acfbe80f83b2b13c6298",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C05_15_5\\diagnosis_tasks\\d32f04309a99482981390ccbf434e72e\\diagnosis_attempt_a69d6c38430641b3aca7c99b9e123bce.json": "852918d1a1682e9165cdac63136821b78f77ced2bcbe9b1bad9536d5afb3960d",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C05_15_5\\diagnosis_tasks\\d32f04309a99482981390ccbf434e72e\\diagnosis_attempt_77a95afe10e04ef0a0a2c08a324bb7aa.json": "9b00fd218a3bec5cc5a4914827631c3dd3a59a610583715b4e6d4b5144b66c66",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C05_15_5\\diagnosis_tasks\\d32f04309a99482981390ccbf434e72e\\evidence_snapshot.json": "e4cc6f8dd45bb86296218c06fdae811cc3a6aed8e81fc892f3e5db7ef544c1f5",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C06_tri20\\diagnosis_tasks\\9a40e511b271469f94cb7829e40a5fd6\\diagnosis_attempt_ea2cb3ff53ed468eadeea8fae17d852e.json": "b9525569a740bcaa91083d57e12d0338fcb571bf6ce526b182ae6f7754d75a15",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C06_tri20\\diagnosis_tasks\\9a40e511b271469f94cb7829e40a5fd6\\diagnosis_attempt_66e630ba3eb149498310963c66589c33.json": "5b031b3466b1b798e1ea7fbc1f8e85fabc8ec1e7f3942909903ecf6574e1f6c6",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C06_tri20\\diagnosis_tasks\\9a40e511b271469f94cb7829e40a5fd6\\diagnosis_attempt_e9bb81cc34c44ab3bc87fdac4feaad1f.json": "a68dca69d99a78a3bcfb4e23cecdd7820b6953a858ca8d25e7ee6265f3791eb4",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\Example1\\runs\\exp15_1103_213612_C06_tri20\\diagnosis_tasks\\9a40e511b271469f94cb7829e40a5fd6\\evidence_snapshot.json": "94bdf144642fa9082cef93de749e48f0519d0d0aba37e91748f1309ec0b1fa9b",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_A01\\diagnosis_tasks\\c7a5414fc2da4256991fe5b50ad241a0\\evidence_snapshot.json": "ad93f3daf9753c0553226648aad7ec07ce9c9027c3af450fa183d360111fa2aa",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_A02\\diagnosis_tasks\\ba4b0697fe754e6eafa48dbc98b116d3\\diagnosis_attempt_222e2464aa0e4bd8897d02cc6954098b.json": "82841e70e4e153c1aac54224ccd71684007d6e68f86b76235108559c1ae05efb",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_A02\\diagnosis_tasks\\ba4b0697fe754e6eafa48dbc98b116d3\\diagnosis_attempt_6b8fa00e8f9e48cb94c99d2328d6e7e4.json": "97fc0687596b19b6132ae7736cda116562a3c56e9fc7389109d97e9c39850851",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_A02\\diagnosis_tasks\\ba4b0697fe754e6eafa48dbc98b116d3\\evidence_snapshot.json": "a9f2576cd657b386dafef1967a4aa729f7fa1bbe4224059aa54de4c6d017f8e8",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_A03\\diagnosis_tasks\\3459aa42c8c44bbb9617e76df167ec91\\diagnosis_attempt_4567efce2e554d1f96612c466cb02788.json": "abf14c6085fefed6f34e68e308bcc84191f9645d995352a0d40318a2e5d77817",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_A03\\diagnosis_tasks\\3459aa42c8c44bbb9617e76df167ec91\\diagnosis_attempt_178896c1b6874984ac4b70979b539889.json": "7091db8fb7a8ec546b380ea7eddf319b0e4270527c5f4d652c711d59a36d07d2",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_A03\\diagnosis_tasks\\3459aa42c8c44bbb9617e76df167ec91\\diagnosis_attempt_7342d502678a47c188cec5f71d83ead0.json": "924e4b3a305ff903ee0d58f8f620100ed84318c17e8a257213e0732491eb4747",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_A03\\diagnosis_tasks\\3459aa42c8c44bbb9617e76df167ec91\\evidence_snapshot.json": "136c16625125cf84771b51292869fe8797751030dbaa42ca59c1b35bac5b3fbc",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_A04\\diagnosis_tasks\\1604fc6db7a8405d9307c66e2faad04c\\diagnosis_attempt_741c1a5c794a4aacaabbef1405be8647.json": "9fc91cf36549583934b280d64ea8306b411d8bd6f4ae155549dd2777b9fba50a",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_A04\\diagnosis_tasks\\1604fc6db7a8405d9307c66e2faad04c\\diagnosis_attempt_6de76f89bc0d4330b3b243c7ddd6d0ce.json": "4f92d8b1f2b548ca982d9a736675ab6a0ea20637e035a399ebe0fb815d43d67e",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_A04\\diagnosis_tasks\\1604fc6db7a8405d9307c66e2faad04c\\diagnosis_attempt_fcbab44477f140b6bd65a70590b435eb.json": "5f1e6a48b78fd0d57ca8902ae073e5101d82482641774ac24cca5e9f98f3f4db",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_A04\\diagnosis_tasks\\1604fc6db7a8405d9307c66e2faad04c\\evidence_snapshot.json": "5e57c6f4390a635e1f59a46dc241f8502ba393e31642fed38024fe8d93e2bd06",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_A05\\diagnosis_tasks\\e0b0bcccfcbc4954999f29aa185c7b00\\diagnosis_attempt_0c1b1ec9f84b4d6c8e977c4b1c4badbe.json": "b9546a5cea265d2ced60af45fa85d28d80f654662d7d127a915008fe70c52918",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_A05\\diagnosis_tasks\\e0b0bcccfcbc4954999f29aa185c7b00\\diagnosis_attempt_4c1bf1148f5d43e58bc6402d5c395faa.json": "0d6cf632525ab5ac36d6f08d144bb18065ef027cf30c78f23d8ee8ca04295962",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_A05\\diagnosis_tasks\\e0b0bcccfcbc4954999f29aa185c7b00\\diagnosis_attempt_4a39851964ea4f7abc30edacc6d54ac7.json": "5dd2e7fc343c292d5a68aef681b7cbdcbd4f4316970ad49a6d0805213c0be935",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_A05\\diagnosis_tasks\\e0b0bcccfcbc4954999f29aa185c7b00\\evidence_snapshot.json": "81f4eeb9d06d06c320cbccd0f3240ec55ec8b2661dc1e847ba95a091982fffa4",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_B01\\diagnosis_tasks\\1f0e59a15cb743a8942e42c02cc40c0a\\evidence_snapshot.json": "749d53e1ce7ac23d1d4c4a351f02bda5d07713f7fd12640aa04f26880f990e33",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_B02\\diagnosis_tasks\\d722e9cc5bee43ac817f78024dbb75c0\\evidence_snapshot.json": "4d7034152ebab985d11ab23be7a4693bb0ce9ba1c9c1e3b4e01e60094d4544e9",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_B03\\diagnosis_tasks\\2aa3c7f38bc946c69c4e45e54b40b7e4\\diagnosis_attempt_8923d3a6afad438d82dcbdb69ff1f3df.json": "efa74da7670f1e457e3dfca84a2ce2a3d683061455df75698c83adf1d699edc2",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_B03\\diagnosis_tasks\\2aa3c7f38bc946c69c4e45e54b40b7e4\\diagnosis_attempt_a2269244bf6943f086f58f0d05c657d9.json": "9aa26d112ea46006df27bebdd4f94f790b4af5b78d333fc34206d9b3912a9b73",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_B03\\diagnosis_tasks\\2aa3c7f38bc946c69c4e45e54b40b7e4\\diagnosis_attempt_5b97e8b2c7da483793ea2ceed7156bfa.json": "3764358ee4f92b0f3824e619096feacbc6d45eebf090c0d90c15149975425ae7",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_B03\\diagnosis_tasks\\2aa3c7f38bc946c69c4e45e54b40b7e4\\evidence_snapshot.json": "a1ddfee2548d4ba8fd74cf9e6ffb74635cd517a92f429d2b73961de77f637e7e",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_B04\\diagnosis_tasks\\d680014815a44656af4fe4771786b9fe\\diagnosis_attempt_4f17724ec6564a37a031d3272a6f1428.json": "6f41323cfe457d864690f9ec032879d985995cf2d2302cbeaedb517057c61c90",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_B04\\diagnosis_tasks\\d680014815a44656af4fe4771786b9fe\\diagnosis_attempt_5a752d62a5c3477c8ce17f2746228fc2.json": "124c6733fa6a5726ea96da7b77a262d608d782bf410a12c18c84623527181c33",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_B04\\diagnosis_tasks\\d680014815a44656af4fe4771786b9fe\\evidence_snapshot.json": "5fe50f482c90ad95753f566d9fbb5fee0ecab2f38b25e639bc6caac8c3bbac9a",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C01\\diagnosis_tasks\\0d03b9381a624802ba696afce6cb61b5\\evidence_snapshot.json": "53a31873751ae7da281deb9ef9eee209de62a952ed39490e53f5b2021eac3bd5",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C02\\diagnosis_tasks\\e2e492f167a842b8bf81a5bb2e51d819\\diagnosis_attempt_60f5c5fe147a436d90307aea3db2defa.json": "252e9c53a747b25e8c09f0ea0ee042f00ebd2a8723d19f255b2570922a8fd6ed",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C02\\diagnosis_tasks\\e2e492f167a842b8bf81a5bb2e51d819\\diagnosis_attempt_8d77e25df38a4f7cb48b8b4922bef0ae.json": "1c6b70c3dd2c762fe5006c64a3b91b64b1e8cdf239930c33574117bf1e3ea561",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C02\\diagnosis_tasks\\e2e492f167a842b8bf81a5bb2e51d819\\diagnosis_attempt_a285dd935fef41fda1eeee8cb13ac221.json": "b0964d5941199d0b98b771523dae1ada25dbd48ab6e553e54a67c9b791fd1d95",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C02\\diagnosis_tasks\\e2e492f167a842b8bf81a5bb2e51d819\\diagnosis_attempt_e4aa00ff5d4c4f89999adb187385aa31.json": "ab31cbb45d3b291c29498cb8bfde69503af49a43446c55fa64f8e5d592b6c638",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C02\\diagnosis_tasks\\e2e492f167a842b8bf81a5bb2e51d819\\evidence_snapshot.json": "d20b68723f099a30fc536880da48720bcdb5ca670a79025669b0e3d9009c8367",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C03\\diagnosis_tasks\\e7af1a567ff6435babe2eef055fc028b\\diagnosis_attempt_f9f9e89872ba49ceb09dc81a5d56dde4.json": "0b1f11afe244c0680be9ee89a9bbff9dc5e7ddba3f2af202360eb9d19eb7ddde",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C03\\diagnosis_tasks\\e7af1a567ff6435babe2eef055fc028b\\diagnosis_attempt_13126616a612465a8a6107b2717a4a1e.json": "32cd4275cf6831ef999dd0d59495fb6166d1ee51ae6f6a045d598f6a9aee2241",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C03\\diagnosis_tasks\\e7af1a567ff6435babe2eef055fc028b\\diagnosis_attempt_c4f6f9edd12f4f53aae00aac812fc283.json": "25cdda4b2c252b3fa4dab807d4659d7c66eadaca99a431e6ae1afbf4b84c8bbf",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C03\\diagnosis_tasks\\e7af1a567ff6435babe2eef055fc028b\\diagnosis_attempt_958727f4874347198a9e2b77f04a20df.json": "f1cd6be6fbde3a532a3e7dd6f111a81d0f0ca1c6b5bd6a70f127513f80fbbc0f",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C03\\diagnosis_tasks\\e7af1a567ff6435babe2eef055fc028b\\evidence_snapshot.json": "047a0386d1b0f5fda609af10cbe835016eb0ec3418f0b26b01970a855f03b7b3",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C04\\diagnosis_tasks\\7d36e4058cfd49978c7422fcd4a61433\\evidence_snapshot.json": "c6cb353d7babf9c3ba73dd1062b90cf0e63239e5d3b0a36f8eae8c0a13ab7c8c",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C05\\diagnosis_tasks\\b4cad5f3234844d0be6a82bf593afef7\\diagnosis_attempt_f317055ee3884beaba4ad083c242f6e8.json": "4aa53661fa57040939dc6290330be7bc7eb92c69fb9f5b54d49b2c8822aeb936",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C05\\diagnosis_tasks\\b4cad5f3234844d0be6a82bf593afef7\\diagnosis_attempt_a8ee6e1560df454b842e3dde4ddf60c3.json": "528d47b6e86630bde4199c3d8a030cd4d7641bbff806be69e62d0815d68f30d8",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C05\\diagnosis_tasks\\b4cad5f3234844d0be6a82bf593afef7\\evidence_snapshot.json": "4777126d11fb70fc384171385acaa51108c79cf199d4d09cf589de0900bef730",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C06\\diagnosis_tasks\\b008540f11674790ae50d1b5bb7df462\\diagnosis_attempt_0006bcd7b38b4d2fb1e69982d0b94971.json": "0510f77f28768475ed3ebfa095b09c3a3797795eba653991840b33bb8016a828",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C06\\diagnosis_tasks\\b008540f11674790ae50d1b5bb7df462\\diagnosis_attempt_a0a4807d1db040a99c1591f81d89ad73.json": "5b196142135ba98cfd72e0a48babaf1009c37eb909c4fee382db1dbbd713961e",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C06\\diagnosis_tasks\\b008540f11674790ae50d1b5bb7df462\\diagnosis_attempt_c1d512323c8d440f96f549c03128b845.json": "153fed82d27889b988737392daeab979ac666d6c8770cc7b23cf4365789e5328",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C06\\diagnosis_tasks\\b008540f11674790ae50d1b5bb7df462\\diagnosis_attempt_773ad608e19e490cb3dfdfaa48ce6621.json": "876cd8bc35ebbfa4d1be926d9e3a036237669746292582801c3a7e1c27710f08",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\urban_drainage\\runs\\ud15pipe_1103_225721_C06\\diagnosis_tasks\\b008540f11674790ae50d1b5bb7df462\\evidence_snapshot.json": "f48acba3593aacf0f15c42d538dffa6a6c1fbe5fad1e7b1b4fec228300eab438",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_A01\\diagnosis_tasks\\5cf45ca8b04e4277aeaf2c4dd0f779a5\\evidence_snapshot.json": "f458047f90dcce4c78a7d819d37b4fc8f2a3a6c9e47fb6a7c170cf9b9bc9587c",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_A02\\diagnosis_tasks\\d0946388292a4429b65ff28e1b507a30\\evidence_snapshot.json": "122e59c0ebcc470a99576a10092afb19a4b8133a0dfd8c69227ceb94405ead6f",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_A03\\diagnosis_tasks\\db8f2917f54349408f4266073af01018\\evidence_snapshot.json": "8f18fa816d4f16ec1da518903ade4d61a7d3f6e50652308e761c8b8bcff46f8b",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_A04\\diagnosis_tasks\\edd05acf58e8481c8aece1f9f8849477\\diagnosis_attempt_a9e3b70ab1b3476ea8aa4da9951bad85.json": "29a0bb0123adbd4bfa4791be1311755c22ea68643eac44dd9f016a7aeedcd6b2",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_A04\\diagnosis_tasks\\edd05acf58e8481c8aece1f9f8849477\\diagnosis_attempt_54681554596b4486b8c98755152757e9.json": "f62c19446f04943a4cfeb4c13c4c9c0ccf67a96db33baae3650a6bcefb338f01",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_A04\\diagnosis_tasks\\edd05acf58e8481c8aece1f9f8849477\\diagnosis_attempt_ac92219e6dac4010a4f9f95391317459.json": "ab2aded1add45b2621bd3a1ae28cb224bb3143874a2ee3593f77fa736227c0cd",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_A04\\diagnosis_tasks\\edd05acf58e8481c8aece1f9f8849477\\evidence_snapshot.json": "dc59f91a78110277b6c8728fed3834f46245baeaa2a785bdf3659853cac42231",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_A05\\diagnosis_tasks\\379f63ceeac141f987c1f2cbe0709100\\diagnosis_attempt_3748a4f0057b4bbf896a79f88b1de63f.json": "da00994f49fda288e471d5679b4fae8d7877bd842fb2275d9edc0a836f7a1af4",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_A05\\diagnosis_tasks\\379f63ceeac141f987c1f2cbe0709100\\diagnosis_attempt_16b3cd8737154a28a796d829af863084.json": "40b41e98164bfea34f1ef019f814115f281f017dae1398b2f9e81054cf06e203",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_A05\\diagnosis_tasks\\379f63ceeac141f987c1f2cbe0709100\\evidence_snapshot.json": "d0cabb71157897d5651c1daf834f63aff31dbf28761c749eabe3de8acf895620",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_A06\\diagnosis_tasks\\a69edf4b89014568ba7553b9cddca1b7\\diagnosis_attempt_7fe642bd19734401b83b5a0f418dde65.json": "feb81d493fb144c4215524d23fea15cf800a940511112e47c4e47cc803f2500f",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_A06\\diagnosis_tasks\\a69edf4b89014568ba7553b9cddca1b7\\diagnosis_attempt_dc45456c5faf474e8db34fb33690fbd1.json": "6833028c135bd56398717877122526ee9c42471cca20929e3caedebdd56dfffe",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_A06\\diagnosis_tasks\\a69edf4b89014568ba7553b9cddca1b7\\evidence_snapshot.json": "89090850add489d1b3dada9433db50a79482595861fe0a0013663ec8aa15524c",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_B01\\diagnosis_tasks\\f49acc71a67e4f258a26b5bb3da27d91\\diagnosis_attempt_80c2cb29bd624004832421ce336eaccd.json": "dd4d645d60d012ccdd07e241efe845ac8905ff3efa22eee4edd0b3d1ca5f8784",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_B01\\diagnosis_tasks\\f49acc71a67e4f258a26b5bb3da27d91\\diagnosis_attempt_70261bd00ec0461d9a74824331bce2ad.json": "c8ff85f4560453c04bc642220874211d3d116ac5b73e641d04787469c5ad3c2d",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_B01\\diagnosis_tasks\\f49acc71a67e4f258a26b5bb3da27d91\\diagnosis_attempt_35e5ae1b81b44916ac48f6b375daf4a6.json": "c0b532ad6520915b55501f55afbd5c77c197d33bbc839a56fcc7829212215cc1",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_B01\\diagnosis_tasks\\f49acc71a67e4f258a26b5bb3da27d91\\evidence_snapshot.json": "b5bfcc5eabe69b637fa1582e5e766dac70b360c1498d42469c8f87aed7eac7f0",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_B02\\diagnosis_tasks\\d873a267d061428ba9ca765abe5c3ae1\\diagnosis_attempt_fd3e035488a949f4ae9cb01d4e178c01.json": "5aa3a971ea34ef3a3ed2c2512114ad7bf4b268c2caff9a29f60bd40d4288dc61",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_B02\\diagnosis_tasks\\d873a267d061428ba9ca765abe5c3ae1\\diagnosis_attempt_b0b54d171a7a46498c55d068662fff60.json": "4dea09ba2799799a27bafeaa22ac0458fe8992dc40f5407959014dcd28a46d2c",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_B02\\diagnosis_tasks\\d873a267d061428ba9ca765abe5c3ae1\\evidence_snapshot.json": "6cf700240e23574450b4d6145c46d3237691825e6e52bc3aaae33c5c73fa4b1d",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_B03\\diagnosis_tasks\\1073b42eb2df4fb591d5110e2f31bd98\\diagnosis_attempt_6174881f5aeb49bf8a4d71c6634a3028.json": "d71246d6449b39d3d556dd612d427cbd6f7a6ce1ae1a37810bf356e8c0f83d2c",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_B03\\diagnosis_tasks\\1073b42eb2df4fb591d5110e2f31bd98\\diagnosis_attempt_1926b146376f4c349f7a85c077a72138.json": "a6a9cdc5d86fcb75a1a41d7767e4dad8e553ee8e11ec3e7d08f9f9a8e2f8d6fa",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_B03\\diagnosis_tasks\\1073b42eb2df4fb591d5110e2f31bd98\\evidence_snapshot.json": "2237e7af29d936d629720c347f1f1a026c12936b0fa633b1df6eaaf283eff704",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_C01\\diagnosis_tasks\\57b2406ba71b48d3a661c89725e9baca\\diagnosis_attempt_4ec9bd7435c44cfebec89b6aa5e644e9.json": "fde17adcf00696291e53ed3a0442aaed4f25c55f95335cbbfa2b30ab8ed9c6f5",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_C01\\diagnosis_tasks\\57b2406ba71b48d3a661c89725e9baca\\diagnosis_attempt_b43b3f1cb7d8459b8475032fcd8752e7.json": "9b59e19a50058b9da4628a115dd6978b26b9d932bc96f76a43deed3f7fc5b7a1",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_C01\\diagnosis_tasks\\57b2406ba71b48d3a661c89725e9baca\\diagnosis_attempt_eec7eed285de447bad9fd9b9b828c243.json": "84d6c85eb35e22a28649ea15aabe4053a0a6f75885eecaeb2744018d11bec40c",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_C01\\diagnosis_tasks\\57b2406ba71b48d3a661c89725e9baca\\evidence_snapshot.json": "5e170550b1912db1bdfc21250a1e5f021b5cdeb937d2fc6eff5c6067081b84ad",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_C02\\diagnosis_tasks\\22f884bb1a9945c0af6364de44f786d9\\diagnosis_attempt_01ee682b77b2401880483efaef12d664.json": "47e303e37299c979d058ec0b17f8434113e6119633d6b74dbdb48d82266eb68e",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_C02\\diagnosis_tasks\\22f884bb1a9945c0af6364de44f786d9\\diagnosis_attempt_c0bb194722a048998947619707955b19.json": "4c7d255abd3ff9cf0f2dc367ed791603f9fbe17462f1d5de69f8f72b8412d1a4",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_C02\\diagnosis_tasks\\22f884bb1a9945c0af6364de44f786d9\\diagnosis_attempt_db9994ced7364601b358f8b3475ca0f4.json": "bd97187326355942d616faef3c85c6f4495736d19041260bdde5d958eb67cb91",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_C02\\diagnosis_tasks\\22f884bb1a9945c0af6364de44f786d9\\evidence_snapshot.json": "22c45015fa1943cb622e89cfc230e9b43e79298e2b43d99dfd56acbcc815b4cb",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_C03\\diagnosis_tasks\\ab8acc98dbf247e3adcefb89a47cd6ae\\evidence_snapshot.json": "badcbc6a4afd5775deaa924b5dc440011b12e13f0a1775356e5af22aceb5a719",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_C04\\diagnosis_tasks\\35dfabdb1dee4009a40e4c6903302285\\diagnosis_attempt_850cbcc7ade74677bcfe44d6e69e1c09.json": "bcd6d0d7c0aa25a73981b60bff584f5a58065b33004bf2c21bf6182bbcfafbf3",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_C04\\diagnosis_tasks\\35dfabdb1dee4009a40e4c6903302285\\diagnosis_attempt_b68a3a931aaa4539b2df6e30b7f820bc.json": "89b024930b6837a6da3ab96d622db330af190babbae02b7b06478c9efa776994",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_C04\\diagnosis_tasks\\35dfabdb1dee4009a40e4c6903302285\\diagnosis_attempt_4495d617f8e943fd8f6356116365322b.json": "69c834a1622704cf43c4dbffff0efa48bc871a651dbb9d2891ec08eb1bdc9695",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_C04\\diagnosis_tasks\\35dfabdb1dee4009a40e4c6903302285\\evidence_snapshot.json": "0f662c375f9fb43308ef9ec2599f9b541a68a3df28da2b89a2c0127cb8cd3fd2",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_C05\\diagnosis_tasks\\c574bbeced9c4b99998d2523fb29463b\\diagnosis_attempt_57fbcb2a2017449d9be56a7c65368869.json": "de187090d3052eaff25171f2266f02539be588257bd92954c2b3f7b1d3d5d6fb",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_C05\\diagnosis_tasks\\c574bbeced9c4b99998d2523fb29463b\\diagnosis_attempt_65b44aa614774be58afcb3d515b24179.json": "7a37d788986687dc68d3edbeec7d63507aec1b610d155380b46942b7083ca4c8",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_C05\\diagnosis_tasks\\c574bbeced9c4b99998d2523fb29463b\\diagnosis_attempt_b6ae064d21284825beeb55cce806972a.json": "a059db67229a4221df853b3747a2c7bc11acfaef9c78f179d7334b1b93cb2dfe",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_C05\\diagnosis_tasks\\c574bbeced9c4b99998d2523fb29463b\\evidence_snapshot.json": "e46099f202eee8b9c8591aaa28e348838248efccdc71dd8c9d0b773800b8bae0",
+    "E:\\SWMM_Agentic\\SWMM-Agentic3\\models\\pystorms_beta\\runs\\pb15pipe_1108_192918_C06\\diagnosis_tasks\\251508499f6c43a5b1ca7778180400e1\\evidence_snapshot.json": "d32e8b7ae2df0a6be1b0c760b24ff4d8e0094bed9c82db845aafcd3ba6625b17"
+  }
+}

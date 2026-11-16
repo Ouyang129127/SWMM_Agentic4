@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "task_id": "3d0aa008f9b24075a1ed14e7af323b5d",
+  "task_state": "preliminary_delivered",
+  "revision": 2,
+  "current_verified_report": true,
+  "stop_reason": "no_executable_pending_requests",
+  "supplement_rounds": 1,
+  "pending_evidence_requests": false,
+  "report_file": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1\\runs\\pilot4_20261116_adff44_A02_14mm\\diagnosis_tasks\\3d0aa008f9b24075a1ed14e7af323b5d\\preliminary_report_r2.md"
+}

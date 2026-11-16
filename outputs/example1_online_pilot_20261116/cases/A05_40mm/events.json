@@ -1,0 +1,98 @@
+[
+  {
+    "event_id": "10:E001",
+    "node_id": "10",
+    "facts": {
+      "event_id": "10:E001",
+      "node_id": "10",
+      "run_id": "pilot4_20261116_adff44_A05_40mm",
+      "model_name": "Example1",
+      "occurrence": 1,
+      "start": "2024-01-01 01:28:55",
+      "end": "2024-01-01 02:13:25",
+      "last_positive_time": "2024-01-01 02:13:20",
+      "peak_time": "2024-01-01 01:40:05",
+      "peak_flooding_Ls": 545.747,
+      "duration_minutes": 44.5,
+      "estimated_volume_m3": 512.502,
+      "positive_sample_count": 534,
+      "left_censored": false,
+      "right_censored": false,
+      "saved_step_seconds": 5.0,
+      "integration_method": "left_sample_rectangle"
+    },
+    "fact_evidence_id": "FP_76e2d6227ceba6965ad4",
+    "evidence_ids": [
+      "FP_76e2d6227ceba6965ad4",
+      "FP_4a998619e4a5e0e06202",
+      "FP_bd39996c19e0d97f7119",
+      "FP_b8d98cadddd0a1ea92ab",
+      "FP_3176c89973b34f2bfbef",
+      "FP_7ae0911a87c1d5467b28"
+    ]
+  },
+  {
+    "event_id": "15:E001",
+    "node_id": "15",
+    "facts": {
+      "event_id": "15:E001",
+      "node_id": "15",
+      "run_id": "pilot4_20261116_adff44_A05_40mm",
+      "model_name": "Example1",
+      "occurrence": 1,
+      "start": "2024-01-01 01:33:45",
+      "end": "2024-01-01 01:34:05",
+      "last_positive_time": "2024-01-01 01:34:00",
+      "peak_time": "2024-01-01 01:33:45",
+      "peak_flooding_Ls": 41.694,
+      "duration_minutes": 0.333,
+      "estimated_volume_m3": 0.453,
+      "positive_sample_count": 4,
+      "left_censored": false,
+      "right_censored": false,
+      "saved_step_seconds": 5.0,
+      "integration_method": "left_sample_rectangle"
+    },
+    "fact_evidence_id": "FP_950c6dde96a7ad2064bb",
+    "evidence_ids": [
+      "FP_950c6dde96a7ad2064bb",
+      "FP_9571488b24d14bbe6b61",
+      "FP_8f46ba18d3c216e35ef0",
+      "FP_7e9a97d5fc1f8f252620",
+      "FP_27b52edc8a1da886d8b8",
+      "FP_e1f27c5a14ea53ccf8ce"
+    ]
+  },
+  {
+    "event_id": "15:E002",
+    "node_id": "15",
+    "facts": {
+      "event_id": "15:E002",
+      "node_id": "15",
+      "run_id": "pilot4_20261116_adff44_A05_40mm",
+      "model_name": "Example1",
+      "occurrence": 2,
+      "start": "2024-01-01 01:34:30",
+      "end": "2024-01-01 01:51:20",
+      "last_positive_time": "2024-01-01 01:51:15",
+      "peak_time": "2024-01-01 01:40:05",
+      "peak_flooding_Ls": 311.188,
+      "duration_minutes": 16.833,
+      "estimated_volume_m3": 152.178,
+      "positive_sample_count": 202,
+      "left_censored": false,
+      "right_censored": false,
+      "saved_step_seconds": 5.0,
+      "integration_method": "left_sample_rectangle"
+    },
+    "fact_evidence_id": "FP_ca9f969e731c3073d26a",
+    "evidence_ids": [
+      "FP_ca9f969e731c3073d26a",
+      "FP_af612a132a9c7cfccc1d",
+      "FP_acd5cd698cec9070a254",
+      "FP_b587461f2be1241b742d",
+      "FP_61aaa9bf949c914a16c2",
+      "FP_410a1dc43e04714fcca4"
+    ]
+  }
+]

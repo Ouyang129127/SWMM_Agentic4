@@ -35,7 +35,7 @@ def row_subjects(row):
             objects = value.get(key, {})
             if isinstance(objects, dict):
                 subjects.update((kind, obj) for obj in objects)
-    elif row.get('metric_name') in {'local_process_series', 'storage_volume_process', 'fullness_time_series',
+    elif row.get('metric_name') in {'local_process_series', 'antecedent_hydraulic_context', 'storage_volume_process', 'fullness_time_series',
                                     'max_fullness', 'ponding_depth_time_series'}:
         for sample in value.get('series', []):
             if isinstance(sample, dict):

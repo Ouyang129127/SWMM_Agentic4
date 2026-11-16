@@ -15,14 +15,19 @@ from workflow_agents.common.hashing import sha256_file
 from workflow_agents.evidence.evidence_selection import lookup_evidence
 from workflow_agents.diagnosis.contract import check_claim_binding, validate_initial, MECHANISMS, CONTRACT_VERSION
 from workflow_agents.diagnosis.structure_contract import structure_review_requirements, validate_structure_assessments
-from workflow_agents.diagnosis.series_transport import process_evidence_view
+from workflow_agents.diagnosis.shared_transport import build_evidence_view, VIEW_FORMAT
 from workflow_agents.evidence.saved_result_evidence import validate_request, evidence_binding
 
 def serialize_prompt(prompt):
     return json.dumps(prompt, ensure_ascii=False, separators=(',', ':'), allow_nan=False)
 
 
-from workflow_agents.diagnosis.prompts import SYSTEM_PROMPT
+from workflow_agents.diagnosis.prompts import SYSTEM_PROMPT, SHARED_VIEW_INSTRUCTIONS
+
+
+def diagnosis_system_prompt(prompt):
+    """Only shared views pay for the additional format instructions."""
+    return SYSTEM_PROMPT + (SHARED_VIEW_INSTRUCTIONS if prompt.get('evidence_view_format') == VIEW_FORMAT else '')
 
 
 def _lookup(rows, request):
@@ -35,9 +40,9 @@ def build_diagnosis_prompt(state, rows, previous=None, feedback=None):
     bindings = {(r['source_model'], r['run_id']) for r in visible}
     if len(bindings) > 1:
         raise ValueError('Visible evidence mixes model/run bindings')
-    # Only the outgoing process-series representation changes. Frozen records,
-    # evidence IDs, scope and response validation retain the original evidence.
-    prompt = {'task': state['task_context'], 'visible_evidence': process_evidence_view(visible),
+    # Tables and one-hop static sharing change only the outgoing view. Frozen
+    # records, IDs, event scopes and response validation keep original evidence.
+    prompt = {'task': state['task_context'], **build_evidence_view(visible),
               'evidence_selection': state.get('evidence_selection', {}),
               'evidence_overview': state['evidence_overview'],
               'inventory': dict(sorted(Counter(r['metric_name'] for r in rows).items())),
@@ -115,7 +120,7 @@ async def configured_completion(prompt, audit=None):
     if audit:
         audit(model=getattr(llm, 'deepseek_model', None), provider=getattr(llm, 'deepseek_base_url', None))
     response = await deepseek_flash.create(
-        [SystemMessage(content=SYSTEM_PROMPT), UserMessage(content=serialize_prompt(prompt), source='user')],
+        [SystemMessage(content=diagnosis_system_prompt(prompt)), UserMessage(content=serialize_prompt(prompt), source='user')],
         json_output=True)
     if audit:
         usage = getattr(response, 'usage', None)
@@ -166,10 +171,11 @@ async def diagnose(root, directory, state, rows, visible, model_name, run_id, ta
             'instruction': '依据本次可见证据修正以下校验错误，重新返回完整JSON；不得放宽校验或编造对象／引用。'}
     attempt_id = uuid4().hex
     attempt_path = directory / f'diagnosis_attempt_{attempt_id}.json'
+    system_prompt = diagnosis_system_prompt(prompt)
     audit_data = {'attempt_id': attempt_id, 'task_id': task_id, 'status': 'started',
                   'phase': 'completion', 'started_at': datetime.now(timezone.utc).isoformat(),
-                  'request_characters': len(SYSTEM_PROMPT) + len(serialize_prompt(prompt)),
-                  'system_prompt_sha256': hashlib.sha256(SYSTEM_PROMPT.encode('utf-8')).hexdigest(),
+                  'request_characters': len(system_prompt) + len(serialize_prompt(prompt)),
+                  'system_prompt_sha256': hashlib.sha256(system_prompt.encode('utf-8')).hexdigest(),
                   'request_payload_sha256': hashlib.sha256(serialize_prompt(prompt).encode('utf-8')).hexdigest(),
                   'snapshot_hash': state['snapshot_hash'], 'visible_ids': list(state['visible_ids']),
                   'evidence_binding': evidence_binding(state),

@@ -1,0 +1,83 @@
+{
+  "all_completed": true,
+  "original_example1_configuration_unchanged": true,
+  "trial_sources_unchanged_during_execution": true,
+  "cases": [
+    {
+      "rainfall_mm": 14.0,
+      "native_report_seconds": 60,
+      "native_saved_records": 420,
+      "routing_step_option": "0:00:05",
+      "final_revision": 2,
+      "verification": {
+        "total_claims": 16,
+        "references_verified": 16,
+        "references_missing": 0,
+        "no_references": 0,
+        "reference_failure_rate": 0.0
+      },
+      "quality": {
+        "status": "passed",
+        "sections": 6,
+        "events": 1,
+        "embedded_images": 7,
+        "all_images_verified": true,
+        "numeric_policy": "supplied_fact_tokens",
+        "causal_policy": "current_diagnosis_statuses",
+        "verification_scope": "structure, source identity and references; not causal certification"
+      },
+      "report": "E:\\SWMM_Agentic\\SWMM-Agentic4\\outputs\\example1tokens_1min_pilot_20261116\\reports\\report_14mm.html"
+    },
+    {
+      "rainfall_mm": 20.0,
+      "native_report_seconds": 60,
+      "native_saved_records": 420,
+      "routing_step_option": "0:00:05",
+      "final_revision": 2,
+      "verification": {
+        "total_claims": 17,
+        "references_verified": 17,
+        "references_missing": 0,
+        "no_references": 0,
+        "reference_failure_rate": 0.0
+      },
+      "quality": {
+        "status": "passed",
+        "sections": 6,
+        "events": 1,
+        "embedded_images": 7,
+        "all_images_verified": true,
+        "numeric_policy": "supplied_fact_tokens",
+        "causal_policy": "current_diagnosis_statuses",
+        "verification_scope": "structure, source identity and references; not causal certification"
+      },
+      "report": "E:\\SWMM_Agentic\\SWMM-Agentic4\\outputs\\example1tokens_1min_pilot_20261116\\reports\\report_20mm.html"
+    },
+    {
+      "rainfall_mm": 40.0,
+      "native_report_seconds": 60,
+      "native_saved_records": 420,
+      "routing_step_option": "0:00:05",
+      "final_revision": 3,
+      "verification": {
+        "total_claims": 36,
+        "references_verified": 36,
+        "references_missing": 0,
+        "no_references": 0,
+        "reference_failure_rate": 0.0
+      },
+      "quality": {
+        "status": "passed",
+        "sections": 6,
+        "events": 2,
+        "embedded_images": 8,
+        "all_images_verified": true,
+        "numeric_policy": "supplied_fact_tokens",
+        "causal_policy": "current_diagnosis_statuses",
+        "verification_scope": "structure, source identity and references; not causal certification"
+      },
+      "report": "E:\\SWMM_Agentic\\SWMM-Agentic4\\outputs\\example1tokens_1min_pilot_20261116\\reports\\report_40mm.html"
+    }
+  ],
+  "total_final_claims_verified": 69
+}

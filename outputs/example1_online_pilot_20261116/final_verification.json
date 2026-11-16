@@ -1,0 +1,63 @@
+{
+  "simulation_and_diagnosis_sources_unchanged_during_run": true,
+  "post_run_code_change": [
+    "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\plots.py"
+  ],
+  "post_run_change_purpose": "Sparse time-axis labels only; all original numerical samples retained; regenerated reports reuse validated real model narratives without new API calls.",
+  "plot_regression_tests": {
+    "passed": 53
+  },
+  "cases": [
+    {
+      "rainfall_mm": 14.0,
+      "html": "E:\\SWMM_Agentic\\SWMM-Agentic4\\outputs\\example1_online_pilot_20261116\\reports\\report_14mm.html",
+      "quality": {
+        "status": "passed",
+        "sections": 6,
+        "events": 1,
+        "embedded_images": 7,
+        "all_images_verified": true,
+        "numeric_policy": "supplied_fact_tokens",
+        "causal_policy": "current_diagnosis_statuses",
+        "verification_scope": "structure, source identity and references; not causal certification"
+      },
+      "references_verified": 20,
+      "total_claims": 20,
+      "report_sha256": "f51c842008b259cbfad2e973b71e4c3b86ba85d2a4d6a45a9cdea36c8d930427"
+    },
+    {
+      "rainfall_mm": 20.0,
+      "html": "E:\\SWMM_Agentic\\SWMM-Agentic4\\outputs\\example1_online_pilot_20261116\\reports\\report_20mm.html",
+      "quality": {
+        "status": "passed",
+        "sections": 6,
+        "events": 1,
+        "embedded_images": 7,
+        "all_images_verified": true,
+        "numeric_policy": "supplied_fact_tokens",
+        "causal_policy": "current_diagnosis_statuses",
+        "verification_scope": "structure, source identity and references; not causal certification"
+      },
+      "references_verified": 20,
+      "total_claims": 20,
+      "report_sha256": "8ba591e4350e6b94122885a1d080334a698234dab3d1b6708b718192ff9354f6"
+    },
+    {
+      "rainfall_mm": 40.0,
+      "html": "E:\\SWMM_Agentic\\SWMM-Agentic4\\outputs\\example1_online_pilot_20261116\\reports\\report_40mm.html",
+      "quality": {
+        "status": "passed",
+        "sections": 6,
+        "events": 3,
+        "embedded_images": 9,
+        "all_images_verified": true,
+        "numeric_policy": "supplied_fact_tokens",
+        "causal_policy": "current_diagnosis_statuses",
+        "verification_scope": "structure, source identity and references; not causal certification"
+      },
+      "references_verified": 39,
+      "total_claims": 39,
+      "report_sha256": "3a9843c392a1b7db5f97e206b9baeaa234c5c8c4f22e8d0446dd1b2dd233d028"
+    }
+  ]
+}

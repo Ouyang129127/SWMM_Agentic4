@@ -1,0 +1,36 @@
+{
+  "totals": {
+    "diagnosis_total_5s": 1088868,
+    "diagnosis_total_60s": 586644,
+    "with_html_total_5s": 1796448,
+    "with_html_total_60s": 806303,
+    "first_input_5s": 236110,
+    "first_input_60s": 103887,
+    "first_total_5s": 308888,
+    "first_total_60s": 173126,
+    "first_input_reduction_pct": 56.0005929439668,
+    "first_total_reduction_pct": 43.95185309885784,
+    "diagnosis_total_reduction_pct": 46.12349706300488,
+    "with_html_total_reduction_pct": 55.116819412529615
+  },
+  "cases": [
+    {
+      "rain_mm": 14.0,
+      "first_input_reduction_pct": 25.300859598853865,
+      "diagnosis_total_reduction_pct": 69.41958825465757,
+      "status": "completed"
+    },
+    {
+      "rain_mm": 20.0,
+      "first_input_reduction_pct": 45.79535777057022,
+      "diagnosis_total_reduction_pct": 50.20694224748146,
+      "status": "completed"
+    },
+    {
+      "rain_mm": 40.0,
+      "first_input_reduction_pct": 68.22094842525486,
+      "diagnosis_total_reduction_pct": 30.318164252985667,
+      "status": "completed"
+    }
+  ]
+}

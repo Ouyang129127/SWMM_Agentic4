@@ -1,0 +1,541 @@
+{
+  "task_id": "3e556d0278fa4cba806b39a74903cced",
+  "model_name": "Example1",
+  "run_id": "pilot4_20261116_adff44_A05_40mm",
+  "task_kind": "initial_overflow",
+  "diagnosis_contract_version": "joint_mechanisms_v2",
+  "context_derivation": {
+    "version": "rainfall_history_structure_context_v3",
+    "rainfall_evidence_id": "CTX_RAINFALL",
+    "source_file": "swmm/rainfall_for_simulation.txt",
+    "antecedent_hydraulics": {
+      "version": "antecedent_hydraulics_v1",
+      "background_interval_seconds": 300,
+      "selected_events": 3,
+      "history_rows": 2,
+      "source_hashes": {
+        "swmm\\model_with_event.inp": "95d791cce07f8a4f7c2f34f220e236b8aac3d4bea69a914b40a819f6dede6f53",
+        "swmm\\model.out": "881eeb7bf831fd54f1b0adeb4d7f3047b5b4d10381cc3182f7ddc35dbd5f1abf"
+      }
+    },
+    "source_sha256": null,
+    "event_facts_preserved": true,
+    "structure_audit_version": "event_structure_audit_v1"
+  },
+  "task_context": {
+    "scope": "global",
+    "node_id": null,
+    "event_id": null,
+    "task_kind": "initial_overflow",
+    "original_question": null,
+    "objective": "以冒溢为中心，给出全场概览，对每个冒溢节点／事件分析发生过程、可能机制和证据缺口；先交付初步诊断，随后再补证。"
+  },
+  "state": "awaiting_evidence_confirmation",
+  "revision": 1,
+  "snapshot_hash": "0fd418c8c28f663ddebeed95e4bd2099ec8736fc64a61a4fc1b3c777dff6cf1f",
+  "source_hash": "9d6e78f1a060bb9f6b9ab9a5b3e22e354a3d6b1d8b095c6cfd72e5ff2b5a3f9d",
+  "evidence_package_version": "1.2",
+  "selection_version": "task_evidence_v3",
+  "evidence_selection": {
+    "policy": "task_evidence_v3",
+    "selection_basis": "task_scope_and_event_hydraulic_context",
+    "scope": "global",
+    "event_coverage": [
+      {
+        "event_id": "10:E001",
+        "missing_groups": []
+      },
+      {
+        "event_id": "15:E001",
+        "missing_groups": []
+      },
+      {
+        "event_id": "15:E002",
+        "missing_groups": []
+      }
+    ],
+    "related_nodes": [
+      "10",
+      "14",
+      "15",
+      "16",
+      "21",
+      "9"
+    ],
+    "related_links": [
+      "1",
+      "12",
+      "13",
+      "6"
+    ],
+    "background_scope": "Whole-run statistics remain background; do not substitute them for event values.",
+    "limitations": [
+      "Local packages cover only their saved process window; missing values remain unknown.",
+      "Initial scope uses one upstream segment and downstream to a retained boundary, without side-branch expansion; it does not guarantee all causes are covered.",
+      "Global statistics are not individual-object or causal diagnosis."
+    ]
+  },
+  "visible_ids": [
+    "CTX_RAINFALL",
+    "FP_27b52edc8a1da886d8b8",
+    "FP_3176c89973b34f2bfbef",
+    "FP_410a1dc43e04714fcca4",
+    "FP_4a998619e4a5e0e06202",
+    "FP_61aaa9bf949c914a16c2",
+    "FP_76e2d6227ceba6965ad4",
+    "FP_7ae0911a87c1d5467b28",
+    "FP_7e9a97d5fc1f8f252620",
+    "FP_8f46ba18d3c216e35ef0",
+    "FP_950c6dde96a7ad2064bb",
+    "FP_9571488b24d14bbe6b61",
+    "FP_acd5cd698cec9070a254",
+    "FP_af612a132a9c7cfccc1d",
+    "FP_b587461f2be1241b742d",
+    "FP_b8d98cadddd0a1ea92ab",
+    "FP_bd39996c19e0d97f7119",
+    "FP_ca9f969e731c3073d26a",
+    "FP_e1f27c5a14ea53ccf8ce",
+    "HIST_5bc667db6829698650474da3",
+    "HIST_b7b83dccfcbf335160958186",
+    "SUM_09d2ed393459d0f46c8121ab",
+    "SUM_1324d2c724f48b84588b0d06",
+    "SUM_53f7d39ab50ba1be1aeec122",
+    "SUM_568ebefd6f099182da24e0a2",
+    "SUM_59033717560353f5447089cd",
+    "SUM_662cd19cb77e9bebaa868cdc",
+    "SUM_76e7d2d044fd7c74e7507c28",
+    "SUM_89927919b4a58ee760f2da5f",
+    "SUM_9fdd77de38509d53b1505b9a",
+    "SUM_c26cfc8ec3d144af8513f1cd",
+    "SUM_e7abac3741c80fdad087416e",
+    "SUM_ef29ef238d92742b79d26195",
+    "SUM_f2f9e5c7a1793a832f29f3c2",
+    "SUM_fdac8558d3ce174ba764c4f9",
+    "SUM_EVT_e39b65e583012f20c7feb256"
+  ],
+  "observations": [
+    {
+      "request": "task_scope_selection",
+      "selected_count": 36,
+      "snapshot_count": 28581,
+      "selection_policy": "task_evidence_v3"
+    }
+  ],
+  "evidence_overview": {
+    "event_count": 3,
+    "overflow_node_count": 2,
+    "structure_audit_version": "event_structure_audit_v1",
+    "event_scope_policy": "upstream_one_segment_downstream_confluence_v1",
+    "node_count": 14,
+    "link_count": 13,
+    "storage_node_count": 0,
+    "facility_counts": {
+      "PUMPS": 0,
+      "ORIFICES": 0,
+      "WEIRS": 0,
+      "OUTLETS": 0
+    },
+    "facility_inventory_status": "available",
+    "native_status": {
+      "status": "available",
+      "units": {
+        "head": "m",
+        "flow": "L/s"
+      }
+    },
+    "surface_status": "available",
+    "evidence_count": 28564,
+    "metrics": {
+      "depth_above_section_reference_duration": 13,
+      "direct_source_composition": 3,
+      "event_context": 3,
+      "facilities_and_storage": 3,
+      "flooding_duration": 14,
+      "flow_direction_changes": 13,
+      "fullness_ge_0_8_duration": 13,
+      "fullness_ge_0_95_duration": 13,
+      "local_process_series": 3,
+      "local_structure": 3,
+      "max_depth": 14192,
+      "max_flooding_flow": 14,
+      "max_flow": 13,
+      "max_fullness": 13,
+      "max_link_depth": 13,
+      "max_node_depth": 14,
+      "overflow_event_count": 14,
+      "ponding_duration": 14192,
+      "rainfall_context": 1,
+      "surface_association": 3,
+      "total_flooding_volume": 14
+    },
+    "model_context": {
+      "model_name": "Example1",
+      "method": "all native junction overflow is external to the 1D network; mapping weight=1",
+      "native_inlets_present": false,
+      "native_streets_present": false,
+      "diagnosis_instruction": "Both baseline and dynamic_wave use DYNWAVE (dynamic wave routing). Backwater, pressurized flow and hydraulic flow reversal can be represented within the SWMM network; diagnose their occurrence from the actual hydraulic evidence. CA2D coupling remains one-way, with no surface-water feedback or sewer re-entry.",
+      "surface_interpretation": "CA2D is synthetic one-way overflow spreading; it is not complete distributed rainfall, infiltration or sewer re-entry.",
+      "source_slopes_percent": 0.01,
+      "map_scale_status": "assumed area-informed local scale; not surveyed",
+      "direct_outfall_runoff_catchment": "8",
+      "note": "Catchment 8 drains directly to outfall 18, bypassing the conduit network, as in the original."
+    }
+  },
+  "history": [
+    {
+      "action": "prepare"
+    },
+    {
+      "action": "diagnose",
+      "revision": 1,
+      "state": "ready_for_verification"
+    },
+    {
+      "action": "verify",
+      "revision": 1,
+      "state": "ready_for_report"
+    },
+    {
+      "action": "report",
+      "revision": 1,
+      "state": "awaiting_evidence_confirmation"
+    }
+  ],
+  "numeric_precision": {
+    "policy": "derived_evidence_decimal3_v1",
+    "decimal_places": 3,
+    "small_nonzero": "preserve original precision when abs(value) < 0.001",
+    "parameters_and_thresholds": "unchanged",
+    "calculation_order": "detect events and calculate statistics before rounding",
+    "interpretation": "Rounded evidence values are approximate; use saved sources for recalculation."
+  },
+  "event_manifest": [
+    {
+      "event_id": "10:E001",
+      "node_id": "10",
+      "facts": {
+        "event_id": "10:E001",
+        "node_id": "10",
+        "run_id": "pilot4_20261116_adff44_A05_40mm",
+        "model_name": "Example1",
+        "occurrence": 1,
+        "start": "2024-01-01 01:28:55",
+        "end": "2024-01-01 02:13:25",
+        "last_positive_time": "2024-01-01 02:13:20",
+        "peak_time": "2024-01-01 01:40:05",
+        "peak_flooding_Ls": 545.747,
+        "duration_minutes": 44.5,
+        "estimated_volume_m3": 512.502,
+        "positive_sample_count": 534,
+        "left_censored": false,
+        "right_censored": false,
+        "saved_step_seconds": 5.0,
+        "integration_method": "left_sample_rectangle"
+      },
+      "fact_evidence_id": "FP_76e2d6227ceba6965ad4",
+      "evidence_ids": [
+        "FP_76e2d6227ceba6965ad4",
+        "FP_4a998619e4a5e0e06202",
+        "FP_bd39996c19e0d97f7119",
+        "FP_b8d98cadddd0a1ea92ab",
+        "FP_3176c89973b34f2bfbef",
+        "FP_7ae0911a87c1d5467b28"
+      ]
+    },
+    {
+      "event_id": "15:E001",
+      "node_id": "15",
+      "facts": {
+        "event_id": "15:E001",
+        "node_id": "15",
+        "run_id": "pilot4_20261116_adff44_A05_40mm",
+        "model_name": "Example1",
+        "occurrence": 1,
+        "start": "2024-01-01 01:33:45",
+        "end": "2024-01-01 01:34:05",
+        "last_positive_time": "2024-01-01 01:34:00",
+        "peak_time": "2024-01-01 01:33:45",
+        "peak_flooding_Ls": 41.694,
+        "duration_minutes": 0.333,
+        "estimated_volume_m3": 0.453,
+        "positive_sample_count": 4,
+        "left_censored": false,
+        "right_censored": false,
+        "saved_step_seconds": 5.0,
+        "integration_method": "left_sample_rectangle"
+      },
+      "fact_evidence_id": "FP_950c6dde96a7ad2064bb",
+      "evidence_ids": [
+        "FP_950c6dde96a7ad2064bb",
+        "FP_9571488b24d14bbe6b61",
+        "FP_8f46ba18d3c216e35ef0",
+        "FP_7e9a97d5fc1f8f252620",
+        "FP_27b52edc8a1da886d8b8",
+        "FP_e1f27c5a14ea53ccf8ce"
+      ]
+    },
+    {
+      "event_id": "15:E002",
+      "node_id": "15",
+      "facts": {
+        "event_id": "15:E002",
+        "node_id": "15",
+        "run_id": "pilot4_20261116_adff44_A05_40mm",
+        "model_name": "Example1",
+        "occurrence": 2,
+        "start": "2024-01-01 01:34:30",
+        "end": "2024-01-01 01:51:20",
+        "last_positive_time": "2024-01-01 01:51:15",
+        "peak_time": "2024-01-01 01:40:05",
+        "peak_flooding_Ls": 311.188,
+        "duration_minutes": 16.833,
+        "estimated_volume_m3": 152.178,
+        "positive_sample_count": 202,
+        "left_censored": false,
+        "right_censored": false,
+        "saved_step_seconds": 5.0,
+        "integration_method": "left_sample_rectangle"
+      },
+      "fact_evidence_id": "FP_ca9f969e731c3073d26a",
+      "evidence_ids": [
+        "FP_ca9f969e731c3073d26a",
+        "FP_af612a132a9c7cfccc1d",
+        "FP_acd5cd698cec9070a254",
+        "FP_b587461f2be1241b742d",
+        "FP_61aaa9bf949c914a16c2",
+        "FP_410a1dc43e04714fcca4"
+      ]
+    }
+  ],
+  "overflow_overview": {
+    "source_model": "Example1",
+    "run_id": "pilot4_20261116_adff44_A05_40mm",
+    "object_type": "run",
+    "object_id": "pilot4_20261116_adff44_A05_40mm",
+    "event_id": "",
+    "metric_name": "overflow_event_overview",
+    "unit": "structured",
+    "value": {
+      "event_count": 3,
+      "overflow_node_count": 2,
+      "overflow_nodes": [
+        "10",
+        "15"
+      ],
+      "identified_event_volume_m3": 665.133,
+      "first_start": "2024-01-01 01:28:55",
+      "last_end": "2024-01-01 02:13:25",
+      "left_censored_events": [],
+      "right_censored_events": [],
+      "status": "events_identified",
+      "interpretation": "Saved-sample event integrals, not a solver water budget or complete causal attribution."
+    },
+    "calculation_method": "validated_saved_event_catalogue_v1",
+    "derivation": {
+      "source": "evidence_snapshot.json",
+      "event_evidence_ids": [
+        "FP_76e2d6227ceba6965ad4",
+        "FP_950c6dde96a7ad2064bb",
+        "FP_ca9f969e731c3073d26a"
+      ],
+      "node_metric_evidence_ids": [
+        "STAT_0d7eb51e8ffb0d080a49",
+        "STAT_4af5658a50e3f2ea45aa",
+        "STAT_12934e752cb0c20bf476",
+        "STAT_23db3218d433b40cd672",
+        "STAT_76360741e2c7eed6f851",
+        "STAT_965772f6a896581cb042",
+        "STAT_92fd4d8ce9f960e1b47a",
+        "STAT_04fdef3a4ea688c47a95",
+        "STAT_9337acc8a5229d05e099",
+        "STAT_4069af1d063a2e83f3a1",
+        "STAT_32bab2ea85cd4c76b0d5",
+        "STAT_926849534bb20faa9928",
+        "STAT_bd2626c5e250f9e07eb0",
+        "STAT_d6d1052d1e3684578a95",
+        "STAT_f4d72fee64743ee93d52",
+        "STAT_097f55afca380e049fac",
+        "STAT_65d2c09ef4a2ad624bdf",
+        "STAT_6c34ac106f272be31bf2",
+        "STAT_9ee1e1ac240c511e3e62",
+        "STAT_801f4df22e606a9b64d6",
+        "STAT_469afa3720031952ac8f",
+        "STAT_cd8fbcdbcd9dc328bf0a",
+        "STAT_8525382b0ca8e210db66",
+        "STAT_2627ea2b19345849e05f",
+        "STAT_4030e76e84beedf6cd92",
+        "STAT_e2371ec5b00648d240dd",
+        "STAT_de50a208610f6add1c6b",
+        "STAT_94abe4932240fc9d42a7"
+      ]
+    },
+    "evidence_id": "SUM_EVT_e39b65e583012f20c7feb256"
+  },
+  "last_attempt": {
+    "attempt_id": "34871e61c9114827b9534fa3686f4fd4",
+    "status": "completed",
+    "audit_file": "diagnosis_attempt_34871e61c9114827b9534fa3686f4fd4.json"
+  },
+  "diagnosis_hash": "e38736029ca953b4a1dddd937a783406f6b565bbc67896798a691d2518f8b2d6",
+  "pending_evidence_requests": true,
+  "verification_hash": "af9ce505e52a5c2f883325d618fd96da2f4199c1b4bea5d6d97c021be878a1e8",
+  "evidence_plan": [
+    {
+      "status": "available",
+      "execution": "saved_result_extract",
+      "resolved_request": {
+        "method": "saved_result_extract_v1",
+        "metric_name": "local_process_series",
+        "scopes": [
+          {
+            "nodes": [
+              "10",
+              "20",
+              "21",
+              "22"
+            ],
+            "links": [
+              "5",
+              "6",
+              "7"
+            ],
+            "cells": [],
+            "event_id": "10:E001",
+            "time_start": "2024-01-01 01:20:00",
+            "time_end": "2024-01-01 02:20:00",
+            "window_policy": "explicit_window",
+            "anchor_node": "10",
+            "sample_interval_seconds": 5.0
+          }
+        ],
+        "source_files": [
+          "swmm/model.out",
+          "swmm/model_with_event.inp"
+        ],
+        "scope_note": "只按结构化参数执行；reason为调查目的。缺省事件时窗前后各扩展一个相应结果保存步长（地表采用地表保存步长）。补证可越过首轮基础边界；节点管网过程请求取所请求节点的直接连接管段及两端节点，管段过程请求取所请求管段及两端节点，不继续沿侧支追踪。"
+      },
+      "request_signature": "79a166d00488e186bace080ece90d80c9a714c75d25115b2a01aab0e9822196c",
+      "matching_evidence_ids": [],
+      "new_evidence_ids": [],
+      "requires_extraction": true,
+      "missing_scope_signatures": [
+        "873d2d9288b3f101b15ba614394efc66c2350294ca81f3cbf1d49c0c21d75d5b"
+      ],
+      "request": {
+        "tool": "saved_result_extract",
+        "object_type": "node",
+        "object_id": "21",
+        "event_id": "10:E001",
+        "metric_name": "local_process_series",
+        "time_start": "2024-01-01 01:20:00",
+        "time_end": "2024-01-01 02:20:00",
+        "sample_interval_seconds": 5.0,
+        "reason": "当前疑点为节点10的link6出口高于管底但低于管顶且出流长期约164 L/s，node21本身水头不高但外侧link5/link7未核查。提取node21及其直接连接过程可判断下游走廊是否维持出口部分充水或限制排出；若link7排出受限且node21水位与link6钉扎同期，则增强M3候选，若link7自由排出且水头仍低，则收窄M3并强化M2单独解释。"
+      }
+    },
+    {
+      "status": "available",
+      "execution": "saved_result_extract",
+      "resolved_request": {
+        "method": "saved_result_extract_v1",
+        "metric_name": "local_process_series",
+        "scopes": [
+          {
+            "nodes": [
+              "15",
+              "16",
+              "22",
+              "24"
+            ],
+            "links": [
+              "13",
+              "15",
+              "8"
+            ],
+            "cells": [],
+            "event_id": "15:E002",
+            "time_start": "2024-01-01 01:30:00",
+            "time_end": "2024-01-01 01:55:00",
+            "window_policy": "explicit_window",
+            "anchor_node": "15",
+            "sample_interval_seconds": 5.0
+          }
+        ],
+        "source_files": [
+          "swmm/model.out",
+          "swmm/model_with_event.inp"
+        ],
+        "scope_note": "只按结构化参数执行；reason为调查目的。缺省事件时窗前后各扩展一个相应结果保存步长（地表采用地表保存步长）。补证可越过首轮基础边界；节点管网过程请求取所请求节点的直接连接管段及两端节点，管段过程请求取所请求管段及两端节点，不继续沿侧支追踪。"
+      },
+      "request_signature": "d76d500276c5bafebac6224a4918cd4b1d77440893f6d3ecebfcfa624caf3eba",
+      "matching_evidence_ids": [],
+      "new_evidence_ids": [],
+      "requires_extraction": true,
+      "missing_scope_signatures": [
+        "65d61916574292c1c3989766871dfdde7fcd42cc66d873455c1edb486bbf44e5"
+      ],
+      "request": {
+        "tool": "saved_result_extract",
+        "object_type": "node",
+        "object_id": "16",
+        "event_id": "15:E002",
+        "metric_name": "local_process_series",
+        "time_start": "2024-01-01 01:30:00",
+        "time_end": "2024-01-01 01:55:00",
+        "sample_interval_seconds": 5.0,
+        "reason": "当前疑点为15:E002峰值时link13出口管顶轻微淹没，而node16及其外侧link8/link15过程未完整读取。提取node16过程可区分下游水位是否通过link13出口影响node15排水；若link15排出受限并伴随node16水位抬升，则增强M3候选，若node16/ link15排出通畅且水头远低于node15入口，则保留局部M2解释并收窄M3。"
+      }
+    },
+    {
+      "status": "available",
+      "execution": "saved_result_extract",
+      "resolved_request": {
+        "method": "saved_result_extract_v1",
+        "metric_name": "fullness_time_series",
+        "scopes": [
+          {
+            "nodes": [],
+            "links": [
+              "13"
+            ],
+            "cells": [],
+            "event_id": "15:E001",
+            "time_start": "2024-01-01 01:30:00",
+            "time_end": "2024-01-01 01:36:00",
+            "window_policy": "explicit_window",
+            "anchor_node": "15",
+            "sample_interval_seconds": 5.0
+          }
+        ],
+        "source_files": [
+          "swmm/links.tsv",
+          "swmm/model_with_event.inp"
+        ],
+        "scope_note": "只按结构化参数执行；reason为调查目的。缺省事件时窗前后各扩展一个相应结果保存步长（地表采用地表保存步长）。补证可越过首轮基础边界；节点管网过程请求取所请求节点的直接连接管段及两端节点，管段过程请求取所请求管段及两端节点，不继续沿侧支追踪。"
+      },
+      "request_signature": "03938918f9e866fd2c668f61b66f0e85b02d3fdac437309899265b994248d07e",
+      "matching_evidence_ids": [],
+      "new_evidence_ids": [],
+      "requires_extraction": true,
+      "missing_scope_signatures": [
+        "be5dd9fd25b89bd662a01a56f0082e4a90a3e6decd0321fe57747f0c3aa2d902"
+      ],
+      "request": {
+        "tool": "saved_result_extract",
+        "object_type": "link",
+        "object_id": "13",
+        "event_id": "15:E001",
+        "metric_name": "fullness_time_series",
+        "time_start": "2024-01-01 01:30:00",
+        "time_end": "2024-01-01 01:36:00",
+        "sample_interval_seconds": 5.0,
+        "reason": "当前疑点为15:E001仅20 s，link13起溢时约90%满管但流量仍快速上升，M2仅为候选。提取该时段满度过程可判断link13是否在起溢前后形成满管/近满管平台；若满度接近1并伴随流量平台，则可升级局部输水约束证据，若满度仍低于满管且流量自由上升，则维持以M1和瞬时充水为主的判断。"
+      }
+    }
+  ],
+  "unresolved_evidence_requests": [],
+  "evidence_closure": "actionable",
+  "report": "# 冒溢初步诊断\n\n以冒溢为中心，给出全场概览，对每个冒溢节点／事件分析发生过程、可能机制和证据缺口；先交付初步诊断，随后再补证。\n\n本报告为初步诊断。引用核查只确认可追溯性，不代表数值、工程解释或因果已独立验证。\n\n证据阅读范围：已提供 36 / 28581 条快照证据；未提供部分不视为已分析。\n\n## 全场概览\n\n识别 2 个冒溢节点、3 次事件；所识别事件积分合计 665.133000 m³。\n节点分布：节点10、节点15。\n事件时间范围：2024-01-01 01:28:55 至 2024-01-01 02:13:25。\n依据：SUM_EVT_e39b65e583012f20c7feb256。\n\n本次run为2024-01-01 00:00-04:00单一连续降雨，总雨量40 mm，雨峰01:35-01:40、峰值73.366 mm/h。全场识别3个冒溢事件、2个节点：节点10在01:28:55-02:13:25连续冒溢44.5 min、峰值545.747 L/s、体积512.502 m3，是主要冒溢量和历时来源；节点15在01:33:45-01:34:05短冒溢0.453 m3后，间隔25 s于01:34:30-01:51:20再次冒溢、峰值311.188 L/s、体积152.178 m3。两个节点均位于同一场降雨上升至峰段，节点10的link1与侧向汇总入流约各半，节点15以侧向汇总入流为主。现有可见过程支持来水时间集中叠加局部出口输送约束；下游顶托在node10和15:E002仍为候选，设施与独立前期蓄水机制未成立。\n引用：CTX_RAINFALL, SUM_EVT_e39b65e583012f20c7feb256, SUM_fdac8558d3ce174ba764c4f9, SUM_e7abac3741c80fdad087416e, FP_76e2d6227ceba6965ad4, FP_950c6dde96a7ad2064bb, FP_ca9f969e731c3073d26a\n\n## 逐节点／事件诊断\n\n### 节点10 · 10:E001\n\n发生事实：起溢 2024-01-01 01:28:55；结束 2024-01-01 02:13:25；最后正冒溢样本 2024-01-01 02:13:20；持续 44.5 min；积分冒溢量 512.502000 m³。\n峰值：2024-01-01 01:40:05，545.747000 L/s；保存步长 5.0 s。\n采样边界：左截断=False，右截断=False；积分方法=left_sample_rectangle。\n事实来源：FP_76e2d6227ceba6965ad4。\n\n发生过程：节点10于01:28:55在降雨上升段起溢，01:40:05达到峰值545.747 L/s，02:13:25结束。起溢前该节点已由同一场降雨的上升入流充水；起溢至峰值段总入流由约199.6 L/s增至709.9 L/s，link1来水和aggregate_lateral分别约352.6 L/s与357.3 L/s，体积组成约50.3%与49.7%，显示两条直接入水路径同期增长并在雨峰附近集中。节点10随即维持最大深度约0.914 m，而可见唯一出口link6流量只由约148.9 L/s升至164.048 L/s后长期维持，明显低于总入流；link6为D=0.3048 m、较link1的D=0.4572 m缩径，同管底、管顶低0.1524 m且坡度较低。故本事件主要由同场来水集中叠加link6局部排出约束解释。link6出口高于管底但低于管顶，属部分出口充水；node21同期水头约302.23-302.26 m、无反向流，下游顶托仍需node21外侧过程区分。未发现设施动作；初始水深为零、无独立前一轮雨峰或储水单元。\n引用：FP_76e2d6227ceba6965ad4, FP_4a998619e4a5e0e06202, FP_bd39996c19e0d97f7119, FP_b8d98cadddd0a1ea92ab, FP_3176c89973b34f2bfbef, FP_7ae0911a87c1d5467b28, HIST_5bc667db6829698650474da3\n\n结构核查：已核查节点10、link1、link6及node21几何。link1为D=0.4572 m、坡度1.25%，link6为D=0.3048 m、坡度1.0%，两者在节点10同管底，link6管顶低0.1524 m且满断面几何面积为link1的44.4%。事件中link6流量长时间约164 L/s、近满管，节点10维持最大深度并冒溢，结构缩径/坡度降低与同期水力受限一致；该几何特征只说明相关，不单独断言设计错误。link6出口高于管底但低于管顶，应与下游候选解释一并保留。\n引用：FP_4a998619e4a5e0e06202, FP_bd39996c19e0d97f7119\n\n- 与本事件有关：该finding给出进口link1与出口link6的缩径、同管底、管顶降低和坡度下降；同期node10满深、link6流量约164 L/s平台，与局部输送约束解释直接相关，但下游出口部分充水尚待区分。\n\n可能机制：\n\n- 来水集中／叠加（有证据支持）：01:28:50-01:40:05总入流与两条直接来源同步增强：link1约98.9→352.6 L/s，aggregate_lateral约100.7→357.3 L/s，峰值与01:35-01:40雨峰相邻；节点10直接子汇水区2接入，但聚合侧向入流未逐区拆分。来水集中与起溢后冒溢增长具有同事件时序联系。（FP_bd39996c19e0d97f7119, FP_b8d98cadddd0a1ea92ab, FP_4a998619e4a5e0e06202, FP_76e2d6227ceba6965ad4）\n- 局部输水约束（有证据支持）：节点10处于最大深度时，唯一可见出口link6长时间维持约164 L/s，而总入流最高709.9 L/s、冒溢545.7 L/s；link6较进口link1缩径、同管底且坡度下降，构成具体局部排出约束。（FP_bd39996c19e0d97f7119, FP_4a998619e4a5e0e06202, FP_b8d98cadddd0a1ea92ab）\n- 下游顶托（候选机制）：link6出口高于管底但低于管顶，出口部分充水且出流钉扎；node21同期水头约302.23-302.26 m、未见反向流，尚不能确认其是否通过下游走廊限制link6排出，需node21外侧link5/link7过程。（FP_bd39996c19e0d97f7119, FP_4a998619e4a5e0e06202）\n- 设施运行（不适用）：局部facilities为空、controls_present为false，run设施清单无泵/闸/堰/孔口；已调查路径上无设施运行影响。（FP_3176c89973b34f2bfbef）\n- 前期蓄水与可用调蓄空间（不适用）：节点10输入初始水深为0；雨量记录为单一连续湿段且事件前无已完成先前局部峰，起溢前水位来自同一上升段；无调蓄池或储水单元。（HIST_5bc667db6829698650474da3, FP_4a998619e4a5e0e06202, CTX_RAINFALL）\n\n综合机制判断（有证据支持）：节点10事件由同场降雨上升段的直接来水集中叠加link6局部排出约束形成，M1与M2在同一时段共同解释起溢、峰值和长历时；下游顶托仍为候选。\n共同作用机制：来水集中／叠加、局部输水约束。\n作用关系：01:28:55起溢后，link1与aggregate_lateral在雨峰附近同步抬升，将总入流推高至约710 L/s；节点10保持最大深度，link6仅能维持约164 L/s，二者差值直接对应持续冒溢。node21低水头和无反向流削弱紧邻下游高水位解释，但link6出口部分充水，故M3仍需外侧过程核查。\n依据：FP_76e2d6227ceba6965ad4, FP_4a998619e4a5e0e06202, FP_bd39996c19e0d97f7119, FP_b8d98cadddd0a1ea92ab\n判断边界：M3为候选；node21外侧link5/link7未读取，不能排除下游走廊对link6出口部分充水的影响。surface_association未构建，不能评价地表回流。\n\n竞争解释／共同作用：来水集中和link6局部排出约束有共同过程证据；下游顶托仍为候选，因出口仅部分充水、node21水头低且无反向流。未发现设施运行或独立前期蓄水证据；不能将缩径单独断言为设计缺陷或唯一根因。\n\n证据缺口：\n\n- node21外侧link5/link7过程未读取，无法判断下游走廊是否影响link6出口部分充水。\n- surface_association为not_built，无法判断地表水回流或淹没映射。\n\n### 节点15 · 15:E001\n\n发生事实：起溢 2024-01-01 01:33:45；结束 2024-01-01 01:34:05；最后正冒溢样本 2024-01-01 01:34:00；持续 0.333 min；积分冒溢量 0.453000 m³。\n峰值：2024-01-01 01:33:45，41.694000 L/s；保存步长 5.0 s。\n采样边界：左截断=False，右截断=False；积分方法=left_sample_rectangle。\n事实来源：FP_950c6dde96a7ad2064bb。\n\n发生过程：15:E001是节点15在01:33:45-01:34:05的短冒溢。01:33:40节点15深度0.443 m，01:33:45总入流345.7 L/s，其中aggregate_lateral 248.6 L/s、占事件直接体积71.9%，link12 97.1 L/s、占28.1%；节点深度升至0.507 m并开始冒溢41.694 L/s，01:33:50达到最大深度0.914 m。随后link13出流由约296 L/s快速升至354.9 L/s，01:34:05与总入流357.6 L/s接近，冒溢停止。该过程更像快速侧向来水在节点/连接管中瞬时充水超过动态排出能力；link13与link12同径同管底，但坡度由0.75%降至0.5%，起溢时约90%满管，局部限制仍为候选。下游link13出口管顶未淹没，node16水头约300.61 m，未见下游高水位顶托。初始水深为零、无独立前一轮雨峰或储水单元，未发现设施。\n引用：FP_950c6dde96a7ad2064bb, FP_9571488b24d14bbe6b61, FP_8f46ba18d3c216e35ef0, FP_7e9a97d5fc1f8f252620, FP_27b52edc8a1da886d8b8, FP_e1f27c5a14ea53ccf8ce, HIST_b7b83dccfcbf335160958186\n\n结构核查：已核查节点15、link12、link13及node16几何。link12与link13同径D=0.4572 m、同管底同管顶，仅下游坡度由0.75%降至0.5%。15:E001起溢时link13约90%满管、流量快速上升，结构坡度降低提供局部排出线索，但事件短且出流随即接近入流；link13出口管顶未淹没，node16低水头，尚不能把坡度特征确认为该短事件的控制因素。\n引用：FP_9571488b24d14bbe6b61, FP_8f46ba18d3c216e35ef0\n\n- 与本事件有关：该finding仅有下游坡度降低，未见同径断面突变；事件中link13近满管且流量快速上升，使该几何特征与局部排出调查有关，但尚缺满度平台证据，不能单独认定根因。\n\n可能机制：\n\n- 来水集中／叠加（有证据支持）：01:33:40-01:34:05 aggregate_lateral约占直接入流体积71.9%，并在起溢时快速推高总入流至约346-358 L/s；节点深度在5 s内由0.443 m跃至0.507 m并达到最大值，来水集中与短冒溢启动有同事件关系。（FP_8f46ba18d3c216e35ef0, FP_7e9a97d5fc1f8f252620, FP_9571488b24d14bbe6b61）\n- 局部输水约束（候选机制）：link13较进口link12坡度降低且起溢时约90%满管，流量296→355 L/s，具局部排出约束线索；但流量快速上升，未形成长时恒定平台，关键控制关系尚未确认。（FP_9571488b24d14bbe6b61, FP_8f46ba18d3c216e35ef0）\n- 下游顶托（不适用）：link13出口水位高于管底但低于管顶，管顶未淹没；node16水头约300.61 m，且link13出流期间快速上升，未见下游高水位或反向流限制本次短冒溢。部分出口充水已记录，但事件前提不足以建立M3候选。（FP_9571488b24d14bbe6b61, FP_8f46ba18d3c216e35ef0）\n- 设施运行（不适用）：局部facilities为空且无控制设施；已核查路径无泵、闸、堰、孔口动作。（FP_27b52edc8a1da886d8b8）\n- 前期蓄水与可用调蓄空间（不适用）：节点15初始水深为0；事件处于单一连续湿段和快速上升段，之前无已完成局部雨峰；无明确储水单元。（HIST_b7b83dccfcbf335160958186, FP_9571488b24d14bbe6b61, CTX_RAINFALL）\n\n综合机制判断（候选机制）：15:E001是一次由快速侧向汇总来水主导的短时初始冒溢，可能与节点/连接管瞬时充水和link13近满管共同作用；M1有支持，M2仍为候选。\n共同作用机制：来水集中／叠加、局部输水约束。\n作用关系：侧向汇总入流在几秒内推高节点15水位并触发冒溢，同时link13出流快速上升并在01:34:05接近总入流，说明短事件随动态出流调整而结束。link13近满管与坡度降低提供局部限制线索，但尚不足以证明其形成持续控制；下游管顶未淹没和node16低水头削弱M3。\n依据：FP_950c6dde96a7ad2064bb, FP_9571488b24d14bbe6b61, FP_8f46ba18d3c216e35ef0, FP_7e9a97d5fc1f8f252620\n判断边界：M2仅为候选；缺少更完整的满度/流量过程来判断link13是否在起溢前形成能力平台。node16外侧link15未读取，但现有出口管顶未淹没使下游影响证据较弱。\n\n竞争解释／共同作用：主要竞争解释是短时来水超过节点/管道动态充水能力，而非持续满管能力限制；M2保留候选。下游顶托因出口管顶未淹没且node16低水头暂不成立。\n\n证据缺口：\n\n- 15:E001仅有20 s，需更长保存满度过程确认link13是否形成能力平台。\n- node16外侧link15未读取，但当前出口管顶未淹没已降低其作为本短事件主因的可能性。\n\n### 节点15 · 15:E002\n\n发生事实：起溢 2024-01-01 01:34:30；结束 2024-01-01 01:51:20；最后正冒溢样本 2024-01-01 01:51:15；持续 16.833 min；积分冒溢量 152.178000 m³。\n峰值：2024-01-01 01:40:05，311.188000 L/s；保存步长 5.0 s。\n采样边界：左截断=False，右截断=False；积分方法=left_sample_rectangle。\n事实来源：FP_ca9f969e731c3073d26a。\n\n发生过程：15:E002在15:E001结束后25 s、01:34:30再次起溢，此时节点15仍在最大深度附近；事件持续至01:51:20。01:34:30-01:40:05总入流由370.6 L/s升至669.7 L/s，aggregate_lateral由265.4 L/s升至487.9 L/s、占事件直接入流体积约73%，link12由105.2 L/s升至181.8 L/s、约27%。节点15维持满深0.914 m；link13在峰值附近接近满管D=0.4572 m，流量约358-378 L/s形成平台，而总入流峰值669.7 L/s、冒溢311.2 L/s。结构上link12与link13同径同管底，但坡度由0.75%降至0.5%，支持局部排出受限。峰值时link13出口管顶被轻微淹没约0.02 m，node16水头约300.706 m但仍远低于节点15入口，且无反向流；下游影响保留为候选，需node16外侧link15过程确认。未发现设施；前一次冒溢虽未排空，但与本事件处于同一连续降雨上升/峰段，不构成独立前期雨峰蓄水。\n引用：FP_ca9f969e731c3073d26a, FP_af612a132a9c7cfccc1d, FP_acd5cd698cec9070a254, FP_b587461f2be1241b742d, FP_61aaa9bf949c914a16c2, FP_410a1dc43e04714fcca4, HIST_b7b83dccfcbf335160958186\n\n结构核查：已核查节点15、link12、link13及node16几何。link12与link13同径、同管底同管顶，坡度由0.75%降至0.5%。15:E002中link13接近满管、流量约358-378 L/s平台，节点15满深并冒溢，结构坡度降低和近满管排出受限同期；峰值时link13出口管顶轻微淹没，node16下游link15未在首轮范围内展开，需补证区分局部M2与下游M3。\n引用：FP_af612a132a9c7cfccc1d, FP_acd5cd698cec9070a254\n\n- 与本事件有关：该finding显示同径但下游坡度降低；同期link13近满管并形成约360-378 L/s平台，而节点15满深持续冒溢，故该结构特征与局部排出约束调查直接相关，但需结合下游link15过程区分轻微出口淹没的作用。\n\n可能机制：\n\n- 来水集中／叠加（有证据支持）：01:34:30-01:40:05总入流370.6→669.7 L/s，aggregate_lateral 265.4→487.9 L/s、体积占约73%，link12同期105.2→181.8 L/s；峰值与雨峰01:35-01:40重合，来水集中与持续冒溢峰值直接对应。（FP_acd5cd698cec9070a254, FP_b587461f2be1241b742d, FP_ca9f969e731c3073d26a）\n- 局部输水约束（有证据支持）：节点15满深时link13接近满管并形成约358-378 L/s流量平台，总入流峰值669.7 L/s、冒溢311.2 L/s；同径但坡度下降的结构与近满管排出受限同期，支持局部输水约束。（FP_acd5cd698cec9070a254, FP_af612a132a9c7cfccc1d, FP_b587461f2be1241b742d）\n- 下游顶托（候选机制）：峰值时link13出口管顶被轻微淹没约0.02 m，说明不能视为自由出流；但node16水头约300.706 m、明显低于节点15入口，无反向流，link15外侧过程未读取，故下游影响仍待区分。（FP_acd5cd698cec9070a254, FP_af612a132a9c7cfccc1d）\n- 设施运行（不适用）：局部facilities为空且controls_present为false；已调查路径无设施动作。（FP_61aaa9bf949c914a16c2）\n- 前期蓄水与可用调蓄空间（不适用）：节点15初始水深为0，单一连续湿段内无独立先前雨峰；15:E001与本事件间隔仅25 s，节点未排空但属于同一连续上升/峰段，且无调蓄单元，按协议不以近满建立M6候选。（HIST_b7b83dccfcbf335160958186, FP_ca9f969e731c3073d26a, FP_af612a132a9c7cfccc1d, CTX_RAINFALL）\n\n综合机制判断（有证据支持）：15:E002由同一雨峰下侧向汇总来水显著增长叠加link13局部近满管排出约束形成；M1与M2共同解释峰值和持续冒溢，下游顶托保留为候选。\n共同作用机制：来水集中／叠加、局部输水约束。\n作用关系：侧向汇总入流与link12在峰前同步增长，使node15总入流达到669.7 L/s；node15维持满深，link13近满管且出流约360-378 L/s，无法带走入流增量，差值表现为311.2 L/s冒溢。link13出口轻微管顶淹没提示下游可能有影响，但node16水头远低于node15入口且无反向流，故当前综合解释以M1+M2为主。\n依据：FP_ca9f969e731c3073d26a, FP_af612a132a9c7cfccc1d, FP_acd5cd698cec9070a254, FP_b587461f2be1241b742d\n判断边界：M3为候选；node16外侧link15未读取，不能确定出口轻微淹没是否增加link13排出约束。15:E001与本事件处于同一连续降雨过程，不能据此建立独立M6前期蓄水作用。\n\n竞争解释／共同作用：M1+M2有同事件过程支持；M3为候选，因为link13出口管顶仅轻微淹没且node16水头明显低于node15入口。15:E001残余水位与本事件连续，但按协议不构成独立前期雨峰蓄水解释。\n\n证据缺口：\n\n- node16及其外侧link8/link15过程未读取，无法判断出口轻微淹没是否实际限制link13排出。\n- node15外侧上游link11未展开，但其来水已通过link12过程反映；未把未提供支路当作已排除。\n\n## 可追溯结论\n\n- [D1:C1] [fact] 本次run共识别3个冒溢事件、2个冒溢节点：节点10事件10:E001冒溢体积512.502 m3；节点15事件15:E001为0.453 m3、15:E002为152.178 m3；合计665.133 m3。（SUM_EVT_e39b65e583012f20c7feb256, FP_76e2d6227ceba6965ad4, FP_950c6dde96a7ad2064bb, FP_ca9f969e731c3073d26a）\n  工程依据：事件目录按保存样本左矩形积分生成，用于事件基本事实，不作为水量平衡或因果贡献率。；相关解释：保存步长积分与真实连续过程存在离散误差；未据此分解来源责任。；适用范围：2024-01-01 01:28:55至02:13:25，节点10与节点15的已识别冒溢事件。\n- [D1:C2] [fact] 节点10于2024-01-01 01:28:55起溢，01:40:05达到峰值545.747 L/s，02:13:25结束，持续44.5 min。（FP_76e2d6227ceba6965ad4）\n  工程依据：event_context由原生保存冒溢序列识别起止和峰值。；相关解释：事件未被左右截断，未见缺失阶段；保存步长5 s。；适用范围：节点10事件10:E001全过程。\n- [D1:C3] [process_explanation] 01:28:50至01:40:05，节点10总入流由199.6 L/s增至709.9 L/s；link1来水由约98.9 L/s增至352.6 L/s，aggregate_lateral由100.7 L/s增至357.3 L/s，两者体积占比约50.3%与49.7%，在01:35-01:40雨峰附近共同推高入流。节点10直接连接子汇水区2，但aggregate_lateral未提供逐子汇水区拆分。（FP_bd39996c19e0d97f7119, FP_b8d98cadddd0a1ea92ab, FP_4a998619e4a5e0e06202, FP_76e2d6227ceba6965ad4）\n  工程依据：直接来源组成显示link1和aggregate_lateral均显著增长且峰值接近；local_process_series显示总入流与两来源同步上升，说明来水时间集中与冒溢增长相联系。；相关解释：单一路径也足以形成集中来水；此处两路径共同增长而非仅凭存在多来源判定叠加。；适用范围：节点10事件10:E001的起溢至峰值段。\n- [D1:C4] [process_explanation] 节点10自01:29前后维持最大深度约0.914 m，head约304.19 m；其唯一可见出口link6流量由148.9 L/s升至164.048 L/s后在大部分事件内维持该值，而总入流最高709.9 L/s、冒溢最高545.7 L/s。link6为D=0.3048 m，较进口link1的D=0.4572 m缩径，同管底、管顶低0.1524 m，坡度1.0%低于link1的1.25%。（FP_bd39996c19e0d97f7119, FP_4a998619e4a5e0e06202, FP_b8d98cadddd0a1ea92ab）\n  工程依据：节点水位达到模型最大深度、入流显著高于恒定出口流量，且出口管径和断面明显小于进口；支持link6形成局部排出约束，而非仅由来水峰值解释持续冒溢。；相关解释：link6出口高于管底但低于管顶，存在部分出口充水；其影响尚需下游节点21外侧过程区分，故M3为候选而非已确认。；适用范围：节点10事件10:E001起溢至结束。\n- [D1:C5] [fact] 节点15第一次冒溢15:E001发生于01:33:45至01:34:05，峰值41.694 L/s，体积0.453 m3，持续约20 s。（FP_950c6dde96a7ad2064bb）\n  工程依据：event_context由保存冒溢序列识别，事件短但未被左右截断。；相关解释：短事件可能包含动态充水过程，不能仅凭短历时判断根因。；适用范围：节点15事件15:E001全过程。\n- [D1:C6] [process_explanation] 01:33:40至01:34:05，节点15总入流约342.7-357.6 L/s，其中aggregate_lateral约246.6-256.8 L/s、占事件直接入流体积71.9%，link12约96.1-101.0 L/s、占28.1%；01:33:45节点深度由0.443 m升至0.507 m并起溢，01:33:50达到最大深度0.914 m。随后link13出流由约296 L/s升至约354.9 L/s，冒溢于01:34:05停止。（FP_8f46ba18d3c216e35ef0, FP_7e9a97d5fc1f8f252620, FP_9571488b24d14bbe6b61）\n  工程依据：直接侧向来水占主导并快速推高节点水位；出流随后上升并与入流接近，说明短事件与快速来水集中及节点/管道瞬时充水有关。；相关解释：局部link13坡度由0.75%降至0.5%且接近满管，可能参与限制；但流量仍快速上升，M2只能列为候选。；适用范围：节点15事件15:E001的20 s过程。\n- [D1:C7] [clue] 15:E001的link13与link12同径D=0.4572 m、同管底同管顶，但下游坡度由0.75%降至0.5%；起溢时link13深度约0.412-0.416 m，约为管径的90%，流量296-355 L/s，未形成像link6那样的长时恒定出流。（FP_9571488b24d14bbe6b61, FP_8f46ba18d3c216e35ef0）\n  工程依据：接近满管和下坡变缓是排查局部输水限制的具体线索，但事件中出流仍快速上升，尚不足以确认其形成控制。；相关解释：此次短冒溢也可能主要由瞬时来水超过动态充水能力引起；需更完整满度过程区分。；适用范围：节点15事件15:E001及其直接连接link12、link13。\n- [D1:C8] [fact] 节点15在15:E001结束后25 s，于01:34:30再次起溢为15:E002，至01:51:20结束，持续约16.8 min，峰值311.188 L/s，体积152.178 m3。（FP_ca9f969e731c3073d26a）\n  工程依据：event_context给出第二次事件起止、峰值和体积，并记录前一冒溢未证明已完全排空。；相关解释：两次事件处于同一连续降雨上升和峰段，重复性不等于独立场次。；适用范围：节点15事件15:E002全过程。\n- [D1:C9] [process_explanation] 01:34:30至01:40:05，节点15总入流由370.6 L/s增至669.7 L/s；aggregate_lateral由265.4 L/s增至487.9 L/s，link12由105.2 L/s增至181.8 L/s，直接入流体积占比分别约73%和27%，峰值与01:35-01:40雨峰一致。节点15直接连接子汇水区5，但aggregate_lateral未逐区拆分。（FP_acd5cd698cec9070a254, FP_b587461f2be1241b742d, FP_af612a132a9c7cfccc1d, FP_ca9f969e731c3073d26a）\n  工程依据：总入流和主要直接来源同步升至峰值，冒溢峰值也出现在同一时刻，支持来水时间集中对本次持续冒溢的作用。；相关解释：link12与aggregate_lateral共同增长，但体积上aggregate_lateral占优；不存在仅凭多来源自动判定叠加。；适用范围：节点15事件15:E002起溢至峰值段。\n- [D1:C10] [process_explanation] 15:E002期间节点15维持在最大深度约0.914 m；出口link13深度在峰值附近约0.457 m、接近D=0.4572 m，流量主要在358-378 L/s范围形成平台；同期节点15总入流峰值669.7 L/s、冒溢311.2 L/s。link13与进口link12同径同管底，但坡度由0.75%降至0.5%。（FP_acd5cd698cec9070a254, FP_af612a132a9c7cfccc1d, FP_b587461f2be1241b742d）\n  工程依据：节点满深、出口近满管且流量形成约360-378 L/s的排出平台，而总入流显著更高，支持link13局部输送能力参与持续冒溢。；相关解释：link13出口在峰值时管顶被轻微淹没；下游节点16/ link15是否共同限制仍需区分，故M3保持候选。；适用范围：节点15事件15:E002峰值及持续段。\n- [D1:C11] [clue] 01:40:05峰值时link13出口head-invert约0.4777 m、较出口管顶高约0.0205 m，节点16 head约300.706 m；节点15入口侧head约301.752 m，流量仍正向link13，无反向流。（FP_acd5cd698cec9070a254, FP_af612a132a9c7cfccc1d）\n  工程依据：出口管顶轻微淹没说明不能把出口视为自由出流；但下游节点16水头明显低于节点15入口，故只能列为下游影响候选，需node16外侧link15过程判断是否实际限制。；相关解释：局部link13近满管已能解释大部分排出受限；下游轻微淹没可能只是结果或次要共同作用。；适用范围：节点15事件15:E002峰值附近。\n\n## 待补证事项\n\n- 10:E001 / 21 / local_process_series：当前疑点为节点10的link6出口高于管底但低于管顶且出流长期约164 L/s，node21本身水头不高但外侧link5/link7未核查。提取node21及其直接连接过程可判断下游走廊是否维持出口部分充水或限制排出；若link7排出受限且node21水位与link6钉扎同期，则增强M3候选，若link7自由排出且水头仍低，则收窄M3并强化M2单独解释。（从本次保存结果提取／计算，返回可追溯证据）\n- 15:E002 / 16 / local_process_series：当前疑点为15:E002峰值时link13出口管顶轻微淹没，而node16及其外侧link8/link15过程未完整读取。提取node16过程可区分下游水位是否通过link13出口影响node15排水；若link15排出受限并伴随node16水位抬升，则增强M3候选，若node16/ link15排出通畅且水头远低于node15入口，则保留局部M2解释并收窄M3。（从本次保存结果提取／计算，返回可追溯证据）\n- 15:E001 / 13 / fullness_time_series：当前疑点为15:E001仅20 s，link13起溢时约90%满管但流量仍快速上升，M2仅为候选。提取该时段满度过程可判断link13是否在起溢前后形成满管/近满管平台；若满度接近1并伴随流量平台，则可升级局部输水约束证据，若满度仍低于满管且流量自由上升，则维持以M1和瞬时充水为主的判断。（从本次保存结果提取／计算，返回可追溯证据）\n\n本轮可回答范围与限制：已按事件目录完成三个冒溢事件的初步诊断、Q1-Q4回答、结构核查和机制分级。节点10与15:E002的M1+M2过程已有同事件过程证据支持；仍影响判断的关键问题是节点10下游node21外侧及节点15下游node16外侧是否形成实际顶托，以及15:E001是否达到持续局部能力约束，已提出针对性补证。保存数据不能证明地表水回流，surface_association为not_built，故不对地表回流作因果推断。",
+  "report_revision": 1,
+  "report_file": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1\\runs\\pilot4_20261116_adff44_A05_40mm\\diagnosis_tasks\\3e556d0278fa4cba806b39a74903cced\\preliminary_report_r1.md"
+}

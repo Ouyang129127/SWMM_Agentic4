@@ -164,8 +164,10 @@ def _draw(materials,d,output):
         ax.legend(loc='upper center',bbox_to_anchor=(.5,1.25),ncol=3,frameon=False,fontsize=8)
         axd.plot(x,[s['depth_m'] for s in process],color=TEAL,lw=1.8,marker='o',ms=3)
         axd.set_ylabel('节点水深（米）');axd.set_ylim(bottom=0);style(axd)
+        tick_indices=np.unique(np.linspace(0,len(st)-1,min(4,len(st))).round().astype(int))
+        clock_format='%m-%d %H:%M:%S' if st[0].date()!=st[-1].date() else '%H:%M:%S'
         for a in (ax,axd):
-            a.set_xticks(x,[t.strftime('%H:%M') for t in st],rotation=30,fontsize=8)
+            a.set_xticks(x[tick_indices],[st[i].strftime(clock_format) for i in tick_indices],rotation=25,fontsize=8)
             a.set_xlabel('模拟时间')
             a.axvspan((pd.Timestamp(event['event']['start'])-st[0]).total_seconds()/60,
                          (pd.Timestamp(event['event']['end'])-st[0]).total_seconds()/60,color=TEAL,alpha=.09)

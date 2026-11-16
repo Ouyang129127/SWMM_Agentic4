@@ -1,0 +1,24 @@
+{
+  "implementation": "M6 antecedent hydraulic window in SWMM-Agentic4",
+  "context_version": "rainfall_history_structure_context_v3",
+  "history_version": "antecedent_hydraulics_v1",
+  "files": {
+    "workflow_agents/diagnosis/prompts.py": "9e493535a2c23b58421560be77526c98b98fe5ecce3c2892332cdcb1fdd772e9",
+    "workflow_agents/diagnosis/contract.py": "d34bac82037f077a517a611e546c397159f4abe38b7809d9f67c8c72802d8073",
+    "workflow_agents/diagnosis/series_transport.py": "50b34dcd1504f41141473bb5eaffa4e930f3f3c41baea4937eab560da7453628",
+    "workflow_agents/evidence/diagnostic_context.py": "7a2b0bb4640c53ef004b88ed68f5b3bd5ba6fbe4b6196a81f54c699c0e218b02",
+    "workflow_agents/evidence/antecedent_context.py": "88021facde3e0503da176040a4f2225d4cea0fd59c7e22417567c1af4e215c0a",
+    "workflow_agents/evidence/evidence_selection.py": "162ffb9c43c16bf318f7c3fa9f881c57803fcc7a586c35c3dd666a54208d8dfa",
+    "workflow_agents/orchestration/tasks.py": "7d857deb37e4e1f728e514833ec611f13499577019b3b7f04f18b9a665d91c78",
+    "tests/test_antecedent_context.py": "611ebb1a2cbb581db80bda3c2b5fb38012c92068b4308f26f53f326cbd453401"
+  },
+  "tests_run": 274,
+  "tests_passed": 274,
+  "new_tests": 9,
+  "new_model_calls": 0,
+  "new_simulations": 0,
+  "real_case_preflight": "real_case_preflight.json",
+  "scope": "Two prior EPA multipulse cases, input coverage and data roundtrip only; no claim of new model diagnostic accuracy.",
+  "full_test_command": "python -m unittest discover -s tests -v",
+  "note": "An earlier quiet run stalled and was stopped; the complete diagnostic run passed all 274 tests without production changes."
+}

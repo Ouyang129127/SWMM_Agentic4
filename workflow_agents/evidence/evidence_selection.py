@@ -118,6 +118,10 @@ def select_initial_evidence(rows, scope, model_name, run_id):
             related_links.update(row['value'].get('links', {}))
 
     selected = list(event_rows)
+    # A node's pre-event history is sent once, shared across its event records.
+    history_targets = {r['object_id'] for r in event_rows if r['metric_name']=='event_context'}
+    selected.extend(r for r in rows if not r.get('event_id') and r.get('metric_name')=='antecedent_hydraulic_context'
+                    and r['object_type']=='node' and r['object_id'] in history_targets)
     derived = []
     if node:
         for row in rows:

@@ -1,0 +1,42 @@
+{
+  "purpose": "Only native output reporting changes from 5s to60s; solver settings unchanged. Model metadata renamed to distinguish copy.",
+  "changes": [
+    {
+      "file": "simulation_timing.json",
+      "before_sha256": "066f3c30efc032d5f936d752e5f6ef2e6e9f6be5933456492fc2e364efd5f8be",
+      "after_sha256": "eb5328cc7d063131721ba818867e0bda151753e4e7924d43a46d69f45b3344ed",
+      "backup": "E:\\SWMM_Agentic\\SWMM-Agentic4\\outputs\\example1tokens_1min_pilot_20261116\\model_before\\simulation_timing.json"
+    },
+    {
+      "file": "model.yaml",
+      "before_sha256": "0ce3981d4e565bc54813f668c430c6c3df20b76b0cbb5d495e02f03d6ab65c07",
+      "after_sha256": "9da127a5f742930505c31d89c179dad5d6745dc374f093c606e6a69fd7a65545",
+      "backup": "E:\\SWMM_Agentic\\SWMM-Agentic4\\outputs\\example1tokens_1min_pilot_20261116\\model_before\\model.yaml"
+    },
+    {
+      "file": "Example1.inp",
+      "before_sha256": "28d8fe5b4df0896c8e68e60a62183697a8163cac8fa9c81153aa8637ef9cf62c",
+      "after_sha256": "de1974e366f775cda9990b56a22cd92ea460cbf0477546d1d23d86c21decdc1e",
+      "backup": "E:\\SWMM_Agentic\\SWMM-Agentic4\\outputs\\example1tokens_1min_pilot_20261116\\model_before\\Example1.inp"
+    },
+    {
+      "file": "swmm/scenarios/baseline/model.inp",
+      "before_sha256": "41044ecc5fafcfdcc7b196097e25b8f7a061ca45c3280aee366a63b56e30983a",
+      "after_sha256": "a75838cd0888f85a1f021601b0f05c80ea6cf1e10d56706c61d4ece4d94b98cf",
+      "backup": "E:\\SWMM_Agentic\\SWMM-Agentic4\\outputs\\example1tokens_1min_pilot_20261116\\model_before\\swmm\\scenarios\\baseline\\model.inp"
+    },
+    {
+      "file": "swmm/scenarios/dynamic_wave/model.inp",
+      "before_sha256": "28d8fe5b4df0896c8e68e60a62183697a8163cac8fa9c81153aa8637ef9cf62c",
+      "after_sha256": "de1974e366f775cda9990b56a22cd92ea460cbf0477546d1d23d86c21decdc1e",
+      "backup": "E:\\SWMM_Agentic\\SWMM-Agentic4\\outputs\\example1tokens_1min_pilot_20261116\\model_before\\swmm\\scenarios\\dynamic_wave\\model.inp"
+    }
+  ],
+  "original_example1_hashes": {
+    "simulation_timing.json": "066f3c30efc032d5f936d752e5f6ef2e6e9f6be5933456492fc2e364efd5f8be",
+    "model.yaml": "0ce3981d4e565bc54813f668c430c6c3df20b76b0cbb5d495e02f03d6ab65c07",
+    "Example1.inp": "28d8fe5b4df0896c8e68e60a62183697a8163cac8fa9c81153aa8637ef9cf62c",
+    "swmm/scenarios/baseline/model.inp": "41044ecc5fafcfdcc7b196097e25b8f7a061ca45c3280aee366a63b56e30983a",
+    "swmm/scenarios/dynamic_wave/model.inp": "28d8fe5b4df0896c8e68e60a62183697a8163cac8fa9c81153aa8637ef9cf62c"
+  }
+}

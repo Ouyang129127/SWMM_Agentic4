@@ -1,0 +1,33 @@
+name: Example1
+type: swmm_2d
+description: Circular-pipe Example1 with a disclosed synthetic CA2D layout and complete CFS-to-LPS conversion.
+default_scenario: baseline
+recommended_diagnostic_scenario: dynamic_wave
+paths:
+  raw: raw
+  static: static
+  swmm: swmm
+  mapping: mapping
+  events: events
+  runs: runs
+scenarios:
+  baseline:
+    swmm_inp: swmm/scenarios/baseline/model.inp
+    routing: DYNWAVE
+  dynamic_wave:
+    swmm_inp: swmm/scenarios/dynamic_wave/model.inp
+    routing: DYNWAVE
+rain_gage_name: RG1
+ca2d:
+  static_model: static
+  node_to_cell_mapping: static/node_to_cell_mapping.csv
+  source_config: static/config.json
+  default_dt_seconds: 10.0
+  default_boundary_interval_minutes: 5.0
+  default_save_interval_minutes: 5.0
+notes:
+  - The original source is archived in raw/Example1.inp. Source coordinates have no spatial units.
+  - Synthetic terrain, roads and buildings are assumptions for workflow validation.
+  - Both TSS and Lead definitions retained with dimensional buildup/washoff conversion.
+  - One-way overflow coupling, no direct CA2D rainfall or return to the pipe network.
+  - Both baseline and dynamic_wave use dynamic wave routing (DYNWAVE); baseline remains the default scenario.

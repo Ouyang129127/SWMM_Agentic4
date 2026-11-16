@@ -1,0 +1,26 @@
+[
+  {
+    "sequence": 1,
+    "started_at": "2026-11-16T09:59:49+08:00",
+    "evidence_view_format": "shallow_shared_v1",
+    "visible_records": 23,
+    "shared_definitions": 0,
+    "characters_raw": 88925,
+    "characters_tables_only": 75247,
+    "characters_actual": 73985,
+    "status": "response_parsed",
+    "completed_at": "2026-11-16T10:02:00+08:00"
+  },
+  {
+    "sequence": 2,
+    "started_at": "2026-11-16T10:02:02+08:00",
+    "evidence_view_format": "shallow_shared_v1",
+    "visible_records": 24,
+    "shared_definitions": 0,
+    "characters_raw": 117832,
+    "characters_tables_only": 95728,
+    "characters_actual": 94386,
+    "status": "response_parsed",
+    "completed_at": "2026-11-16T10:03:06+08:00"
+  }
+]

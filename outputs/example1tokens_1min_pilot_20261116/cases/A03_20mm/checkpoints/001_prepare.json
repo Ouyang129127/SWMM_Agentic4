@@ -1,0 +1,266 @@
+{
+  "task_id": "08399e8966d04ef8b2cf346dcaf76409",
+  "model_name": "Example1Tokens",
+  "run_id": "pilot4_1min_20261116_cbb20d_A03_20mm",
+  "task_kind": "initial_overflow",
+  "diagnosis_contract_version": "joint_mechanisms_v2",
+  "context_derivation": {
+    "version": "rainfall_history_structure_context_v3",
+    "rainfall_evidence_id": "CTX_RAINFALL",
+    "source_file": "swmm/rainfall_for_simulation.txt",
+    "antecedent_hydraulics": {
+      "version": "antecedent_hydraulics_v1",
+      "background_interval_seconds": 300,
+      "selected_events": 1,
+      "history_rows": 1,
+      "source_hashes": {
+        "swmm\\model_with_event.inp": "1cd05ddd09f4219c853abca61f03d0e0a57899e8e0d94f6e3419d9093390581d",
+        "swmm\\model.out": "86de49b4903384bc94ff961f9ddca5501877a6261de81f38459324ffcb3f6bb6"
+      }
+    },
+    "source_sha256": null,
+    "event_facts_preserved": true,
+    "structure_audit_version": "event_structure_audit_v1"
+  },
+  "task_context": {
+    "scope": "global",
+    "node_id": null,
+    "event_id": null,
+    "task_kind": "initial_overflow",
+    "original_question": null,
+    "objective": "以冒溢为中心，给出全场概览，对每个冒溢节点／事件分析发生过程、可能机制和证据缺口；先交付初步诊断，随后再补证。"
+  },
+  "state": "ready_for_diagnosis",
+  "revision": 0,
+  "snapshot_hash": "ab02add62c7ebc4c233bcac3bfc60431c162b7b0259d96ad3d9d1438b83e9887",
+  "source_hash": "b635c524503fdfaaf8de7ded7c76602b2684a0450f76e34747ae48b2967aa521",
+  "evidence_package_version": "1.2",
+  "selection_version": "task_evidence_v3",
+  "evidence_selection": {
+    "policy": "task_evidence_v3",
+    "selection_basis": "task_scope_and_event_hydraulic_context",
+    "scope": "global",
+    "event_coverage": [
+      {
+        "event_id": "10:E001",
+        "missing_groups": []
+      }
+    ],
+    "related_nodes": [
+      "10",
+      "21",
+      "9"
+    ],
+    "related_links": [
+      "1",
+      "6"
+    ],
+    "background_scope": "Whole-run statistics remain background; do not substitute them for event values.",
+    "limitations": [
+      "Local packages cover only their saved process window; missing values remain unknown.",
+      "Initial scope uses one upstream segment and downstream to a retained boundary, without side-branch expansion; it does not guarantee all causes are covered.",
+      "Global statistics are not individual-object or causal diagnosis."
+    ]
+  },
+  "visible_ids": [
+    "CTX_RAINFALL",
+    "FP_3176c89973b34f2bfbef",
+    "FP_4a998619e4a5e0e06202",
+    "FP_76e2d6227ceba6965ad4",
+    "FP_7ae0911a87c1d5467b28",
+    "FP_b8d98cadddd0a1ea92ab",
+    "FP_bd39996c19e0d97f7119",
+    "HIST_544d77187d5f8ffafcd220b4",
+    "SUM_113c3e8509bd837ab7639a72",
+    "SUM_36b64b164906118124b56a4b",
+    "SUM_4116bac3ec5e548a0189439d",
+    "SUM_577cd3f621f0d915b97582a9",
+    "SUM_58218bed1792cb38ce221458",
+    "SUM_603182e8598fe3d60eaf8897",
+    "SUM_60404669a24624632187d7bb",
+    "SUM_766135a4fcaf938312cb33c6",
+    "SUM_9b01fec8794e2fd251027e68",
+    "SUM_a8eaa0b05afefac0343301f9",
+    "SUM_c34ae9ecf5ee44e5319c489f",
+    "SUM_c54d0c759660aba1c0100045",
+    "SUM_d0e8e1432a6c5c18c6843687",
+    "SUM_f0b4ed2953e279c8571f4234",
+    "SUM_EVT_1fe00f44ead50f69eca050ed"
+  ],
+  "observations": [
+    {
+      "request": "task_scope_selection",
+      "selected_count": 23,
+      "snapshot_count": 28568,
+      "selection_policy": "task_evidence_v3"
+    }
+  ],
+  "evidence_overview": {
+    "event_count": 1,
+    "overflow_node_count": 1,
+    "structure_audit_version": "event_structure_audit_v1",
+    "event_scope_policy": "upstream_one_segment_downstream_confluence_v1",
+    "node_count": 14,
+    "link_count": 13,
+    "storage_node_count": 0,
+    "facility_counts": {
+      "PUMPS": 0,
+      "ORIFICES": 0,
+      "WEIRS": 0,
+      "OUTLETS": 0
+    },
+    "facility_inventory_status": "available",
+    "native_status": {
+      "status": "available",
+      "units": {
+        "head": "m",
+        "flow": "L/s"
+      }
+    },
+    "surface_status": "available",
+    "evidence_count": 28552,
+    "metrics": {
+      "depth_above_section_reference_duration": 13,
+      "direct_source_composition": 1,
+      "event_context": 1,
+      "facilities_and_storage": 1,
+      "flooding_duration": 14,
+      "flow_direction_changes": 13,
+      "fullness_ge_0_8_duration": 13,
+      "fullness_ge_0_95_duration": 13,
+      "local_process_series": 1,
+      "local_structure": 1,
+      "max_depth": 14192,
+      "max_flooding_flow": 14,
+      "max_flow": 13,
+      "max_fullness": 13,
+      "max_link_depth": 13,
+      "max_node_depth": 14,
+      "overflow_event_count": 14,
+      "ponding_duration": 14192,
+      "rainfall_context": 1,
+      "surface_association": 1,
+      "total_flooding_volume": 14
+    },
+    "model_context": {
+      "model_name": "Example1",
+      "method": "all native junction overflow is external to the 1D network; mapping weight=1",
+      "native_inlets_present": false,
+      "native_streets_present": false,
+      "diagnosis_instruction": "Both baseline and dynamic_wave use DYNWAVE (dynamic wave routing). Backwater, pressurized flow and hydraulic flow reversal can be represented within the SWMM network; diagnose their occurrence from the actual hydraulic evidence. CA2D coupling remains one-way, with no surface-water feedback or sewer re-entry.",
+      "surface_interpretation": "CA2D is synthetic one-way overflow spreading; it is not complete distributed rainfall, infiltration or sewer re-entry.",
+      "source_slopes_percent": 0.01,
+      "map_scale_status": "assumed area-informed local scale; not surveyed",
+      "direct_outfall_runoff_catchment": "8",
+      "note": "Catchment 8 drains directly to outfall 18, bypassing the conduit network, as in the original."
+    }
+  },
+  "history": [
+    {
+      "action": "prepare"
+    }
+  ],
+  "numeric_precision": {
+    "policy": "derived_evidence_decimal3_v1",
+    "decimal_places": 3,
+    "small_nonzero": "preserve original precision when abs(value) < 0.001",
+    "parameters_and_thresholds": "unchanged",
+    "calculation_order": "detect events and calculate statistics before rounding",
+    "interpretation": "Rounded evidence values are approximate; use saved sources for recalculation."
+  },
+  "event_manifest": [
+    {
+      "event_id": "10:E001",
+      "node_id": "10",
+      "facts": {
+        "event_id": "10:E001",
+        "node_id": "10",
+        "run_id": "pilot4_1min_20261116_cbb20d_A03_20mm",
+        "model_name": "Example1Tokens",
+        "occurrence": 1,
+        "start": "2024-01-01 01:37:00",
+        "end": "2024-01-01 01:54:00",
+        "last_positive_time": "2024-01-01 01:53:00",
+        "peak_time": "2024-01-01 01:40:00",
+        "peak_flooding_Ls": 148.814,
+        "duration_minutes": 17.0,
+        "estimated_volume_m3": 83.333,
+        "positive_sample_count": 17,
+        "left_censored": false,
+        "right_censored": false,
+        "saved_step_seconds": 60.0,
+        "integration_method": "left_sample_rectangle"
+      },
+      "fact_evidence_id": "FP_76e2d6227ceba6965ad4",
+      "evidence_ids": [
+        "FP_76e2d6227ceba6965ad4",
+        "FP_4a998619e4a5e0e06202",
+        "FP_bd39996c19e0d97f7119",
+        "FP_b8d98cadddd0a1ea92ab",
+        "FP_3176c89973b34f2bfbef",
+        "FP_7ae0911a87c1d5467b28"
+      ]
+    }
+  ],
+  "overflow_overview": {
+    "source_model": "Example1Tokens",
+    "run_id": "pilot4_1min_20261116_cbb20d_A03_20mm",
+    "object_type": "run",
+    "object_id": "pilot4_1min_20261116_cbb20d_A03_20mm",
+    "event_id": "",
+    "metric_name": "overflow_event_overview",
+    "unit": "structured",
+    "value": {
+      "event_count": 1,
+      "overflow_node_count": 1,
+      "overflow_nodes": [
+        "10"
+      ],
+      "identified_event_volume_m3": 83.333,
+      "first_start": "2024-01-01 01:37:00",
+      "last_end": "2024-01-01 01:54:00",
+      "left_censored_events": [],
+      "right_censored_events": [],
+      "status": "events_identified",
+      "interpretation": "Saved-sample event integrals, not a solver water budget or complete causal attribution."
+    },
+    "calculation_method": "validated_saved_event_catalogue_v1",
+    "derivation": {
+      "source": "evidence_snapshot.json",
+      "event_evidence_ids": [
+        "FP_76e2d6227ceba6965ad4"
+      ],
+      "node_metric_evidence_ids": [
+        "STAT_0d7eb51e8ffb0d080a49",
+        "STAT_4af5658a50e3f2ea45aa",
+        "STAT_12934e752cb0c20bf476",
+        "STAT_23db3218d433b40cd672",
+        "STAT_76360741e2c7eed6f851",
+        "STAT_965772f6a896581cb042",
+        "STAT_92fd4d8ce9f960e1b47a",
+        "STAT_04fdef3a4ea688c47a95",
+        "STAT_9337acc8a5229d05e099",
+        "STAT_4069af1d063a2e83f3a1",
+        "STAT_32bab2ea85cd4c76b0d5",
+        "STAT_926849534bb20faa9928",
+        "STAT_bd2626c5e250f9e07eb0",
+        "STAT_d6d1052d1e3684578a95",
+        "STAT_f4d72fee64743ee93d52",
+        "STAT_097f55afca380e049fac",
+        "STAT_65d2c09ef4a2ad624bdf",
+        "STAT_6c34ac106f272be31bf2",
+        "STAT_9ee1e1ac240c511e3e62",
+        "STAT_801f4df22e606a9b64d6",
+        "STAT_469afa3720031952ac8f",
+        "STAT_cd8fbcdbcd9dc328bf0a",
+        "STAT_8525382b0ca8e210db66",
+        "STAT_2627ea2b19345849e05f",
+        "STAT_4030e76e84beedf6cd92",
+        "STAT_e2371ec5b00648d240dd",
+        "STAT_de50a208610f6add1c6b",
+        "STAT_94abe4932240fc9d42a7"
+      ]
+    },
+    "evidence_id": "SUM_EVT_1fe00f44ead50f69eca050ed"
+  }
+}

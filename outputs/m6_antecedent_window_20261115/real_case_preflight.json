@@ -1,0 +1,105 @@
+[
+  {
+    "case": "12_Example1_C03",
+    "label": "EPA小型示例管网｜双脉冲，总量20 mm（分量峰时相隔120 min；10+10 mm）",
+    "history_rows": 1,
+    "shared_sample_counts": {
+      "10": {
+        "background_interval_seconds": 300,
+        "native_intervals_seconds": [
+          5.0
+        ],
+        "native_samples_in_window": 2221,
+        "returned_samples": 57,
+        "anchor_policy": "actual samples on both sides of rain/event boundaries, no interpolation"
+      }
+    },
+    "coverage": {
+      "10": {
+        "start": "2024-01-01 00:00:05",
+        "end": "2024-01-01 03:05:05"
+      }
+    },
+    "rainfall_points": 45,
+    "total_prompt_characters": 153055,
+    "history_characters": 12394,
+    "source_package_unchanged": true,
+    "derivation": {
+      "version": "rainfall_history_structure_context_v3",
+      "rainfall_evidence_id": "CTX_RAINFALL_TIMELINE",
+      "source_file": "swmm/rainfall_for_simulation.txt",
+      "antecedent_hydraulics": {
+        "version": "antecedent_hydraulics_v1",
+        "background_interval_seconds": 300,
+        "selected_events": 2,
+        "history_rows": 1,
+        "source_hashes": {
+          "swmm\\model_with_event.inp": "a19f94da519121ef02bee5351316b08698914fc1e3fddb3da1731eb1796727b5",
+          "swmm\\model.out": "36e64656c8da1bb2eae05163caed7ae3a9e708795ac1efa504c2ffe666c8f307"
+        }
+      },
+      "source_sha256": "542db4e63d6b67237dd2a994b2d175532edc74c78bb352eabb331fad66eeab28",
+      "event_facts_preserved": true,
+      "structure_audit_version": "event_structure_audit_v1"
+    },
+    "table_roundtrip_equal": true
+  },
+  {
+    "case": "14_Example1_C05",
+    "label": "EPA小型示例管网｜双脉冲，总量20 mm（分量峰时相隔60 min；15+5 mm）",
+    "history_rows": 2,
+    "shared_sample_counts": {
+      "10": {
+        "background_interval_seconds": 300,
+        "native_intervals_seconds": [
+          5.0
+        ],
+        "native_samples_in_window": 764,
+        "returned_samples": 19,
+        "anchor_policy": "actual samples on both sides of rain/event boundaries, no interpolation"
+      },
+      "15": {
+        "background_interval_seconds": 300,
+        "native_intervals_seconds": [
+          5.0
+        ],
+        "native_samples_in_window": 783,
+        "returned_samples": 22,
+        "anchor_policy": "actual samples on both sides of rain/event boundaries, no interpolation"
+      }
+    },
+    "coverage": {
+      "10": {
+        "start": "2024-01-01 00:00:05",
+        "end": "2024-01-01 01:03:40"
+      },
+      "15": {
+        "start": "2024-01-01 00:00:05",
+        "end": "2024-01-01 01:05:15"
+      }
+    },
+    "rainfall_points": 33,
+    "total_prompt_characters": 159779,
+    "history_characters": 12696,
+    "source_package_unchanged": true,
+    "derivation": {
+      "version": "rainfall_history_structure_context_v3",
+      "rainfall_evidence_id": "CTX_RAINFALL_TIMELINE",
+      "source_file": "swmm/rainfall_for_simulation.txt",
+      "antecedent_hydraulics": {
+        "version": "antecedent_hydraulics_v1",
+        "background_interval_seconds": 300,
+        "selected_events": 2,
+        "history_rows": 2,
+        "source_hashes": {
+          "swmm\\model_with_event.inp": "dfdf13191c5b7e8c027aba22b93a19af757d2bc9b3dd3ffffc5a49c76cc8e5c6",
+          "swmm\\model.out": "e59964b38d14efa74e14a4695eaf9953e1f6a57c4624fd6a651af9060906557a"
+        }
+      },
+      "source_sha256": "bacb8b5fad096a80aa448295ec1dc9be5ca84d845c972f4783d3e30680083620",
+      "event_facts_preserved": true,
+      "structure_audit_version": "event_structure_audit_v1"
+    },
+    "table_roundtrip_equal": true
+  }
+]

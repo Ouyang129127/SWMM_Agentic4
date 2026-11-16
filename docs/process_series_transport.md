@@ -2,7 +2,11 @@
 
 发送给 DiagnosisAgent 前，将同构的过程采样记录转换成公共表头和数据行。此转换只处理每个采样点重复的数据结构，不合并跨事件结构、不删除公共元信息、不改变跨轮上下文策略。
 
+随后可以执行第二类[请求内浅层静态共享](shallow_shared_transport.md)，与本页的过程表格化分步处理；事件过程不参与静态共享。
+
 适用指标：`local_process_series`、`fullness_time_series`、`max_fullness`、`storage_volume_process`、`ponding_depth_time_series` 的 `value.series`。首轮、补证后和修订时均经过同一个组包入口。
+
+M6的`antecedent_hydraulic_context.value.series`也使用同一传输格式。该背景记录在构建时明确按300秒及关键边界选取原生样本；表格转换再完整保留背景记录的全部样本。采样策略与无损格式转换是两个步骤，详见[M6前期视窗](m6_antecedent_window.md)。
 
 ```json
 {

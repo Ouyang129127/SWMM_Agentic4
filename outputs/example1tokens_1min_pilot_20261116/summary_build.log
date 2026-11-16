@@ -1,0 +1,44 @@
+[
+  {
+    "rain_mm": 14.0,
+    "status": "completed",
+    "phase": "finished",
+    "revision": 2,
+    "usage": {
+      "diagnosis_attempts": 2,
+      "diagnosis_completed": 2,
+      "diagnosis_failed": 0,
+      "prompt_tokens": 67950,
+      "completion_tokens": 33310
+    },
+    "html": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A02_14mm\\diagnosis_tasks\\ba9aedeb16be436fa13e7ca4d6e93b3e\\display_reports\\r2\\20261116_100306_c6353816\\模拟诊断报告.html"
+  },
+  {
+    "rain_mm": 20.0,
+    "status": "completed",
+    "phase": "finished",
+    "revision": 2,
+    "usage": {
+      "diagnosis_attempts": 2,
+      "diagnosis_completed": 2,
+      "diagnosis_failed": 0,
+      "prompt_tokens": 72408,
+      "completion_tokens": 34304
+    },
+    "html": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A03_20mm\\diagnosis_tasks\\08399e8966d04ef8b2cf346dcaf76409\\display_reports\\r2\\20261116_100316_0bfb7805\\模拟诊断报告.html"
+  },
+  {
+    "rain_mm": 40.0,
+    "status": "completed",
+    "phase": "finished",
+    "revision": 3,
+    "usage": {
+      "diagnosis_attempts": 4,
+      "diagnosis_completed": 3,
+      "diagnosis_failed": 1,
+      "prompt_tokens": 285893,
+      "completion_tokens": 92779
+    },
+    "html": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A05_40mm\\diagnosis_tasks\\0fd441778f1a4d67999204adcb9fbdc6\\display_reports\\r3\\20261116_100749_f0d29f2a\\模拟诊断报告.html"
+  }
+]

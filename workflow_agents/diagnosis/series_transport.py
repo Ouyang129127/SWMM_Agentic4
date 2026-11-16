@@ -11,6 +11,7 @@ import json
 
 TABLE_FORMAT = 'path_table_v1'
 PROCESS_METRICS = frozenset({
+    'antecedent_hydraulic_context',
     'local_process_series', 'fullness_time_series', 'max_fullness',
     'storage_volume_process', 'ponding_depth_time_series',
 })

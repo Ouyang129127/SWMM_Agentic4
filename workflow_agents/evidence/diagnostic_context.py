@@ -7,10 +7,10 @@ from workflow_agents.evidence.rainfall_context import build_rainfall_context, ev
 from workflow_agents.evidence.event_packages import parse_run_input
 from workflow_agents.evidence.structure_audit import AUDIT_VERSION, build_structure_audit, event_interface_summary
 
-VERSION = 'rainfall_history_structure_context_v2'
+VERSION = 'rainfall_history_structure_context_v3'
 
 
-def prepare_context_rows(root, package, manifest):
+def prepare_context_rows(root, package, manifest, history_scope=None):
     rows = copy.deepcopy(package['evidence_rows'])
     original_rain = next((r for r in rows if r.get('metric_name')=='rainfall_context'), None)
     if original_rain and original_rain['value'].get('timeline_status')=='available':
@@ -65,5 +65,8 @@ def prepare_context_rows(root, package, manifest):
                     'reason':'Missing saved input or declared topology scope; not treated as absence of problems.'}]
         row['value']['structure_audit']={**audits[target],
             'event_interfaces':event_interface_summary(audits[target],processes.get(row['event_id'],[]),facts[row['event_id']])}
+    from workflow_agents.evidence.antecedent_context import add_antecedent_context
+    history = add_antecedent_context(root,package,rows,manifest,rain,history_scope)
     return rows, {'version':VERSION,'rainfall_evidence_id':rain_id,'source_file':source,
+                  'antecedent_hydraulics':history,
                   'source_sha256':source_sha,'event_facts_preserved':True,'structure_audit_version':AUDIT_VERSION}

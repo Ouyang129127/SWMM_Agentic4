@@ -1,0 +1,1383 @@
+{
+  "kind": "real_simulation_and_llm_smoke_pilot_not_controlled_quality_comparison",
+  "plan": {
+    "created_at": "2026-11-16T09:59:16+08:00",
+    "project": "E:\\SWMM_Agentic\\SWMM-Agentic4",
+    "model_name": "Example1Tokens",
+    "scenario_name": "dynamic_wave",
+    "simulation_end_time": "2024-01-01 07:00:00",
+    "max_supplement_rounds": 2,
+    "max_diagnosis_attempts_per_case": 8,
+    "cases": [
+      {
+        "event_file": "A02_14mm.txt",
+        "rainfall_file": "events/exp15/A02_14mm.txt",
+        "total_mm": 14.0,
+        "peak_mm_h": 25.6781,
+        "run_id": "pilot4_1min_20261116_cbb20d_A02_14mm",
+        "event_sha256": "bcaae33000bb51722a990cf9bcbbb1b0c3f6488273bce41101f07fca3bcd7e3e"
+      },
+      {
+        "event_file": "A03_20mm.txt",
+        "rainfall_file": "events/exp15/A03_20mm.txt",
+        "total_mm": 20.0,
+        "peak_mm_h": 36.683,
+        "run_id": "pilot4_1min_20261116_cbb20d_A03_20mm",
+        "event_sha256": "bfb2576d39dc39a92c276a2ca0c5175c85d02ff3fb0a43019a6bcaef06a98369"
+      },
+      {
+        "event_file": "A05_40mm.txt",
+        "rainfall_file": "events/exp15/A05_40mm.txt",
+        "total_mm": 40.0,
+        "peak_mm_h": 73.366,
+        "run_id": "pilot4_1min_20261116_cbb20d_A05_40mm",
+        "event_sha256": "235df7bedd4c58480682795f1e2374f15dc830842c727d6b67feb2a3f135df09"
+      }
+    ],
+    "purpose": "Real smoke trial of current M6, table and shallow shared-view protocol; not a controlled accuracy comparison.",
+    "source_hashes": {
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\__init__.py": "9f43cb32711df952940c14046903aaa8de755265740dde2717336bb629cd855f",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\common\\environment.py": "47ebb081d2c1086a53583a95a985c8a32a28b1af8ba6372811db21e4132cdb22",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\common\\hashing.py": "77786cf2a56ecc4b78ecc2ea47b5c972a48a688af962c848ac5ab6aa502fed7e",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\common\\json_io.py": "13932c94478363fe9f11d8e679cf65bb09da885f8aa26867691b5ef38cf9eb31",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\common\\llm.py": "8db0748f99dc983b8161af21b4e9f2ba0fc070952ad89f266401bd882e0bca9a",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\common\\messages.py": "36345cea4a6a3340e818ce83be71f18d260d475a87382eb0c6a97aafc3f99442",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\common\\model_files.py": "b5de5fae572c09d715cb7837833bf1a90cf2c420634df99c4e55c06228b339f9",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\common\\paths.py": "ab78c662c2dd2a8ea22d3564cad00d383be1a839d5c4c3f27a8c20c62556b119",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\common\\schemas.py": "25d7604a5d445626f4e48b6110cc4ccb601beec2999dfe8fb9e9a4067c4c5690",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\common\\state.py": "797a81843aeae2a6ae76015337ad18c01bcd5802e1ccdf51528e2861753af23d",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\common\\__init__.py": "07ab27d8412ed9dd6a0cf4516cbf080f52243309bb18c240fd0b7b9295cc4813",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\diagnosis\\agent.py": "63a284d9c4c96948044293ff132f161fd9f1af7de3a9080369048aaa5d01b77f",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\diagnosis\\contract.py": "d34bac82037f077a517a611e546c397159f4abe38b7809d9f67c8c72802d8073",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\diagnosis\\prompts.py": "31e5e8976f1e496be119340399b0b416879b52e115374e66ef0989fd5d071f32",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\diagnosis\\series_transport.py": "50b34dcd1504f41141473bb5eaffa4e930f3f3c41baea4937eab560da7453628",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\diagnosis\\service.py": "ccf4ee2e7c3ae85f2d6ebb910f5a26fb7638810f4514a4f5fd3ebb26d6ba3c7e",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\diagnosis\\shared_transport.py": "56234816f7e84aeab5409a60376b84e3d8f0a27419e92e022c1b8cd401cab52f",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\diagnosis\\structure_contract.py": "6fa3c6b1822891fa05b79aedbd529b03e4d653da2f63072c01b1c449a9b5d1f7",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\diagnosis\\task_scope.py": "8b0713d35089e5ccc147ae80865f17d6e98a4811fe2bcf23ebba29243df4fdd8",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\diagnosis\\__init__.py": "6fda61782d14cff0a3bffbdb783ac155e9f56122248cded16465f6ae14ab88f1",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\evidence\\agent.py": "4ea7bf3c9a6ff8c2c1fdf49dd0e7734b0435a131e2e8955f8722b52d41e66e5f",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\evidence\\antecedent_context.py": "88021facde3e0503da176040a4f2225d4cea0fd59c7e22417567c1af4e215c0a",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\evidence\\diagnostic_context.py": "7a2b0bb4640c53ef004b88ed68f5b3bd5ba6fbe4b6196a81f54c699c0e218b02",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\evidence\\event_packages.py": "a43bc1ee4716c77d6bf3caa23845efe8c8583124f00574e242b3542cfd5cd33f",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\evidence\\evidence_builder.py": "e9a0b1915b220882c886e18e68fcb091c5daecfc6254212f73f6f0bd4033c3ee",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\evidence\\evidence_package.py": "b54fe8aa3d2481697ca99aae4b95aa012ad55ef9e1d7856c102ab819d1f8882e",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\evidence\\evidence_precision.py": "e1c2cbc5291bc55af7f00fd26cbed8d8fe3f9e06056d59c5b37149f0ec7ed4cf",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\evidence\\evidence_selection.py": "162ffb9c43c16bf318f7c3fa9f881c57803fcc7a586c35c3dd666a54208d8dfa",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\evidence\\rainfall_context.py": "cef7f6e84a267171ddfd262ca28352c3e31554f1fd78b006b6b87676f4d6e966",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\evidence\\requests.py": "4b31393dcef41799685c12c955c33da8558fe7746ddf8bf4db47c5447a101d0d",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\evidence\\sampled_events.py": "550bcbf353eee72b0ef0bdc58ab1a3d55165cc596c8fa51c23b3ceb61f399197",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\evidence\\saved_result_evidence.py": "014bf5118750e3652cfdbede501ef7f93726ebdd3f3274fea179e712861f13b6",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\evidence\\structure_audit.py": "0de298b6215899572a1867bb934d704a5234e0d39eb8fb78931ca1adb57e4f95",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\evidence\\supplement.py": "356c0fc644969e069aed01ed50ee528f7cc19d64bda53e807881e8652fd4daf8",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\evidence\\topology_scope.py": "095ff58116cd394d7310d2b3769380a10052bbfefeafcaf9d95493a6645cc620",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\evidence\\__init__.py": "04a63890d5afcc7f9b490f3ff5a6a75c6d652f23ed06d6ce962cf949c5ec2cea",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\interfaces\\cli.py": "cf1da7ff6365a62eac68dbfc3b952d03f8a216ad3b2525d9ca23a6ec8825d87e",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\interfaces\\contracts.py": "eff96deee4b8e66cf885dc42596f348cb0849357b5b1c60a204b95779e95cf8b",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\interfaces\\presentation.py": "66ee58d7241eafc1c8872ce55e2562c9d5e15817085f0bb185a422ade0bc0df2",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\interfaces\\__init__.py": "dc0ad290290e5747a8cd248d336d5b365e9d24d3dee9fec772e1acd70868d0cd",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\orchestration\\agents.py": "6a2ae0403b35dd446ed1f5bec60c6cba83a190e808b64e940cd265658f76ffc0",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\orchestration\\agent_actions.py": "260628c8fa9985ab3e8f2c6c77d97a75b330f9748950997914d5618315f6748d",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\orchestration\\assistant.py": "5dc3af719ab7aabe8054deade32a4d4c85b8ba5c18e675be0152bb0e37214619",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\orchestration\\controller.py": "557d3368a8836ab51a09721792402045caa66ad0b91dac31d8a0ce65484301d7",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\orchestration\\investigation.py": "58033053dafb13150273c2b4595d45a93e47ee2067760c1ae1f45df7fd37acb6",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\orchestration\\investigation_flow.py": "5c8fc47a252e6265a1bfcaf5dd8ec833fe22d7fc3847afa0aab117c08829d6ae",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\orchestration\\prompts.py": "b3e9d80c2022d4c0c51134a0c16141700d5f10fb27f1c62ed4e9068c74b20317",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\orchestration\\run_preparation.py": "66763ff282ba90b12c7685c71e69ce63cd720491d158cc7cb5e50bb6f3b11c17",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\orchestration\\sessions.py": "412ae52a02e3639e7db85668759ade8fb93d4c40bad668535acfc83d3d28099e",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\orchestration\\session_state.py": "69cf7c2371d14b4463cff5a17e125b40a9d3426431997e665830eb1b3e3d209b",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\orchestration\\tasks.py": "7d857deb37e4e1f728e514833ec611f13499577019b3b7f04f18b9a665d91c78",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\orchestration\\__init__.py": "247a2346aeb57652df6746dbc88353d7c1155619db85cd1f994752c24ef24815",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\agent.py": "9ffd9046633b7b503ddbae68204a588a46a1560a6657fe1f5da70d3bd8fcdf03",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\delivery.py": "2e0e7ac41e69a6223572dab995136cfeaba5ca89ac39d17d6de225eda3223355",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\internal_report.py": "8aa1b924a870f9888d24c7c4e3ad76777f10cc550c394ea0cdec04f1f9967aed",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\labels.py": "76310e01266031a1b5612dd7ce568f33acc77b53b78e759bfcfc0c9d2356e5ea",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\materials.py": "3e5b135c121fc32763ea042c355eb8b1d625f6739341ed70d968998016ecfc37",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\narrative.py": "7641eb6c750f34856488f793ddbd88d5aab7496b2b66e1f54e3dafd7bd081ff7",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\object_labels.py": "62a4a2b722b5c1514e5ec65f313696716c33dd57662fe595f82e0b2d625ea45e",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\pipeline.py": "bdf2589c5a1658724bb50f69460dcfdf1b7b0bba6f214c461da8a436668511c5",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\plots.py": "c03ee8fbc429e18218884308c44e42fd2b81da80fcd0eb7fcdf5e3d2cd6efd34",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\rain.py": "24564eb5c52098e081681c451bc1c621498804513b4299e8f5b5261ee4a089a0",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\render.py": "5b411326f3a6cc3488035761ad1643899d13b1a130eef87c39219686a3e5d1a7",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\scene.py": "3afb370cc0ba568b2a7a1e7a3000794170fc7e9c8d09767c589fd75de344e1a8",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\surface.py": "93220f7eeafc2bde808a00a261dd2030e7fd78aa81d91e4e0b14ac4d2f218ec6",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\__init__.py": "558c41869e14aa07e52b56254449ba970eca3fa8898f01e1c28ed2fdb38f46f5",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\scenario\\agent.py": "93e719d366da3e77968ff13d2fce2ed29619c3def27b46245eaec1de2c10fec1",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\scenario\\requests.py": "a9e3ddcd5a7d8493beddba2a63ec1e124ed430f9842d43e9b38338ed212dadad",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\scenario\\validation.py": "8991ed98e5b05ea211c26ec061049c856f9ebd3b30e107682968135672926d29",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\scenario\\__init__.py": "93a6a515aca1eaf62b5c0454d018f552a51792e91e0b79347a7fc724a9b23202",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\simulation\\agent.py": "a53903d3365787cd1f082e2ccc15d776246c1d5f5e5bd9e3b0586e673d0f8766",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\simulation\\ca2d.py": "a2b74bb2101b154ed232aa13a80178fd2ebb1b2ba6e3f4dcf941b2e26151b127",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\simulation\\runner.py": "7c3414974f56a41bc68cc8dca753bfc417272cdfc8d1b247679e0463fb0335cb",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\simulation\\service.py": "fa215f42bf1fab880aeac512e6c704988a930419bbdabbb407a2ea6387e953b1",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\simulation\\surface_rendering.py": "e17dea5cd267912c1ac9294549dea33dc38036447d1f8817c6eaa70fedf7c4b4",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\simulation\\timing.py": "59c136d3b864937cb09fc3e506c13c9b2527f70b45d78362d7010ec207187208",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\simulation\\__init__.py": "03dc1b33d14fcaabea851777a2df6c15d1e30f6e468942b98ce9e5e96fcfd7d4",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\verification\\agent.py": "616fd098faaaa3e4960dc3a838280f8237f57d67f69b5fd6a5ea66ecb465137a",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\verification\\reference_checks.py": "58c789686fc2487a9c1cdf5ec0daa3fa20aa274b52f94145d26385c1af16df86",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\verification\\service.py": "75aedc9130be14ff32add1e72ce150b6aa529dbca8eaee2935a91d0ce912872c",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\verification\\__init__.py": "72e79d393f43d2ce3fb58864bfc3aa71a7a9fceef5e272e5ed795a584916b27a",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\simulation_timing.json": "eb5328cc7d063131721ba818867e0bda151753e4e7924d43a46d69f45b3344ed",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\model.yaml": "9da127a5f742930505c31d89c179dad5d6745dc374f093c606e6a69fd7a65545",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\swmm\\scenarios\\dynamic_wave\\model.inp": "de1974e366f775cda9990b56a22cd92ea460cbf0477546d1d23d86c21decdc1e",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\events\\exp15\\A02_14mm.txt": "bcaae33000bb51722a990cf9bcbbb1b0c3f6488273bce41101f07fca3bcd7e3e",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\events\\exp15\\A03_20mm.txt": "bfb2576d39dc39a92c276a2ca0c5175c85d02ff3fb0a43019a6bcaef06a98369",
+      "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\events\\exp15\\A05_40mm.txt": "235df7bedd4c58480682795f1e2374f15dc830842c727d6b67feb2a3f135df09"
+    }
+  },
+  "cases": [
+    {
+      "case": {
+        "event_file": "A02_14mm.txt",
+        "rainfall_file": "events/exp15/A02_14mm.txt",
+        "total_mm": 14.0,
+        "peak_mm_h": 25.6781,
+        "run_id": "pilot4_1min_20261116_cbb20d_A02_14mm",
+        "event_sha256": "bcaae33000bb51722a990cf9bcbbb1b0c3f6488273bce41101f07fca3bcd7e3e"
+      },
+      "run_root": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A02_14mm",
+      "task_root": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A02_14mm\\diagnosis_tasks\\ba9aedeb16be436fa13e7ca4d6e93b3e",
+      "status": {
+        "case": {
+          "event_file": "A02_14mm.txt",
+          "rainfall_file": "events/exp15/A02_14mm.txt",
+          "total_mm": 14.0,
+          "peak_mm_h": 25.6781,
+          "run_id": "pilot4_1min_20261116_cbb20d_A02_14mm",
+          "event_sha256": "bcaae33000bb51722a990cf9bcbbb1b0c3f6488273bce41101f07fca3bcd7e3e"
+        },
+        "run_root": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A02_14mm",
+        "status": "completed",
+        "phase": "finished",
+        "started_at": "2026-11-16T09:59:16+08:00",
+        "updated_at": "2026-11-16T10:03:06+08:00",
+        "event_count": 1,
+        "overflow_nodes": [
+          "10"
+        ],
+        "overflow_volume_m3": 8.156,
+        "request_number": 2,
+        "diagnosis": {
+          "status": "completed",
+          "task_id": "ba9aedeb16be436fa13e7ca4d6e93b3e",
+          "task_state": "preliminary_delivered",
+          "revision": 2,
+          "current_verified_report": true,
+          "stop_reason": "no_executable_pending_requests",
+          "supplement_rounds": 1,
+          "pending_evidence_requests": false,
+          "report_file": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A02_14mm\\diagnosis_tasks\\ba9aedeb16be436fa13e7ca4d6e93b3e\\preliminary_report_r2.md"
+        },
+        "task_id": "ba9aedeb16be436fa13e7ca4d6e93b3e",
+        "revision": 2,
+        "display_report": {
+          "status": "completed",
+          "version": "report_agent_v1.10_surface_basis_palette",
+          "task_id": "ba9aedeb16be436fa13e7ca4d6e93b3e",
+          "revision": 2,
+          "generated_at": "2026-11-16T10:03:06+08:00",
+          "output_dir": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A02_14mm\\diagnosis_tasks\\ba9aedeb16be436fa13e7ca4d6e93b3e\\display_reports\\r2\\20261116_100306_c6353816",
+          "producer_hashes": {
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\agent.py": "9ffd9046633b7b503ddbae68204a588a46a1560a6657fe1f5da70d3bd8fcdf03",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\delivery.py": "2e0e7ac41e69a6223572dab995136cfeaba5ca89ac39d17d6de225eda3223355",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\internal_report.py": "8aa1b924a870f9888d24c7c4e3ad76777f10cc550c394ea0cdec04f1f9967aed",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\labels.py": "76310e01266031a1b5612dd7ce568f33acc77b53b78e759bfcfc0c9d2356e5ea",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\materials.py": "3e5b135c121fc32763ea042c355eb8b1d625f6739341ed70d968998016ecfc37",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\narrative.py": "7641eb6c750f34856488f793ddbd88d5aab7496b2b66e1f54e3dafd7bd081ff7",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\object_labels.py": "62a4a2b722b5c1514e5ec65f313696716c33dd57662fe595f82e0b2d625ea45e",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\pipeline.py": "bdf2589c5a1658724bb50f69460dcfdf1b7b0bba6f214c461da8a436668511c5",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\plots.py": "c03ee8fbc429e18218884308c44e42fd2b81da80fcd0eb7fcdf5e3d2cd6efd34",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\rain.py": "24564eb5c52098e081681c451bc1c621498804513b4299e8f5b5261ee4a089a0",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\render.py": "5b411326f3a6cc3488035761ad1643899d13b1a130eef87c39219686a3e5d1a7",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\scene.py": "3afb370cc0ba568b2a7a1e7a3000794170fc7e9c8d09767c589fd75de344e1a8",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\surface.py": "93220f7eeafc2bde808a00a261dd2030e7fd78aa81d91e4e0b14ac4d2f218ec6",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\__init__.py": "558c41869e14aa07e52b56254449ba970eca3fa8898f01e1c28ed2fdb38f46f5",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\causes_overview_v1.md": "9f5a468aa707ca01666cc5bb4d4f50948cba53df2d231b3de28dbb116c7dec66",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\event_example_lateral_v1.json": "5810c4b2faf150b36b8dc180cd057bb6a066c2ab1a560b8f06f7ee858819f8c1",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\event_example_outflow_v1.json": "624391eb86b5da9c604597435f7dbd279dd018841ba9f86dff25c94afc90d1b0",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\event_example_P7_v1.json": "9d8b6cd06facd0050c13c88ef17dbf96a848ee84555f523e0d63229c2c34a41a",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\event_example_v1.json": "9127c6b06d81733d8b364484ffd68ae8ed6de54a039abe5cda46a4d159f545ed",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\event_rewrite_v2.md": "cf25c14b93e7e885ced2ed7d34292a228056874af99c61fd36761aa2fd15bc62",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\intro_rewrite_v1.md": "743ccf6a353518006c20ad402d108e556859c54c93c347a3f66e85788fd27521",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\rain_fixed_v1.md": "3c95b99632e43db9e24d461d10fed0ff263b6c0bca7a6b2ec1057831425421fe",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\rain_template_v1.json": "305c1bde691ed85b632b02178353e7e24b88e6713bd5aecb13e1a9851b0cdef1",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\scene_fixed_v1.md": "8183aafbb123c547472b29bc0e841770943615805cd4c1e7395e0b047e96b37f",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\scene_template_v1.json": "98c6059fdc95e4829739cc471b3406b8718785f360a81fbad784973b761ff89a",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\surface_basis_v1.json": "3e8b20b7b7e681fd4788106c887b04a2b9709f4dd17639b459b3ac82224ac224",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\surface_basis_v1.md": "d6f2471451d62cc0596a4d6b413368b31320e71a03fc418bf0a9cf71e5b84cd8",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\common\\llm.py": "8db0748f99dc983b8161af21b4e9f2ba0fc070952ad89f266401bd882e0bca9a"
+          },
+          "html_file": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A02_14mm\\diagnosis_tasks\\ba9aedeb16be436fa13e7ca4d6e93b3e\\display_reports\\r2\\20261116_100306_c6353816\\模拟诊断报告.html",
+          "html_sha256": "bd8dc56fac10d69fae383b5c0968c0891b93e1d8b5b608daf860cf809a8337b0",
+          "materials_file": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A02_14mm\\diagnosis_tasks\\ba9aedeb16be436fa13e7ca4d6e93b3e\\display_reports\\r2\\20261116_100306_c6353816\\report_materials.json",
+          "quality_checks": {
+            "status": "passed",
+            "sections": 6,
+            "events": 1,
+            "embedded_images": 7,
+            "all_images_verified": true,
+            "numeric_policy": "supplied_fact_tokens",
+            "causal_policy": "current_diagnosis_statuses",
+            "verification_scope": "structure, source identity and references; not causal certification"
+          },
+          "elapsed_seconds": 98.718
+        },
+        "html_file": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A02_14mm\\diagnosis_tasks\\ba9aedeb16be436fa13e7ca4d6e93b3e\\display_reports\\r2\\20261116_100306_c6353816\\模拟诊断报告.html",
+        "completed_at": "2026-11-16T10:04:45+08:00",
+        "elapsed_seconds": 328.3
+      },
+      "task_state": "preliminary_delivered",
+      "revision": 2,
+      "facts": {
+        "rainfall_total_mm": 14.0,
+        "rainfall_peak_mm_h": 25.6781,
+        "overflow_event_count": 1,
+        "overflow_nodes": [
+          "10"
+        ],
+        "overflow_volume_m3": 8.156,
+        "events": [
+          {
+            "event_id": "10:E001",
+            "node_id": "10",
+            "run_id": "pilot4_1min_20261116_cbb20d_A02_14mm",
+            "model_name": "Example1Tokens",
+            "occurrence": 1,
+            "start": "2024-01-01 01:41:00",
+            "end": "2024-01-01 01:47:00",
+            "last_positive_time": "2024-01-01 01:46:00",
+            "peak_time": "2024-01-01 01:41:00",
+            "peak_flooding_Ls": 36.698,
+            "duration_minutes": 6.0,
+            "estimated_volume_m3": 8.156,
+            "positive_sample_count": 6,
+            "left_censored": false,
+            "right_censored": false,
+            "saved_step_seconds": 60.0,
+            "integration_method": "left_sample_rectangle"
+          }
+        ]
+      },
+      "hydraulic_audit": {
+        "runoff_continuity_error_pct": -0.005,
+        "routing_continuity_error_pct": 0.0,
+        "nonconverging_steps_pct": 0.0,
+        "warnings": [
+          "WARNING 02: maximum depth increased for Node 21",
+          "WARNING 02: maximum depth increased for Node 22"
+        ],
+        "review_status": "recorded_not_independent_quality_acceptance",
+        "simulation_end": "2024-01-01 07:00:00",
+        "source_volume_m3": 8.156274633,
+        "coupling_volume_error_m3": 5.329070518200751e-15
+      },
+      "usage": {
+        "diagnosis_attempts": 2,
+        "diagnosis_completed": 2,
+        "diagnosis_failed": 0,
+        "prompt_tokens": 67950,
+        "completion_tokens": 33310
+      },
+      "model_overview": "本次运行仅识别到1个冒溢事件：节点10的10:E001，发生于2024-01-01 01:41—01:47，峰值冒溢36.698 L/s，估计体积8.156 m3，持续6 min。降雨为00:00—04:00单场14 mm中等降雨，雨峰25.678 mm/h出现在01:35并持续至01:40。节点10直接来水由管段1和aggregate_lateral组成，事件体积占比约50.4%/49.6%，二者在01:40—01:41达到约100 L/s的峰值；出水管段6口径0.3048 m、满断面面积约为进水管段1的44.4%，事件中近满（约97.4%）且流量稳定在约164 L/s，节点10达到最大水深0.914 m并冒溢。补证显示节点21下游管段7约30%满度、正向流约162.6—174.0 L/s，节点22水头更低，未形成下游顶托；设施清单为空，前期为零初态且无独立余水或储水单元。",
+      "event_assessments": [
+        {
+          "event_id": "10:E001",
+          "node_id": "10",
+          "process_explanation": "降雨自00:00持续至04:00，01:35达到25.678 mm/h峰值并于01:40结束平台。节点10直接来水由管段1与aggregate_lateral组成，local_structure显示直接连接目标节点的子汇水区为2；01:40总入流202.744 L/s（管段1约99.981 L/s、lateral 102.763 L/s），01:41总入流200.077 L/s（管段1 100.775、lateral 99.302），事件体积占比约50.4%/49.6%。01:40节点10水深0.416 m、出水管段6流量140.307 L/s；01:41节点水深跃至0.914 m最大值并开始冒溢36.698 L/s，管段6流量163.793 L/s。随后01:42—01:46管段6流量稳定在约164.0 L/s，节点10维持最大水深0.914 m，冒溢流量随入流下降由30.152 L/s降至7.589 L/s；01:47节点水深0.827 m、冒溢停止。管段6为D=0.3048 m出水管，较进水管段1的D=0.4572 m缩小，满断面面积仅为管段1的44.4%，近满并出现流量平台，支持局部排出约束。补证更新：节点21下游管段7在01:41—01:42通过约162.6—174.0 L/s，水深约0.184—0.189 m、depth_reference约0.6096 m（约30%），节点22水头约301.073 m低于节点21的302.243 m，未见下游顶托；管段6出口在节点21处高于管底约0.186 m但低于管顶约0.119 m，仅为部分淹没，故M3按本事件判为不适用。节点10为零初态，前期为同一场降雨上涨段，无独立余水或储水单元，M6不适用。结构核查显示节点10处下游管径和满断面面积减小、管底同高、下游坡度略降，该结构事实与管段6近满流量平台及节点10冒溢过程一致，但缩径本身不单独证明根因。",
+          "evidence_ids": [
+            "FP_76e2d6227ceba6965ad4",
+            "FP_4a998619e4a5e0e06202",
+            "FP_bd39996c19e0d97f7119",
+            "FP_b8d98cadddd0a1ea92ab",
+            "FP_3176c89973b34f2bfbef",
+            "HIST_6a5a27d0582706d96dbe02f8",
+            "CTX_RAINFALL",
+            "SUP_b57caa36e76b822e6504e4cc"
+          ],
+          "mechanism_assessments": [
+            {
+              "mechanism_id": "M1",
+              "status": "supported",
+              "reason": "节点10两路直接来水在01:40—01:41接近同时峰值：管段1约100.0→100.8 L/s、lateral约102.8→99.3 L/s，总入流约202.7→200.1 L/s，事件体积占比约50.4%/49.6%；起溢在01:41紧随该峰值。降雨单峰01:35—01:40与来水峰值、起溢时间衔接，支持来水时间集中。",
+              "evidence_ids": [
+                "CTX_RAINFALL",
+                "FP_76e2d6227ceba6965ad4",
+                "FP_b8d98cadddd0a1ea92ab",
+                "FP_bd39996c19e0d97f7119",
+                "FP_4a998619e4a5e0e06202"
+              ]
+            },
+            {
+              "mechanism_id": "M2",
+              "status": "supported",
+              "reason": "管段6为节点10唯一可见出水管，D=0.3048 m，较管段1的D=0.4572 m缩小，满断面面积仅为44.4%；01:41—01:46管段6水深约0.297 m（约97.4%管径）、流量稳定约164.0 L/s，节点10保持最大水深0.914 m并冒溢，入流超出约164 L/s的部分与冒溢流量下降相符。新增管段7—节点22过程显示下游管段7约30%满度且正向流，未显示更下游排出瓶颈，支持约束定位在管段6。",
+              "evidence_ids": [
+                "FP_4a998619e4a5e0e06202",
+                "FP_bd39996c19e0d97f7119",
+                "SUP_b57caa36e76b822e6504e4cc"
+              ]
+            },
+            {
+              "mechanism_id": "M3",
+              "status": "not_applicable",
+              "reason": "本次模型为DYNWAVE，能够表征回水；但本事件已核查下游走廊未显示下游水位控制：节点21在01:41水头302.243 m，管段6出口高于管底约0.186 m但低于管顶约0.119 m，为部分淹没；管段7同期正向流约162.6 L/s、约30%满度，节点22水头301.073 m低于节点21，管段7两端水头差约1.17 m，未见顶托。M3必要事件前提在本事件已核查范围内不成立。",
+              "evidence_ids": [
+                "FP_4a998619e4a5e0e06202",
+                "FP_bd39996c19e0d97f7119",
+                "SUP_b57caa36e76b822e6504e4cc"
+              ]
+            },
+            {
+              "mechanism_id": "M5",
+              "status": "not_applicable",
+              "reason": "已核查路径未发现泵、闸、堰、孔口或其他控制设施；local_facilities为空、controls_present=false，运行设施统计为0，故本事件无设施运行影响可归因。",
+              "evidence_ids": [
+                "FP_3176c89973b34f2bfbef",
+                "FP_4a998619e4a5e0e06202"
+              ]
+            },
+            {
+              "mechanism_id": "M6",
+              "status": "not_applicable",
+              "reason": "节点10输入初始水深为0，00:01水深约9.4×10^-5 m；00:01—01:41为同一场00:00—04:00连续降雨的上涨段，唯一雨峰在01:35，未见前一轮雨峰退水后的余水边界；节点均为JUNCTIONS，未识别调蓄设施或储水单元。01:40前水量属于本轮上涨，不是前期余水。",
+              "evidence_ids": [
+                "HIST_6a5a27d0582706d96dbe02f8",
+                "FP_4a998619e4a5e0e06202",
+                "CTX_RAINFALL",
+                "FP_3176c89973b34f2bfbef"
+              ]
+            }
+          ],
+          "joint_assessment": {
+            "status": "supported",
+            "mechanism_ids": [
+              "M1",
+              "M2"
+            ],
+            "conclusion": "10:E001是节点10约6 min的冒溢事件：管段1与aggregate_lateral在01:40—01:41同时达到约100 L/s的来水峰值，总入流约200—203 L/s；出水管段6因口径较小、近满并稳定在约164 L/s形成局部排出约束，节点10达到最大水深0.914 m，超出部分形成36.698 L/s初始冒溢和8.156 m3事件体积。补证后下游管段7—节点22未显示顶托，M3不纳入综合支持。",
+            "interaction_explanation": "同一时段内，M1提供来水峰值：01:40总入流202.744 L/s、01:41为200.077 L/s；M2提供排出上限：管段6流量由01:40的140.307 L/s升至01:41的163.793 L/s后稳定在约164.0 L/s。节点10在01:41达到最大水深0.914 m，入流与管段6排出之差对应冒溢流量，随后入流下降而出流仍约164 L/s，冒溢由30.152 L/s逐步降至7.589 L/s并于01:47停止。补证更新：管段7在01:41—01:42正向流约162.6—174.0 L/s、约30%满度，节点22水头低于节点21约1.17 m，M3由候选降为不适用；M5无设施；M6不适用。",
+            "evidence_ids": [
+              "FP_76e2d6227ceba6965ad4",
+              "FP_4a998619e4a5e0e06202",
+              "FP_bd39996c19e0d97f7119",
+              "FP_b8d98cadddd0a1ea92ab",
+              "CTX_RAINFALL",
+              "HIST_6a5a27d0582706d96dbe02f8",
+              "SUP_b57caa36e76b822e6504e4cc"
+            ],
+            "limitations": "M3已按新增管段7—节点22过程判为事件前提不成立，更远下游未继续追踪，但已核查走廊未显示下游控制。未做贡献率或反事实比较，不能给出M1、M2各自独立贡献比例。surface_association未构建，不能推断地表路径或回流。"
+          },
+          "alternatives": "主要竞争解释是下游节点21水位顶托（M3）与局部管段6能力限制（M2）：补证显示管段7约30%满度、正向流且节点22水头更低，M3仅见管段6出口部分淹没，未形成下游控制，故M2有更直接的近满和流量平台过程支持。M1与M2为共同作用关系，不是互斥替代；M5、M6未见适用前提。",
+          "evidence_gaps": [
+            "节点22以外的更远下游未继续追踪；已核查的节点21—管段7—节点22走廊未显示下游顶托，不影响本事件M3判为不适用。",
+            "未进行改变来水峰值或管段6能力后的反事实比较，不能量化M1、M2贡献率。",
+            "surface_association为not_built，无法评价地表漫流路径或地表水回流。",
+            "outside-scope连接仅列出编号或仅补充局部过程，几何与更远过程未全部核查，结论限于已声明和已补证范围。"
+          ],
+          "structural_assessment": {
+            "status": "reviewed",
+            "summary": "已核查节点9、10、21和管段1、6，unavailable_checks为空。管段1 D=0.4572 m、坡度约1.25%，管段6 D=0.3048 m、坡度约1.0%；节点10处两管管底同高，出水管顶低约0.1524 m，管段6满断面面积仅为管段1的44.4%。事件中管段6在01:41—01:46近满（约0.297/0.3048 m，约97.4%）且流量稳定约164 L/s，同时节点10达到最大水深0.914 m并冒溢，结构缩径与局部排出约束过程一致；但缩径本身不是单独根因。补充过程显示管段6出口在节点21处高于管底约0.186 m、低于管顶约0.119 m，且节点21下游管段7约30%满度、正向流、节点22水头更低；未见管顶淹没或下游顶托。节点21的outside-scope管段5、7未全部纳入结构几何核查，管段7仅补充了过程信息。",
+            "evidence_ids": [
+              "FP_4a998619e4a5e0e06202",
+              "FP_bd39996c19e0d97f7119",
+              "SUP_b57caa36e76b822e6504e4cc"
+            ],
+            "finding_assessments": [
+              {
+                "check_id": "joint:10:1:6",
+                "status": "relevant",
+                "reason": "该检查项给出节点10处进水管段1 D=0.4572 m、出水管段6 D=0.3048 m，出水管满断面面积为进水管44.4%，管底同高、出水管顶低0.1524 m，且出水管坡度略降。与事件过程联系：01:41—01:46管段6近满、流量稳定约164 L/s，节点10维持最大水深0.914 m并冒溢，说明该几何变化与局部输水约束调查相关；但缩径/面积减小本身不等于已证明根因，需结合管段6实际流量和下游排出条件解释。新增下游管段7过程未显示顶托，进一步将解释收窄至管段6局部约束。",
+                "evidence_ids": [
+                  "FP_4a998619e4a5e0e06202",
+                  "FP_bd39996c19e0d97f7119",
+                  "SUP_b57caa36e76b822e6504e4cc"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "evidence_requests": [],
+      "reference_verification": {
+        "total_claims": 16,
+        "references_verified": 16,
+        "references_missing": 0,
+        "no_references": 0,
+        "reference_failure_rate": 0.0
+      },
+      "call_comparisons": [
+        {
+          "sequence": 1,
+          "started_at": "2026-11-16T09:59:49+08:00",
+          "evidence_view_format": "shallow_shared_v1",
+          "visible_records": 23,
+          "shared_definitions": 0,
+          "characters_raw": 88925,
+          "characters_tables_only": 75247,
+          "characters_actual": 73985,
+          "status": "response_parsed",
+          "completed_at": "2026-11-16T10:02:00+08:00"
+        },
+        {
+          "sequence": 2,
+          "started_at": "2026-11-16T10:02:02+08:00",
+          "evidence_view_format": "shallow_shared_v1",
+          "visible_records": 24,
+          "shared_definitions": 0,
+          "characters_raw": 117832,
+          "characters_tables_only": 95728,
+          "characters_actual": 94386,
+          "status": "response_parsed",
+          "completed_at": "2026-11-16T10:03:06+08:00"
+        }
+      ],
+      "markdown_report": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A02_14mm\\diagnosis_tasks\\ba9aedeb16be436fa13e7ca4d6e93b3e\\preliminary_report_r2.md",
+      "html_report": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A02_14mm\\diagnosis_tasks\\ba9aedeb16be436fa13e7ca4d6e93b3e\\display_reports\\r2\\20261116_100306_c6353816\\模拟诊断报告.html",
+      "display_report": {
+        "status": "completed",
+        "version": "report_agent_v1.10_surface_basis_palette",
+        "task_id": "ba9aedeb16be436fa13e7ca4d6e93b3e",
+        "revision": 2,
+        "generated_at": "2026-11-16T10:03:06+08:00",
+        "output_dir": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A02_14mm\\diagnosis_tasks\\ba9aedeb16be436fa13e7ca4d6e93b3e\\display_reports\\r2\\20261116_100306_c6353816",
+        "producer_hashes": {
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\agent.py": "9ffd9046633b7b503ddbae68204a588a46a1560a6657fe1f5da70d3bd8fcdf03",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\delivery.py": "2e0e7ac41e69a6223572dab995136cfeaba5ca89ac39d17d6de225eda3223355",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\internal_report.py": "8aa1b924a870f9888d24c7c4e3ad76777f10cc550c394ea0cdec04f1f9967aed",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\labels.py": "76310e01266031a1b5612dd7ce568f33acc77b53b78e759bfcfc0c9d2356e5ea",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\materials.py": "3e5b135c121fc32763ea042c355eb8b1d625f6739341ed70d968998016ecfc37",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\narrative.py": "7641eb6c750f34856488f793ddbd88d5aab7496b2b66e1f54e3dafd7bd081ff7",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\object_labels.py": "62a4a2b722b5c1514e5ec65f313696716c33dd57662fe595f82e0b2d625ea45e",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\pipeline.py": "bdf2589c5a1658724bb50f69460dcfdf1b7b0bba6f214c461da8a436668511c5",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\plots.py": "c03ee8fbc429e18218884308c44e42fd2b81da80fcd0eb7fcdf5e3d2cd6efd34",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\rain.py": "24564eb5c52098e081681c451bc1c621498804513b4299e8f5b5261ee4a089a0",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\render.py": "5b411326f3a6cc3488035761ad1643899d13b1a130eef87c39219686a3e5d1a7",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\scene.py": "3afb370cc0ba568b2a7a1e7a3000794170fc7e9c8d09767c589fd75de344e1a8",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\surface.py": "93220f7eeafc2bde808a00a261dd2030e7fd78aa81d91e4e0b14ac4d2f218ec6",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\__init__.py": "558c41869e14aa07e52b56254449ba970eca3fa8898f01e1c28ed2fdb38f46f5",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\causes_overview_v1.md": "9f5a468aa707ca01666cc5bb4d4f50948cba53df2d231b3de28dbb116c7dec66",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\event_example_lateral_v1.json": "5810c4b2faf150b36b8dc180cd057bb6a066c2ab1a560b8f06f7ee858819f8c1",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\event_example_outflow_v1.json": "624391eb86b5da9c604597435f7dbd279dd018841ba9f86dff25c94afc90d1b0",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\event_example_P7_v1.json": "9d8b6cd06facd0050c13c88ef17dbf96a848ee84555f523e0d63229c2c34a41a",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\event_example_v1.json": "9127c6b06d81733d8b364484ffd68ae8ed6de54a039abe5cda46a4d159f545ed",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\event_rewrite_v2.md": "cf25c14b93e7e885ced2ed7d34292a228056874af99c61fd36761aa2fd15bc62",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\intro_rewrite_v1.md": "743ccf6a353518006c20ad402d108e556859c54c93c347a3f66e85788fd27521",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\rain_fixed_v1.md": "3c95b99632e43db9e24d461d10fed0ff263b6c0bca7a6b2ec1057831425421fe",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\rain_template_v1.json": "305c1bde691ed85b632b02178353e7e24b88e6713bd5aecb13e1a9851b0cdef1",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\scene_fixed_v1.md": "8183aafbb123c547472b29bc0e841770943615805cd4c1e7395e0b047e96b37f",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\scene_template_v1.json": "98c6059fdc95e4829739cc471b3406b8718785f360a81fbad784973b761ff89a",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\surface_basis_v1.json": "3e8b20b7b7e681fd4788106c887b04a2b9709f4dd17639b459b3ac82224ac224",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\surface_basis_v1.md": "d6f2471451d62cc0596a4d6b413368b31320e71a03fc418bf0a9cf71e5b84cd8",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\common\\llm.py": "8db0748f99dc983b8161af21b4e9f2ba0fc070952ad89f266401bd882e0bca9a"
+        },
+        "html_file": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A02_14mm\\diagnosis_tasks\\ba9aedeb16be436fa13e7ca4d6e93b3e\\display_reports\\r2\\20261116_100306_c6353816\\模拟诊断报告.html",
+        "html_sha256": "bd8dc56fac10d69fae383b5c0968c0891b93e1d8b5b608daf860cf809a8337b0",
+        "materials_file": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A02_14mm\\diagnosis_tasks\\ba9aedeb16be436fa13e7ca4d6e93b3e\\display_reports\\r2\\20261116_100306_c6353816\\report_materials.json",
+        "quality_checks": {
+          "status": "passed",
+          "sections": 6,
+          "events": 1,
+          "embedded_images": 7,
+          "all_images_verified": true,
+          "numeric_policy": "supplied_fact_tokens",
+          "causal_policy": "current_diagnosis_statuses",
+          "verification_scope": "structure, source identity and references; not causal certification"
+        },
+        "elapsed_seconds": 98.718
+      },
+      "standalone_report": "E:\\SWMM_Agentic\\SWMM-Agentic4\\outputs\\example1tokens_1min_pilot_20261116\\reports\\report_14mm.html",
+      "report_usage": {
+        "configured_attempts": 2,
+        "prompt_tokens": 36003,
+        "completion_tokens": 16217
+      }
+    },
+    {
+      "case": {
+        "event_file": "A03_20mm.txt",
+        "rainfall_file": "events/exp15/A03_20mm.txt",
+        "total_mm": 20.0,
+        "peak_mm_h": 36.683,
+        "run_id": "pilot4_1min_20261116_cbb20d_A03_20mm",
+        "event_sha256": "bfb2576d39dc39a92c276a2ca0c5175c85d02ff3fb0a43019a6bcaef06a98369"
+      },
+      "run_root": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A03_20mm",
+      "task_root": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A03_20mm\\diagnosis_tasks\\08399e8966d04ef8b2cf346dcaf76409",
+      "status": {
+        "case": {
+          "event_file": "A03_20mm.txt",
+          "rainfall_file": "events/exp15/A03_20mm.txt",
+          "total_mm": 20.0,
+          "peak_mm_h": 36.683,
+          "run_id": "pilot4_1min_20261116_cbb20d_A03_20mm",
+          "event_sha256": "bfb2576d39dc39a92c276a2ca0c5175c85d02ff3fb0a43019a6bcaef06a98369"
+        },
+        "run_root": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A03_20mm",
+        "status": "completed",
+        "phase": "finished",
+        "started_at": "2026-11-16T09:59:16+08:00",
+        "updated_at": "2026-11-16T10:03:15+08:00",
+        "event_count": 1,
+        "overflow_nodes": [
+          "10"
+        ],
+        "overflow_volume_m3": 83.333,
+        "request_number": 2,
+        "diagnosis": {
+          "status": "completed",
+          "task_id": "08399e8966d04ef8b2cf346dcaf76409",
+          "task_state": "preliminary_delivered",
+          "revision": 2,
+          "current_verified_report": true,
+          "stop_reason": "no_executable_pending_requests",
+          "supplement_rounds": 1,
+          "pending_evidence_requests": false,
+          "report_file": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A03_20mm\\diagnosis_tasks\\08399e8966d04ef8b2cf346dcaf76409\\preliminary_report_r2.md"
+        },
+        "task_id": "08399e8966d04ef8b2cf346dcaf76409",
+        "revision": 2,
+        "display_report": {
+          "status": "completed",
+          "version": "report_agent_v1.10_surface_basis_palette",
+          "task_id": "08399e8966d04ef8b2cf346dcaf76409",
+          "revision": 2,
+          "generated_at": "2026-11-16T10:03:16+08:00",
+          "output_dir": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A03_20mm\\diagnosis_tasks\\08399e8966d04ef8b2cf346dcaf76409\\display_reports\\r2\\20261116_100316_0bfb7805",
+          "producer_hashes": {
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\agent.py": "9ffd9046633b7b503ddbae68204a588a46a1560a6657fe1f5da70d3bd8fcdf03",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\delivery.py": "2e0e7ac41e69a6223572dab995136cfeaba5ca89ac39d17d6de225eda3223355",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\internal_report.py": "8aa1b924a870f9888d24c7c4e3ad76777f10cc550c394ea0cdec04f1f9967aed",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\labels.py": "76310e01266031a1b5612dd7ce568f33acc77b53b78e759bfcfc0c9d2356e5ea",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\materials.py": "3e5b135c121fc32763ea042c355eb8b1d625f6739341ed70d968998016ecfc37",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\narrative.py": "7641eb6c750f34856488f793ddbd88d5aab7496b2b66e1f54e3dafd7bd081ff7",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\object_labels.py": "62a4a2b722b5c1514e5ec65f313696716c33dd57662fe595f82e0b2d625ea45e",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\pipeline.py": "bdf2589c5a1658724bb50f69460dcfdf1b7b0bba6f214c461da8a436668511c5",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\plots.py": "c03ee8fbc429e18218884308c44e42fd2b81da80fcd0eb7fcdf5e3d2cd6efd34",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\rain.py": "24564eb5c52098e081681c451bc1c621498804513b4299e8f5b5261ee4a089a0",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\render.py": "5b411326f3a6cc3488035761ad1643899d13b1a130eef87c39219686a3e5d1a7",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\scene.py": "3afb370cc0ba568b2a7a1e7a3000794170fc7e9c8d09767c589fd75de344e1a8",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\surface.py": "93220f7eeafc2bde808a00a261dd2030e7fd78aa81d91e4e0b14ac4d2f218ec6",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\__init__.py": "558c41869e14aa07e52b56254449ba970eca3fa8898f01e1c28ed2fdb38f46f5",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\causes_overview_v1.md": "9f5a468aa707ca01666cc5bb4d4f50948cba53df2d231b3de28dbb116c7dec66",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\event_example_lateral_v1.json": "5810c4b2faf150b36b8dc180cd057bb6a066c2ab1a560b8f06f7ee858819f8c1",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\event_example_outflow_v1.json": "624391eb86b5da9c604597435f7dbd279dd018841ba9f86dff25c94afc90d1b0",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\event_example_P7_v1.json": "9d8b6cd06facd0050c13c88ef17dbf96a848ee84555f523e0d63229c2c34a41a",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\event_example_v1.json": "9127c6b06d81733d8b364484ffd68ae8ed6de54a039abe5cda46a4d159f545ed",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\event_rewrite_v2.md": "cf25c14b93e7e885ced2ed7d34292a228056874af99c61fd36761aa2fd15bc62",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\intro_rewrite_v1.md": "743ccf6a353518006c20ad402d108e556859c54c93c347a3f66e85788fd27521",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\rain_fixed_v1.md": "3c95b99632e43db9e24d461d10fed0ff263b6c0bca7a6b2ec1057831425421fe",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\rain_template_v1.json": "305c1bde691ed85b632b02178353e7e24b88e6713bd5aecb13e1a9851b0cdef1",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\scene_fixed_v1.md": "8183aafbb123c547472b29bc0e841770943615805cd4c1e7395e0b047e96b37f",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\scene_template_v1.json": "98c6059fdc95e4829739cc471b3406b8718785f360a81fbad784973b761ff89a",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\surface_basis_v1.json": "3e8b20b7b7e681fd4788106c887b04a2b9709f4dd17639b459b3ac82224ac224",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\surface_basis_v1.md": "d6f2471451d62cc0596a4d6b413368b31320e71a03fc418bf0a9cf71e5b84cd8",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\common\\llm.py": "8db0748f99dc983b8161af21b4e9f2ba0fc070952ad89f266401bd882e0bca9a"
+          },
+          "html_file": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A03_20mm\\diagnosis_tasks\\08399e8966d04ef8b2cf346dcaf76409\\display_reports\\r2\\20261116_100316_0bfb7805\\模拟诊断报告.html",
+          "html_sha256": "471274f9c77d5aaa6f6eb15acc9ff8c061cbaf7aaaf99a0383c3a4483f8619c0",
+          "materials_file": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A03_20mm\\diagnosis_tasks\\08399e8966d04ef8b2cf346dcaf76409\\display_reports\\r2\\20261116_100316_0bfb7805\\report_materials.json",
+          "quality_checks": {
+            "status": "passed",
+            "sections": 6,
+            "events": 1,
+            "embedded_images": 7,
+            "all_images_verified": true,
+            "numeric_policy": "supplied_fact_tokens",
+            "causal_policy": "current_diagnosis_statuses",
+            "verification_scope": "structure, source identity and references; not causal certification"
+          },
+          "elapsed_seconds": 107.203
+        },
+        "html_file": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A03_20mm\\diagnosis_tasks\\08399e8966d04ef8b2cf346dcaf76409\\display_reports\\r2\\20261116_100316_0bfb7805\\模拟诊断报告.html",
+        "completed_at": "2026-11-16T10:05:03+08:00",
+        "elapsed_seconds": 346.34
+      },
+      "task_state": "preliminary_delivered",
+      "revision": 2,
+      "facts": {
+        "rainfall_total_mm": 20.0,
+        "rainfall_peak_mm_h": 36.683,
+        "overflow_event_count": 1,
+        "overflow_nodes": [
+          "10"
+        ],
+        "overflow_volume_m3": 83.333,
+        "events": [
+          {
+            "event_id": "10:E001",
+            "node_id": "10",
+            "run_id": "pilot4_1min_20261116_cbb20d_A03_20mm",
+            "model_name": "Example1Tokens",
+            "occurrence": 1,
+            "start": "2024-01-01 01:37:00",
+            "end": "2024-01-01 01:54:00",
+            "last_positive_time": "2024-01-01 01:53:00",
+            "peak_time": "2024-01-01 01:40:00",
+            "peak_flooding_Ls": 148.814,
+            "duration_minutes": 17.0,
+            "estimated_volume_m3": 83.333,
+            "positive_sample_count": 17,
+            "left_censored": false,
+            "right_censored": false,
+            "saved_step_seconds": 60.0,
+            "integration_method": "left_sample_rectangle"
+          }
+        ]
+      },
+      "hydraulic_audit": {
+        "runoff_continuity_error_pct": -0.005,
+        "routing_continuity_error_pct": 0.0,
+        "nonconverging_steps_pct": 0.0,
+        "warnings": [
+          "WARNING 02: maximum depth increased for Node 21",
+          "WARNING 02: maximum depth increased for Node 22"
+        ],
+        "review_status": "recorded_not_independent_quality_acceptance",
+        "simulation_end": "2024-01-01 07:00:00",
+        "source_volume_m3": 83.33309300519998,
+        "coupling_volume_error_m3": 1.8474111129762605e-13
+      },
+      "usage": {
+        "diagnosis_attempts": 2,
+        "diagnosis_completed": 2,
+        "diagnosis_failed": 0,
+        "prompt_tokens": 72408,
+        "completion_tokens": 34304
+      },
+      "model_overview": "全场仅节点10发生1次冒溢：2024-01-01 01:37—01:54，峰值148.814 L/s（01:40），体积83.333 m3；其他节点无冒溢。降雨为00:00—04:00连续20 mm、峰值36.683 mm/h（01:35）的中等降雨，无零雨间歇。节点10两条直接来水路径管段1与aggregate_lateral约各占一半，均在01:40达峰，总入流峰值313.971 L/s；下游出流管段6为D=0.3048 m，小于上游管段1的D=0.4572 m，01:38—01:53流量基本恒定于164.048 L/s，节点10在最大水深0.914 m处持续冒溢。运行无泵、闸、堰、孔口等设施及储水节点，模型为DYNWAVE、无地表水回流。补充下游过程显示节点21下游管段7未满且正向流，节点22水头更低，未见下游高水位控制，M3不适用；M1的来水时间集中与M2的局部出流约束共同解释本事件。",
+      "event_assessments": [
+        {
+          "event_id": "10:E001",
+          "node_id": "10",
+          "process_explanation": "本事件处于00:00—04:00单一连续降雨段内，雨峰01:35。节点10初始水深为0，01:36水深0.381 m、尚未冒溢；01:37水深升至0.914 m并出现75.662 L/s冒溢。直接来水由管段1（125.946 m3，50.2%）和aggregate_lateral（125.075 m3，49.8%）组成，两者均在01:40达到峰值（155.367、158.604 L/s），总入流达313.971 L/s，冒溢峰值148.814 L/s。下游管段6为D=0.3048 m、承接D=0.4572 m管段1且同管底，事件中01:38—01:53流量基本恒定于164.048 L/s；节点10维持最大水深0.914 m并持续冒溢。01:40后直接来水回落，但节点10仍保持最大水深，冒溢流量逐步降至01:53的5.442 L/s，01:54归零。补充下游过程显示节点21处管段6出口虽部分淹没但低于管顶，节点21下游管段7未满、正向流，节点22水头更低，未形成下游高水位控制，M3降为不适用。综合看，M1的来水时间集中与M2的管段6局部输送约束在同一过程中共同解释起溢—峰值—持续；M5无设施，M6无前期余水。",
+          "evidence_ids": [
+            "FP_76e2d6227ceba6965ad4",
+            "FP_4a998619e4a5e0e06202",
+            "FP_bd39996c19e0d97f7119",
+            "FP_b8d98cadddd0a1ea92ab",
+            "FP_3176c89973b34f2bfbef",
+            "CTX_RAINFALL",
+            "HIST_544d77187d5f8ffafcd220b4",
+            "SUP_761c4615d722b91e117deaa5"
+          ],
+          "mechanism_assessments": [
+            {
+              "mechanism_id": "M1",
+              "status": "supported",
+              "reason": "雨峰01:35后，管段1与aggregate_lateral两条直接来水路径均在01:40达峰，总入流01:36—01:40由207.205升至313.971 L/s；起溢01:37、峰值01:40与该来水时间结构一致。支持的是本轮来水时间集中，不涉及前一轮雨峰叠加。",
+              "evidence_ids": [
+                "CTX_RAINFALL",
+                "FP_bd39996c19e0d97f7119",
+                "FP_b8d98cadddd0a1ea92ab",
+                "FP_76e2d6227ceba6965ad4"
+              ]
+            },
+            {
+              "mechanism_id": "M2",
+              "status": "supported",
+              "reason": "节点10下游管段6为D=0.3048 m，小于上游管段1的D=0.4572 m，节点10处同管底且满断面面积比为0.444；事件中管段6流量01:38—01:53基本恒定于164.048 L/s，而总入流峰值313.971 L/s、节点10维持最大水深0.914 m并冒溢。该具体部位—同期受限表现—目标节点冒溢关系支持局部输送约束。补充下游过程未见管段7满流或反向，说明该约束位于节点10至管段6的局部出流段。",
+              "evidence_ids": [
+                "FP_4a998619e4a5e0e06202",
+                "FP_bd39996c19e0d97f7119",
+                "FP_b8d98cadddd0a1ea92ab",
+                "SUP_761c4615d722b91e117deaa5"
+              ]
+            },
+            {
+              "mechanism_id": "M3",
+              "status": "not_applicable",
+              "reason": "补充下游过程显示节点21处管段6出口仅部分淹没且低于管顶；节点21下游管段7未满、正向流，节点22水头更低。未发现下游高水位通过节点21限制节点10排水。本次模型为DYNWAVE，可表征下游顶托，故本事件M3必要前提不成立；结论限于节点20—22及管段5、7。",
+              "evidence_ids": [
+                "FP_4a998619e4a5e0e06202",
+                "FP_bd39996c19e0d97f7119",
+                "SUP_761c4615d722b91e117deaa5"
+              ]
+            },
+            {
+              "mechanism_id": "M5",
+              "status": "not_applicable",
+              "reason": "已核查路径无泵、闸、堰、孔口等设施，local_facilities为空且controls_present为false；本事件不存在设施结构、规则或动作环节。",
+              "evidence_ids": [
+                "FP_3176c89973b34f2bfbef",
+                "FP_4a998619e4a5e0e06202"
+              ]
+            },
+            {
+              "mechanism_id": "M6",
+              "status": "not_applicable",
+              "reason": "节点10输入初始水深为0，最早保存样本00:01水深约0.00017 m；本场仅一个连续降雨段，无前一轮已完成雨段或峰间退水，且无储水节点/调蓄设施。01:36前水深为同一轮降雨上涨段，不构成前期余水候选。",
+              "evidence_ids": [
+                "HIST_544d77187d5f8ffafcd220b4",
+                "CTX_RAINFALL",
+                "FP_4a998619e4a5e0e06202",
+                "FP_3176c89973b34f2bfbef"
+              ]
+            }
+          ],
+          "joint_assessment": {
+            "status": "supported",
+            "mechanism_ids": [
+              "M1",
+              "M2"
+            ],
+            "conclusion": "节点10冒溢由本轮降雨峰值后两条直接来水路径同步达峰、总入流超过下游管段6可输送能力共同造成。M1解释来水为何在01:37—01:40迅速集中，M2解释超出部分为何在节点10转为冒溢；事件峰值148.814 L/s、体积83.333 m3。",
+            "interaction_explanation": "01:35雨峰后，管段1和aggregate_lateral均在01:40达峰，节点10总入流升至313.971 L/s；节点10于01:37达到最大水深0.914 m并开始冒溢。与此时段对应，下游管段6虽承接节点10出流，但01:38—01:53流量基本恒定于164.048 L/s，且管段6较管段1明显缩径、同管底，节点10多余入流无法经管段6排出而转为冒溢。01:40后来水回落，管段6仍保持该流量，节点10水位维持最大直至01:53，符合来水集中叠加局部出流约束的连续过程。原判断M3为候选，因节点21下游尚未审计；新增补充过程显示节点21下游管段7未满、正向流、节点22水头更低，未形成下游高水位控制，故M3降为不适用，不纳入综合支持。M5、M6不适用。",
+            "evidence_ids": [
+              "FP_76e2d6227ceba6965ad4",
+              "FP_4a998619e4a5e0e06202",
+              "FP_bd39996c19e0d97f7119",
+              "FP_b8d98cadddd0a1ea92ab",
+              "FP_3176c89973b34f2bfbef",
+              "CTX_RAINFALL",
+              "HIST_544d77187d5f8ffafcd220b4",
+              "SUP_761c4615d722b91e117deaa5"
+            ],
+            "limitations": "结论限于本次DYNWAVE模型、首轮局部范围和01:36—01:55保存过程，补充下游过程覆盖01:30—02:00。M3已因下游过程否定本事件高水位控制，但管段5、7的完整几何未在structure_audit中核查，仅对其过程作出判断。管段缩径与常流量是事件约束证据，不构成设计违规或唯一根因的反事实验证。aggregate_lateral未按子汇水区拆分。CA2D为单向溢流映射，未表征地表水回流入网。"
+          },
+          "alternatives": "竞争解释主要是下游节点21及其下游管段7的高水位影响：管段6出口确实部分淹没，但补充过程显示节点21水位低于管段6管顶、管段7未满且正向流、节点22水头更低，故不支持下游高水位控制目标排水。管段6缩径本身不自动等于设计错误，需以事件流量和约束过程解释。M6因初始水深近零、单一湿段且无储水设施不成立；M5因无相关设施不成立。",
+          "evidence_gaps": [
+            "aggregate_lateral为汇总入流，未提供子汇水区2逐区径流过程，不能拆分其体量或峰值；不影响M1的时间集中结论，但限制本地子汇水贡献的定量说明。",
+            "管段5、7的完整几何未在首轮structure_audit中核查，仅有补充过程；但补充过程显示其未满、正向流，已足以否定本事件下游高水位控制，若需设计复核可另行核查几何。",
+            "surface_association未构建，且模型为SWMM→CA2D单向传递，不能评估地表水回流；本事件不据此推断地表回流。",
+            "保存过程覆盖01:36—01:55，足以描述事件及即时退水；更长退水阶段未展开，因M6前提已不成立，未将其作为关键缺口。"
+          ],
+          "structural_assessment": {
+            "status": "reviewed",
+            "summary": "已按首轮范围核查节点9—管段1—节点10—管段6—节点21：管段1为D=0.4572 m、坡度约0.0125，管段6为D=0.3048 m、坡度约0.010；节点10处两管同管底，管段6满断面面积为管段1的0.444，管顶低0.1524 m；管段6出口管底较节点21管底高0.3048 m。事件中节点10水头达304.19 m（最大水深0.914 m）并冒溢，管段6流量01:38—01:53基本恒定于164.048 L/s，结构与同期水力响应共同支持M2。补充下游过程显示管段7未满、正向流，节点22水头更低，未支持下游高水位顶托。unavailable_checks为空；管段5、7完整几何仍属首轮结构审计范围外，但其过程已用于本事件M3判断。",
+            "evidence_ids": [
+              "FP_4a998619e4a5e0e06202",
+              "FP_bd39996c19e0d97f7119",
+              "SUP_761c4615d722b91e117deaa5"
+            ],
+            "finding_assessments": [
+              {
+                "check_id": "joint:10:1:6",
+                "status": "relevant",
+                "reason": "该检查记录节点10处上游管段1与下游管段6的缩径、满断面面积减小、同管底不同管顶及下游坡度降低。事件中管段6在节点10持续最大水深和冒溢时，流量基本恒定于164.048 L/s，且01:38—01:53不随总入流回落，与出流断面较小的结构事实相符，故与M2局部输送约束解释相关；但几何缩径本身不能单独证明设计错误或根因。补充下游过程显示管段7未满且正向流，说明该局部约束不宜归因于下游高水位顶托。",
+                "evidence_ids": [
+                  "FP_4a998619e4a5e0e06202",
+                  "FP_bd39996c19e0d97f7119",
+                  "SUP_761c4615d722b91e117deaa5"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "evidence_requests": [],
+      "reference_verification": {
+        "total_claims": 17,
+        "references_verified": 17,
+        "references_missing": 0,
+        "no_references": 0,
+        "reference_failure_rate": 0.0
+      },
+      "call_comparisons": [
+        {
+          "sequence": 1,
+          "started_at": "2026-11-16T09:59:49+08:00",
+          "evidence_view_format": "shallow_shared_v1",
+          "visible_records": 23,
+          "shared_definitions": 0,
+          "characters_raw": 96595,
+          "characters_tables_only": 77889,
+          "characters_actual": 76627,
+          "status": "response_parsed",
+          "completed_at": "2026-11-16T10:01:49+08:00"
+        },
+        {
+          "sequence": 2,
+          "started_at": "2026-11-16T10:01:52+08:00",
+          "evidence_view_format": "shallow_shared_v1",
+          "visible_records": 24,
+          "shared_definitions": 0,
+          "characters_raw": 136715,
+          "characters_tables_only": 101464,
+          "characters_actual": 100122,
+          "status": "response_parsed",
+          "completed_at": "2026-11-16T10:03:15+08:00"
+        }
+      ],
+      "markdown_report": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A03_20mm\\diagnosis_tasks\\08399e8966d04ef8b2cf346dcaf76409\\preliminary_report_r2.md",
+      "html_report": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A03_20mm\\diagnosis_tasks\\08399e8966d04ef8b2cf346dcaf76409\\display_reports\\r2\\20261116_100316_0bfb7805\\模拟诊断报告.html",
+      "display_report": {
+        "status": "completed",
+        "version": "report_agent_v1.10_surface_basis_palette",
+        "task_id": "08399e8966d04ef8b2cf346dcaf76409",
+        "revision": 2,
+        "generated_at": "2026-11-16T10:03:16+08:00",
+        "output_dir": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A03_20mm\\diagnosis_tasks\\08399e8966d04ef8b2cf346dcaf76409\\display_reports\\r2\\20261116_100316_0bfb7805",
+        "producer_hashes": {
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\agent.py": "9ffd9046633b7b503ddbae68204a588a46a1560a6657fe1f5da70d3bd8fcdf03",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\delivery.py": "2e0e7ac41e69a6223572dab995136cfeaba5ca89ac39d17d6de225eda3223355",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\internal_report.py": "8aa1b924a870f9888d24c7c4e3ad76777f10cc550c394ea0cdec04f1f9967aed",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\labels.py": "76310e01266031a1b5612dd7ce568f33acc77b53b78e759bfcfc0c9d2356e5ea",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\materials.py": "3e5b135c121fc32763ea042c355eb8b1d625f6739341ed70d968998016ecfc37",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\narrative.py": "7641eb6c750f34856488f793ddbd88d5aab7496b2b66e1f54e3dafd7bd081ff7",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\object_labels.py": "62a4a2b722b5c1514e5ec65f313696716c33dd57662fe595f82e0b2d625ea45e",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\pipeline.py": "bdf2589c5a1658724bb50f69460dcfdf1b7b0bba6f214c461da8a436668511c5",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\plots.py": "c03ee8fbc429e18218884308c44e42fd2b81da80fcd0eb7fcdf5e3d2cd6efd34",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\rain.py": "24564eb5c52098e081681c451bc1c621498804513b4299e8f5b5261ee4a089a0",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\render.py": "5b411326f3a6cc3488035761ad1643899d13b1a130eef87c39219686a3e5d1a7",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\scene.py": "3afb370cc0ba568b2a7a1e7a3000794170fc7e9c8d09767c589fd75de344e1a8",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\surface.py": "93220f7eeafc2bde808a00a261dd2030e7fd78aa81d91e4e0b14ac4d2f218ec6",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\__init__.py": "558c41869e14aa07e52b56254449ba970eca3fa8898f01e1c28ed2fdb38f46f5",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\causes_overview_v1.md": "9f5a468aa707ca01666cc5bb4d4f50948cba53df2d231b3de28dbb116c7dec66",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\event_example_lateral_v1.json": "5810c4b2faf150b36b8dc180cd057bb6a066c2ab1a560b8f06f7ee858819f8c1",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\event_example_outflow_v1.json": "624391eb86b5da9c604597435f7dbd279dd018841ba9f86dff25c94afc90d1b0",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\event_example_P7_v1.json": "9d8b6cd06facd0050c13c88ef17dbf96a848ee84555f523e0d63229c2c34a41a",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\event_example_v1.json": "9127c6b06d81733d8b364484ffd68ae8ed6de54a039abe5cda46a4d159f545ed",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\event_rewrite_v2.md": "cf25c14b93e7e885ced2ed7d34292a228056874af99c61fd36761aa2fd15bc62",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\intro_rewrite_v1.md": "743ccf6a353518006c20ad402d108e556859c54c93c347a3f66e85788fd27521",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\rain_fixed_v1.md": "3c95b99632e43db9e24d461d10fed0ff263b6c0bca7a6b2ec1057831425421fe",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\rain_template_v1.json": "305c1bde691ed85b632b02178353e7e24b88e6713bd5aecb13e1a9851b0cdef1",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\scene_fixed_v1.md": "8183aafbb123c547472b29bc0e841770943615805cd4c1e7395e0b047e96b37f",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\scene_template_v1.json": "98c6059fdc95e4829739cc471b3406b8718785f360a81fbad784973b761ff89a",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\surface_basis_v1.json": "3e8b20b7b7e681fd4788106c887b04a2b9709f4dd17639b459b3ac82224ac224",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\surface_basis_v1.md": "d6f2471451d62cc0596a4d6b413368b31320e71a03fc418bf0a9cf71e5b84cd8",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\common\\llm.py": "8db0748f99dc983b8161af21b4e9f2ba0fc070952ad89f266401bd882e0bca9a"
+        },
+        "html_file": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A03_20mm\\diagnosis_tasks\\08399e8966d04ef8b2cf346dcaf76409\\display_reports\\r2\\20261116_100316_0bfb7805\\模拟诊断报告.html",
+        "html_sha256": "471274f9c77d5aaa6f6eb15acc9ff8c061cbaf7aaaf99a0383c3a4483f8619c0",
+        "materials_file": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A03_20mm\\diagnosis_tasks\\08399e8966d04ef8b2cf346dcaf76409\\display_reports\\r2\\20261116_100316_0bfb7805\\report_materials.json",
+        "quality_checks": {
+          "status": "passed",
+          "sections": 6,
+          "events": 1,
+          "embedded_images": 7,
+          "all_images_verified": true,
+          "numeric_policy": "supplied_fact_tokens",
+          "causal_policy": "current_diagnosis_statuses",
+          "verification_scope": "structure, source identity and references; not causal certification"
+        },
+        "elapsed_seconds": 107.203
+      },
+      "standalone_report": "E:\\SWMM_Agentic\\SWMM-Agentic4\\outputs\\example1tokens_1min_pilot_20261116\\reports\\report_20mm.html",
+      "report_usage": {
+        "configured_attempts": 2,
+        "prompt_tokens": 42868,
+        "completion_tokens": 18295
+      }
+    },
+    {
+      "case": {
+        "event_file": "A05_40mm.txt",
+        "rainfall_file": "events/exp15/A05_40mm.txt",
+        "total_mm": 40.0,
+        "peak_mm_h": 73.366,
+        "run_id": "pilot4_1min_20261116_cbb20d_A05_40mm",
+        "event_sha256": "235df7bedd4c58480682795f1e2374f15dc830842c727d6b67feb2a3f135df09"
+      },
+      "run_root": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A05_40mm",
+      "task_root": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A05_40mm\\diagnosis_tasks\\0fd441778f1a4d67999204adcb9fbdc6",
+      "status": {
+        "case": {
+          "event_file": "A05_40mm.txt",
+          "rainfall_file": "events/exp15/A05_40mm.txt",
+          "total_mm": 40.0,
+          "peak_mm_h": 73.366,
+          "run_id": "pilot4_1min_20261116_cbb20d_A05_40mm",
+          "event_sha256": "235df7bedd4c58480682795f1e2374f15dc830842c727d6b67feb2a3f135df09"
+        },
+        "run_root": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A05_40mm",
+        "status": "completed",
+        "phase": "finished",
+        "started_at": "2026-11-16T09:59:17+08:00",
+        "updated_at": "2026-11-16T10:07:49+08:00",
+        "event_count": 2,
+        "overflow_nodes": [
+          "10",
+          "15"
+        ],
+        "overflow_volume_m3": 666.6120000000001,
+        "request_number": 4,
+        "diagnosis": {
+          "status": "completed",
+          "task_id": "0fd441778f1a4d67999204adcb9fbdc6",
+          "task_state": "preliminary_delivered",
+          "revision": 3,
+          "current_verified_report": true,
+          "stop_reason": "no_executable_pending_requests",
+          "supplement_rounds": 2,
+          "pending_evidence_requests": false,
+          "report_file": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A05_40mm\\diagnosis_tasks\\0fd441778f1a4d67999204adcb9fbdc6\\preliminary_report_r3.md"
+        },
+        "task_id": "0fd441778f1a4d67999204adcb9fbdc6",
+        "revision": 3,
+        "display_report": {
+          "status": "completed",
+          "version": "report_agent_v1.10_surface_basis_palette",
+          "task_id": "0fd441778f1a4d67999204adcb9fbdc6",
+          "revision": 3,
+          "generated_at": "2026-11-16T10:07:49+08:00",
+          "output_dir": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A05_40mm\\diagnosis_tasks\\0fd441778f1a4d67999204adcb9fbdc6\\display_reports\\r3\\20261116_100749_f0d29f2a",
+          "producer_hashes": {
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\agent.py": "9ffd9046633b7b503ddbae68204a588a46a1560a6657fe1f5da70d3bd8fcdf03",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\delivery.py": "2e0e7ac41e69a6223572dab995136cfeaba5ca89ac39d17d6de225eda3223355",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\internal_report.py": "8aa1b924a870f9888d24c7c4e3ad76777f10cc550c394ea0cdec04f1f9967aed",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\labels.py": "76310e01266031a1b5612dd7ce568f33acc77b53b78e759bfcfc0c9d2356e5ea",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\materials.py": "3e5b135c121fc32763ea042c355eb8b1d625f6739341ed70d968998016ecfc37",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\narrative.py": "7641eb6c750f34856488f793ddbd88d5aab7496b2b66e1f54e3dafd7bd081ff7",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\object_labels.py": "62a4a2b722b5c1514e5ec65f313696716c33dd57662fe595f82e0b2d625ea45e",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\pipeline.py": "bdf2589c5a1658724bb50f69460dcfdf1b7b0bba6f214c461da8a436668511c5",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\plots.py": "c03ee8fbc429e18218884308c44e42fd2b81da80fcd0eb7fcdf5e3d2cd6efd34",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\rain.py": "24564eb5c52098e081681c451bc1c621498804513b4299e8f5b5261ee4a089a0",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\render.py": "5b411326f3a6cc3488035761ad1643899d13b1a130eef87c39219686a3e5d1a7",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\scene.py": "3afb370cc0ba568b2a7a1e7a3000794170fc7e9c8d09767c589fd75de344e1a8",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\surface.py": "93220f7eeafc2bde808a00a261dd2030e7fd78aa81d91e4e0b14ac4d2f218ec6",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\__init__.py": "558c41869e14aa07e52b56254449ba970eca3fa8898f01e1c28ed2fdb38f46f5",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\causes_overview_v1.md": "9f5a468aa707ca01666cc5bb4d4f50948cba53df2d231b3de28dbb116c7dec66",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\event_example_lateral_v1.json": "5810c4b2faf150b36b8dc180cd057bb6a066c2ab1a560b8f06f7ee858819f8c1",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\event_example_outflow_v1.json": "624391eb86b5da9c604597435f7dbd279dd018841ba9f86dff25c94afc90d1b0",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\event_example_P7_v1.json": "9d8b6cd06facd0050c13c88ef17dbf96a848ee84555f523e0d63229c2c34a41a",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\event_example_v1.json": "9127c6b06d81733d8b364484ffd68ae8ed6de54a039abe5cda46a4d159f545ed",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\event_rewrite_v2.md": "cf25c14b93e7e885ced2ed7d34292a228056874af99c61fd36761aa2fd15bc62",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\intro_rewrite_v1.md": "743ccf6a353518006c20ad402d108e556859c54c93c347a3f66e85788fd27521",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\rain_fixed_v1.md": "3c95b99632e43db9e24d461d10fed0ff263b6c0bca7a6b2ec1057831425421fe",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\rain_template_v1.json": "305c1bde691ed85b632b02178353e7e24b88e6713bd5aecb13e1a9851b0cdef1",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\scene_fixed_v1.md": "8183aafbb123c547472b29bc0e841770943615805cd4c1e7395e0b047e96b37f",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\scene_template_v1.json": "98c6059fdc95e4829739cc471b3406b8718785f360a81fbad784973b761ff89a",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\surface_basis_v1.json": "3e8b20b7b7e681fd4788106c887b04a2b9709f4dd17639b459b3ac82224ac224",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\surface_basis_v1.md": "d6f2471451d62cc0596a4d6b413368b31320e71a03fc418bf0a9cf71e5b84cd8",
+            "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\common\\llm.py": "8db0748f99dc983b8161af21b4e9f2ba0fc070952ad89f266401bd882e0bca9a"
+          },
+          "html_file": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A05_40mm\\diagnosis_tasks\\0fd441778f1a4d67999204adcb9fbdc6\\display_reports\\r3\\20261116_100749_f0d29f2a\\模拟诊断报告.html",
+          "html_sha256": "de8a60c75b84d4c3c577a7d49a3d2add8addc0d6054f51980c1f9454e0780548",
+          "materials_file": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A05_40mm\\diagnosis_tasks\\0fd441778f1a4d67999204adcb9fbdc6\\display_reports\\r3\\20261116_100749_f0d29f2a\\report_materials.json",
+          "quality_checks": {
+            "status": "passed",
+            "sections": 6,
+            "events": 2,
+            "embedded_images": 8,
+            "all_images_verified": true,
+            "numeric_policy": "supplied_fact_tokens",
+            "causal_policy": "current_diagnosis_statuses",
+            "verification_scope": "structure, source identity and references; not causal certification"
+          },
+          "elapsed_seconds": 135.172
+        },
+        "html_file": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A05_40mm\\diagnosis_tasks\\0fd441778f1a4d67999204adcb9fbdc6\\display_reports\\r3\\20261116_100749_f0d29f2a\\模拟诊断报告.html",
+        "completed_at": "2026-11-16T10:10:04+08:00",
+        "elapsed_seconds": 647.83
+      },
+      "task_state": "preliminary_delivered",
+      "revision": 3,
+      "facts": {
+        "rainfall_total_mm": 40.0,
+        "rainfall_peak_mm_h": 73.366,
+        "overflow_event_count": 2,
+        "overflow_nodes": [
+          "10",
+          "15"
+        ],
+        "overflow_volume_m3": 666.6120000000001,
+        "events": [
+          {
+            "event_id": "10:E001",
+            "node_id": "10",
+            "run_id": "pilot4_1min_20261116_cbb20d_A05_40mm",
+            "model_name": "Example1Tokens",
+            "occurrence": 1,
+            "start": "2024-01-01 01:29:00",
+            "end": "2024-01-01 02:14:00",
+            "last_positive_time": "2024-01-01 02:13:00",
+            "peak_time": "2024-01-01 01:40:00",
+            "peak_flooding_Ls": 543.677,
+            "duration_minutes": 45.0,
+            "estimated_volume_m3": 513.783,
+            "positive_sample_count": 45,
+            "left_censored": false,
+            "right_censored": false,
+            "saved_step_seconds": 60.0,
+            "integration_method": "left_sample_rectangle"
+          },
+          {
+            "event_id": "15:E001",
+            "node_id": "15",
+            "run_id": "pilot4_1min_20261116_cbb20d_A05_40mm",
+            "model_name": "Example1Tokens",
+            "occurrence": 1,
+            "start": "2024-01-01 01:34:00",
+            "end": "2024-01-01 01:52:00",
+            "last_positive_time": "2024-01-01 01:51:00",
+            "peak_time": "2024-01-01 01:40:00",
+            "peak_flooding_Ls": 308.881,
+            "duration_minutes": 18.0,
+            "estimated_volume_m3": 152.829,
+            "positive_sample_count": 18,
+            "left_censored": false,
+            "right_censored": false,
+            "saved_step_seconds": 60.0,
+            "integration_method": "left_sample_rectangle"
+          }
+        ]
+      },
+      "hydraulic_audit": {
+        "runoff_continuity_error_pct": -0.006,
+        "routing_continuity_error_pct": 0.0,
+        "nonconverging_steps_pct": 0.0,
+        "warnings": [
+          "WARNING 02: maximum depth increased for Node 21",
+          "WARNING 02: maximum depth increased for Node 22"
+        ],
+        "review_status": "recorded_not_independent_quality_acceptance",
+        "simulation_end": "2024-01-01 07:00:00",
+        "source_volume_m3": 666.6118814153998,
+        "coupling_volume_error_m3": 7.958078640513122e-13
+      },
+      "usage": {
+        "diagnosis_attempts": 4,
+        "diagnosis_completed": 3,
+        "diagnosis_failed": 1,
+        "prompt_tokens": 285893,
+        "completion_tokens": 92779
+      },
+      "model_overview": "本运行（pilot4_1min_20261116_cbb20d_A05_40mm，Example1Tokens，DYNWAVE）为单一连续降雨：00:00—04:00累计40 mm，雨峰73.366 mm/h@01:35、平台至01:40，无零雨间歇。全场识别2个冒溢事件、2个冒溢节点（节点10、节点15），合计识别冒溢体积666.612 m3，两事件峰值同为01:40，01:34—01:52两节点同时冒溢。节点10（01:29—02:14，45 min，513.783 m3，峰值543.677 L/s）直接来水由管段1（50.3%）与本地侧向入流（49.7%，直接连接子汇水区2）各半组成，出流管段6（D=0.3048 m）承压且流量恒定164.048 L/s，冒溢量≈总入流−该恒定排放量。节点15（01:34—01:52，18 min，152.829 m3，峰值308.881 L/s）直接来水以本地侧向入流为主（72.9%，直接连接子汇水区5），出流管段13（D=0.4572 m、坡度0.005）近满管承压、流量停滞于358—377 L/s，冒溢量同样≈总入流−管段13流量。两事件均无泵闸堰等设施、无初始蓄水与前期余水；补证显示下游节点21—节点22、节点16—节点24—节点17水头沿程下降且无冒溢，下游影响仅见管段6出口及管段13出口的局部或轻微淹没，未构成已确立的顶托过程。",
+      "event_assessments": [
+        {
+          "event_id": "10:E001",
+          "node_id": "10",
+          "process_explanation": "本场为单一连续降雨（00:00—04:00，40 mm，雨峰73.366 mm/h@01:35、平台至01:40）。节点10在01:28水深0.38 m、无冒溢，01:29水深跃至0.914 m（等于max_depth，水头304.19 m）并出现48.645 L/s冒溢，此后水头整段恒定304.19 m，01:40达峰543.677 L/s，02:13仍有1.502 L/s，02:14停止，事件体积513.783 m3。来水：管段1（节点9→节点10）与节点10外部侧向入流（直接连接子汇水区2）体量比50.3%/49.7%，分别由93.481/96.122 L/s升至351.002/357.047 L/s，且同在01:40达峰，总入流189.603→708.049 L/s。排出：管段6（D=0.3048 m、坡度0.01）自01:31起恒定164.048 L/s至02:13，管段水深0.297 m近满、入口水头高于管顶0.6096 m（承压），冒溢流量与“总入流−164.048 L/s”高度接近（01:40为544.0 vs 543.677 L/s）。储水：ponded_area=0、ALLOW_PONDING=NO，超出部分即时外排。下游：管段6出口在节点21部分淹没（高于管底0.17—0.20 m、低于管顶0.10—0.13 m），补证显示节点21下游管段7仅0.135—0.205 m深、流量89.878—202.523 L/s、节点21—节点22水头差1.08—1.19 m，水头继续下降，未见下游壅水；节点21水位属局部过流水位。结构：节点10入流D=0.4572 m与出流D=0.3048 m同管底、下游管顶低0.1524 m、满断面面积比0.444、坡度0.0125→0.01。综合：雨峰期两条来水路径集中并叠加抬升总入流（M1），出流管段6在承压状态下被限制在约164 L/s（M2），二者在同一过程中共同造成起溢—峰值—持续；补证后下游壅水解释被排除，M3只保留出口稳态部分淹没的弱候选。",
+          "evidence_ids": [
+            "FP_76e2d6227ceba6965ad4",
+            "FP_4a998619e4a5e0e06202",
+            "FP_bd39996c19e0d97f7119",
+            "FP_b8d98cadddd0a1ea92ab",
+            "FP_3176c89973b34f2bfbef",
+            "HIST_3857c99d4b13f3d01e2c01a4",
+            "CTX_RAINFALL",
+            "SUP_4b49bacb9d05bfd9f233629c"
+          ],
+          "mechanism_assessments": [
+            {
+              "mechanism_id": "M1",
+              "status": "supported",
+              "reason": "管段1入流与节点10外部侧向入流在01:28—01:40同期增长、同在01:40达峰（351.002/357.047 L/s），总入流189.603→708.049 L/s，起溢与峰值均落在该集中上涨段并与雨峰平台同相位；两条路径各约一半，属共同作用而非单一路径。缺口：未提供逐子汇水区径流过程，无法细分本地侧向的组成。",
+              "evidence_ids": [
+                "FP_bd39996c19e0d97f7119",
+                "FP_b8d98cadddd0a1ea92ab",
+                "CTX_RAINFALL"
+              ]
+            },
+            {
+              "mechanism_id": "M2",
+              "status": "supported",
+              "reason": "出流管段6在01:31—02:13恒定164.048 L/s、水深近满、入口水头高于管顶0.6096 m，节点10水头被井口钉住，冒溢量≈总入流−该恒定排放量；结构上管段6较管段1缩径（D 0.4572→0.3048）、同管底、坡度由0.0125降至0.01。竞争解释已比较：来水决定入流峰值，补证显示下游管段7远未满且水头沿程下降，主控为管段6承压输水上限。",
+              "evidence_ids": [
+                "FP_bd39996c19e0d97f7119",
+                "FP_4a998619e4a5e0e06202",
+                "FP_b8d98cadddd0a1ea92ab",
+                "SUP_4b49bacb9d05bfd9f233629c"
+              ]
+            },
+            {
+              "mechanism_id": "M3",
+              "status": "candidate",
+              "reason": "DYNWAVE可表征回水；管段6出口在节点21部分淹没（高于管底0.174—0.205 m、低于管顶约0.10—0.13 m）构成具体线索，但补证显示节点21下游管段7仅约22%—34%深度、节点21—节点22水头差1.08—1.19 m且沿程下降，未见下游壅水；仅出口稳态部分淹没可能影响排放，量值未定，故保持候选并收窄范围。",
+              "evidence_ids": [
+                "FP_4a998619e4a5e0e06202",
+                "FP_bd39996c19e0d97f7119",
+                "SUP_4b49bacb9d05bfd9f233629c"
+              ]
+            },
+            {
+              "mechanism_id": "M5",
+              "status": "not_applicable",
+              "reason": "事件前提不成立（无相关设施）：全运行PUMPS/ORIFICES/WEIRS/OUTLETS计数均为0，节点10路径local_facilities为空、controls_present=false；限定于已核实的节点10、节点9、节点21与管段1、6。",
+              "evidence_ids": [
+                "FP_3176c89973b34f2bfbef",
+                "FP_4a998619e4a5e0e06202"
+              ]
+            },
+            {
+              "mechanism_id": "M6",
+              "status": "not_applicable",
+              "reason": "事件前提不成立：节点10（及管段1、6区间）初始水深0、ponded_area=0，前期背景00:01—01:29水位单调上升、无独立前一轮雨峰/峰间退水，无储水单元；本轮上涨段的管段储水增加属基础水量过程，不作M6依据。",
+              "evidence_ids": [
+                "HIST_3857c99d4b13f3d01e2c01a4",
+                "FP_4a998619e4a5e0e06202",
+                "CTX_RAINFALL"
+              ]
+            }
+          ],
+          "joint_assessment": {
+            "status": "supported",
+            "mechanism_ids": [
+              "M1",
+              "M2"
+            ],
+            "conclusion": "节点10冒溢由雨峰期两条直接来水路径（管段1来水与本地侧向入流）集中增长并峰值叠加，叠加出流管段6（D=0.3048 m）承压输水上限约164 L/s共同造成：总入流超出该上限的部分逐分钟近似等于冒溢流量。",
+            "interaction_explanation": "同期证据相互咬合：(1) 01:28—01:40总入流189.603→708.049 L/s，两条路径同刻达峰，说明来水时间集中（M1）抬高了需排出的峰值；(2) 管段6在01:31后恒定164.048 L/s、水深近满、入口水头高于管顶0.6096 m，而节点10水头被井口钉在304.19 m，说明可用驱动水头被封顶、排放能力受限（M2）；(3) 01:40“总入流−管段6流量=544.0 L/s”与冒溢543.677 L/s一致，把来水、排出与冒溢三者在同一时刻定量连接。补证显示节点21下游管段7远未满、水头继续下降，未形成可见的顶托过程，故M3只作弱候选而非综合判断的一部分。",
+            "evidence_ids": [
+              "FP_76e2d6227ceba6965ad4",
+              "FP_4a998619e4a5e0e06202",
+              "FP_bd39996c19e0d97f7119",
+              "FP_b8d98cadddd0a1ea92ab",
+              "CTX_RAINFALL",
+              "SUP_4b49bacb9d05bfd9f233629c"
+            ],
+            "limitations": "节点22以下与地表路径未核查，故不能排除更远下游或地表过程；出口部分淹没对管段6排放能力的削减幅度未量化；管段6恒定流量的数值-水力机制未做变工况比较，结论限于本次模型工况。"
+          },
+          "alternatives": "竞争解释主要为下游顶托（M3，因节点21出口部分淹没）与单纯来水增大（M1，若出流能力充足则不会冒溢）。现有证据显示节点21下游管段7未满且水头沿程下降、管段6流量在上游水头恒定时保持不变，故更支持局部排出能力限制（M2）与来水时间集中（M1）的共同作用；地表回流路径无证据（surface_association未构建，SWMM→CA2D为单向耦合），不推断上游冒溢水回流进入节点10。",
+          "evidence_gaps": [
+            "节点22以下及管段5的排出条件未核查，无法最终判定出口稳态部分淹没是否削减管段6的输水能力。",
+            "缺少逐子汇水区径流过程，无法把节点10外部侧向入流（49.7%）细分到子汇水区2以外的来源。",
+            "未做改变出流管段条件或来水峰现时刻的比较演算，故不给出贡献率或反事实验证。"
+          ],
+          "structural_assessment": {
+            "status": "reviewed",
+            "summary": "已按upstream_one_segment_downstream_confluence_v1核查节点10、节点9、节点21与管段1、管段6。唯一finding joint:10:1:6给出：出流管段6较入流管段1缩径（0.4572→0.3048 m，满断面面积比0.444）、同管底而下游管顶低0.1524 m、坡度由0.0125降至0.01。该几何与事件过程一致：管段6入口水头高于管顶0.6096 m、流量被限制在164.048 L/s，节点10水头钉在井口并持续冒溢。unavailable_checks为空；节点21的范围外连接（入流管段5、出流管段7）仅列为清单，管段7已通过补证核查，管段5几何与过程未核查，故下游结论限于节点21界面及已核查的管段7。",
+            "evidence_ids": [
+              "FP_4a998619e4a5e0e06202",
+              "FP_bd39996c19e0d97f7119",
+              "SUP_4b49bacb9d05bfd9f233629c"
+            ],
+            "finding_assessments": [
+              {
+                "check_id": "joint:10:1:6",
+                "status": "relevant",
+                "reason": "出流管段6相对管段1缩径（D 0.4572→0.3048 m）、同管底同高程衔接而管顶低0.1524 m、坡度减小，构成节点10排出能力低于入流能力的几何条件；与同期管段6承压（入口水头高于管顶0.6096 m）、流量恒定164.048 L/s及节点10水头恒定304.19 m的冒溢过程直接对应。几何面积比只是断面描述，能力意义由水力过程给出。",
+                "evidence_ids": [
+                  "FP_4a998619e4a5e0e06202",
+                  "FP_bd39996c19e0d97f7119"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "event_id": "15:E001",
+          "node_id": "15",
+          "process_explanation": "同一场连续降雨。节点15在01:33水深0.397 m、无冒溢，01:34水深0.914 m（等于max_depth，水头301.752 m）并出现6.733 L/s，01:40达峰308.881 L/s，01:51仍有5.780 L/s，01:52停止，事件体积152.829 m3、持续18 min。来水：管段12（节点14→节点15）与节点15外部侧向入流（直接连接子汇水区5）体量比27.1%/72.9%；侧向入流由232.431 L/s升至486.973 L/s（01:33→01:40），管段12由87.483升至180.878 L/s（峰值188.441@01:41），总入流319.914→667.851 L/s。排出：管段13（D=0.4572 m、坡度0.005）01:36达378.067 L/s后维持358—377 L/s，管段水深0.44—0.457 m近满，入口水头高于管顶0.4572 m，节点15水头恒定301.752 m；冒溢流量与“总入流−管段13流量”接近（01:40为309.3 vs 308.881 L/s）。结构：进出管段同径、同管底、同管顶，仅下游坡度由0.0075降至0.005，无缩径或跌差。下游：补证显示节点16在01:36—01:40水头升0.042 m，同期管段13流量由378.067降至358.569 L/s、两端水头差由1.089降至1.047 m，提示节点16局部水位有可测但次要的影响；01:40节点16水头300.705 m，高于管段13出口管顶约0.020 m。新增SUP_2e99显示节点16经管段15（754.228 L/s、水深0.497 m、至节点24水头差0.265 m）流向节点24（水头300.44 m、无冒溢），再经管段16（850.632 L/s、水深0.487 m、水头差1.279 m）至节点17（299.161 m），节点24以下未见壅水。综合：本地侧向来水在雨峰期集中增长并与管段12来水同期达峰（M1），出流管段13因坡度较小并近满管承压而限制在约360—378 L/s（M2），二者共同形成节点15冒溢；下游影响收窄为节点16本地汇流水位造成的轻微出口淹没候选。",
+          "evidence_ids": [
+            "FP_950c6dde96a7ad2064bb",
+            "FP_9571488b24d14bbe6b61",
+            "FP_8f46ba18d3c216e35ef0",
+            "FP_7e9a97d5fc1f8f252620",
+            "FP_27b52edc8a1da886d8b8",
+            "HIST_3cb905b777e61601235c3858",
+            "CTX_RAINFALL",
+            "SUP_f111c0bcf77706b176c99add",
+            "SUP_2e99fd59aa5aad7ef93b6f91"
+          ],
+          "mechanism_assessments": [
+            {
+              "mechanism_id": "M1",
+              "status": "supported",
+              "reason": "节点15外部侧向入流232.431→486.973 L/s（01:33→01:40）与管段12来水87.483→180.878 L/s（峰值188.441@01:41）同期增长、在01:40—01:41同刻达峰，总入流319.914→667.851 L/s；起溢01:34位于该上涨段，与雨峰01:35—01:40同相位。本地侧向占直接来水体积72.9%，是集中增长的主要路径。缺口：无逐子汇水区分过程。",
+              "evidence_ids": [
+                "FP_8f46ba18d3c216e35ef0",
+                "FP_7e9a97d5fc1f8f252620",
+                "CTX_RAINFALL"
+              ]
+            },
+            {
+              "mechanism_id": "M2",
+              "status": "supported",
+              "reason": "出流管段13流量01:36后停滞在358—377 L/s、水深近满（0.44—0.457 m）、入口水头高于管顶0.4572 m，节点15水头恒定301.752 m，冒溢量≈总入流−管段13流量（01:40：309.3 vs 308.881 L/s）；结构上出流管段与入流同径但坡度由0.0075降至0.005，满管均匀流参照流量约273 L/s，实测358—378 L/s表明其已承压运行。竞争解释（下游顶托）已比较：节点16水位仅略高于管顶、上游水头恒定，主控仍为该管段的坡度/断面与承压状态。",
+              "evidence_ids": [
+                "FP_8f46ba18d3c216e35ef0",
+                "FP_9571488b24d14bbe6b61",
+                "FP_7e9a97d5fc1f8f252620"
+              ]
+            },
+            {
+              "mechanism_id": "M3",
+              "status": "candidate",
+              "reason": "DYNWAVE可表征回水。01:40节点16水头300.705 m高于管段13出口管顶约0.020 m；01:36—01:40节点16水头升0.042 m时管段13流量降约19 L/s（上游水头恒定），方向一致但幅度小。新增SUP_2e99显示节点16经管段15至节点24、再经管段16至节点17，水头由300.705 m降至300.44 m再降至299.161 m，管段15/16水深约82%/80%且节点24无冒溢，未见节点24以下壅水；M3作用范围收窄为节点16本地汇流造成的轻微出口淹没。",
+              "evidence_ids": [
+                "FP_8f46ba18d3c216e35ef0",
+                "FP_9571488b24d14bbe6b61",
+                "SUP_f111c0bcf77706b176c99add",
+                "SUP_2e99fd59aa5aad7ef93b6f91"
+              ]
+            },
+            {
+              "mechanism_id": "M5",
+              "status": "not_applicable",
+              "reason": "事件前提不成立（无相关设施）：节点15路径local_facilities为空、controls_present=false，全运行PUMPS/ORIFICES/WEIRS/OUTLETS计数为0；限定于已核实的节点14、节点15、节点16与管段12、13。",
+              "evidence_ids": [
+                "FP_27b52edc8a1da886d8b8",
+                "FP_9571488b24d14bbe6b61"
+              ]
+            },
+            {
+              "mechanism_id": "M6",
+              "status": "not_applicable",
+              "reason": "事件前提不成立：节点15初始水深0、ponded_area=0，前期背景00:01—01:34水位自管底附近单调上升，属同一连续雨段，无独立前一轮雨峰/峰间退水，无储水单元；起溢前水位上升属本轮过程，不作M6依据。",
+              "evidence_ids": [
+                "HIST_3cb905b777e61601235c3858",
+                "FP_9571488b24d14bbe6b61",
+                "CTX_RAINFALL"
+              ]
+            }
+          ],
+          "joint_assessment": {
+            "status": "supported",
+            "mechanism_ids": [
+              "M1",
+              "M2"
+            ],
+            "conclusion": "节点15冒溢由雨峰期以本地侧向入流为主的来水集中增长（M1）与出流管段13近满管承压、坡度偏小造成的排出受限（M2）共同形成：总入流达到667.851 L/s时，管段13仅通过358.569 L/s，其余约309 L/s在节点15外溢。",
+            "interaction_explanation": "同期证据连接三个环节：(1) 01:33—01:40外部侧向入流232.431→486.973 L/s、管段12 87.483→180.878 L/s，同刻达峰，总入流翻倍；(2) 同一时段节点15水头被井口钉在301.752 m，管段13入口水头高于管顶0.4572 m、水深近满、流量自01:36后停滞在358—377 L/s；(3) 01:40“总入流−管段13流量=309.3 L/s”与冒溢308.881 L/s一致。补证显示节点16尾水上升0.042 m与管段13约5%流量下降同向同量级，但新增节点24、节点17过程显示水头继续下降、下游管段未满管，故下游影响仅为节点16本地汇流的次要候选，不进入综合判断的supported机制。",
+            "evidence_ids": [
+              "FP_950c6dde96a7ad2064bb",
+              "FP_9571488b24d14bbe6b61",
+              "FP_8f46ba18d3c216e35ef0",
+              "FP_7e9a97d5fc1f8f252620",
+              "CTX_RAINFALL",
+              "SUP_f111c0bcf77706b176c99add",
+              "SUP_2e99fd59aa5aad7ef93b6f91"
+            ],
+            "limitations": "节点17以下与范围外来水（管段8）的上游条件未核查，下游顶托的作用范围不能最终排除，但已核查至节点17的走廊内未见壅水；无逐子汇水区过程，本地侧向72.9%的来源不能细分；管段13的承压输水上限未做变工况比较，结论限于本次模型工况。"
+          },
+          "alternatives": "竞争解释为下游顶托（节点16水位略高于管段13出口管顶，且节点16入流含范围外管段8约400 L/s）与单纯来水增大。新增SUP_2e99显示节点16经管段15至节点24、再经管段16至节点17时水头持续下降，节点24无冒溢，故更支持“本地来水集中+管段13坡度偏小的承压排出受限”的共同作用；节点16尾水影响仅为局部候选。地表路径无证据，不推断上游冒溢水回流进入节点15。",
+          "evidence_gaps": [
+            "节点17以下与来水侧管段8上游缺少完整过程，无法最终判定更远边界条件，但当前已核查走廊未见顶托。",
+            "缺少逐子汇水区径流过程，无法验证节点15外部侧向入流（72.9%）的子汇水区组成。",
+            "未做改变管段13坡度/下游水位的比较演算，故不给出贡献率或反事实验证。"
+          ],
+          "structural_assessment": {
+            "status": "reviewed",
+            "summary": "已按upstream_one_segment_downstream_confluence_v1核查节点15、节点14、节点16与管段12、管段13。唯一finding joint:15:12:13仅报告下游坡度减小（0.0075→0.005）；两管段同径D=0.4572 m、同管底、同管顶，故节点15处不存在缩径、错台或跌差，同径同管底本身不是异常。该坡降减小的意义在事件中体现为管段13在近满管（水深0.44—0.457 m）时流量停滞于358—377 L/s，而节点15水头恒定301.752 m并持续冒溢。unavailable_checks为空；节点16的范围外连接（入流管段8、出流管段15）已通过补证核查流量/水深界面，并进一步核查管段15—节点24—管段16—节点17，水头沿程下降、节点24无冒溢，未见更远下游壅水；但节点17以下及管段8上游几何/过程仍未核查。",
+            "evidence_ids": [
+              "FP_9571488b24d14bbe6b61",
+              "FP_8f46ba18d3c216e35ef0",
+              "SUP_f111c0bcf77706b176c99add",
+              "SUP_2e99fd59aa5aad7ef93b6f91"
+            ],
+            "finding_assessments": [
+              {
+                "check_id": "joint:15:12:13",
+                "status": "relevant",
+                "reason": "下游管段13坡度由0.0075降至0.005，断面与衔接完全一致（同径0.4572 m、同管底、同管顶），因此不存在缩径型局部约束，但单位长度水力坡降更小意味着同水深下输水能力更低；与同期管段13近满管、流量停滞在358—377 L/s而节点15水头恒定的过程相符。该特征本身不构成设计缺陷或冒溢根因判定。",
+                "evidence_ids": [
+                  "FP_9571488b24d14bbe6b61",
+                  "FP_8f46ba18d3c216e35ef0"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "evidence_requests": [],
+      "reference_verification": {
+        "total_claims": 36,
+        "references_verified": 36,
+        "references_missing": 0,
+        "no_references": 0,
+        "reference_failure_rate": 0.0
+      },
+      "call_comparisons": [
+        {
+          "sequence": 1,
+          "started_at": "2026-11-16T09:59:49+08:00",
+          "evidence_view_format": "shallow_shared_v1",
+          "visible_records": 30,
+          "shared_definitions": 0,
+          "characters_raw": 165415,
+          "characters_tables_only": 114490,
+          "characters_actual": 112668,
+          "status": "response_parsed",
+          "completed_at": "2026-11-16T10:02:31+08:00"
+        },
+        {
+          "sequence": 2,
+          "started_at": "2026-11-16T10:02:32+08:00",
+          "evidence_view_format": "shallow_shared_v1",
+          "visible_records": 32,
+          "shared_definitions": 0,
+          "characters_raw": 260250,
+          "characters_tables_only": 165834,
+          "characters_actual": 163852,
+          "status": "response_parsed",
+          "completed_at": "2026-11-16T10:04:51+08:00"
+        },
+        {
+          "sequence": 3,
+          "started_at": "2026-11-16T10:04:51+08:00",
+          "evidence_view_format": "shallow_shared_v1",
+          "visible_records": 32,
+          "shared_definitions": 0,
+          "characters_raw": 274721,
+          "characters_tables_only": 180305,
+          "characters_actual": 178323,
+          "status": "response_parsed",
+          "completed_at": "2026-11-16T10:06:07+08:00"
+        },
+        {
+          "sequence": 4,
+          "started_at": "2026-11-16T10:06:08+08:00",
+          "evidence_view_format": "shallow_shared_v1",
+          "visible_records": 33,
+          "shared_definitions": 0,
+          "characters_raw": 319792,
+          "characters_tables_only": 186637,
+          "characters_actual": 184575,
+          "status": "response_parsed",
+          "completed_at": "2026-11-16T10:07:48+08:00"
+        }
+      ],
+      "markdown_report": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A05_40mm\\diagnosis_tasks\\0fd441778f1a4d67999204adcb9fbdc6\\preliminary_report_r3.md",
+      "html_report": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A05_40mm\\diagnosis_tasks\\0fd441778f1a4d67999204adcb9fbdc6\\display_reports\\r3\\20261116_100749_f0d29f2a\\模拟诊断报告.html",
+      "display_report": {
+        "status": "completed",
+        "version": "report_agent_v1.10_surface_basis_palette",
+        "task_id": "0fd441778f1a4d67999204adcb9fbdc6",
+        "revision": 3,
+        "generated_at": "2026-11-16T10:07:49+08:00",
+        "output_dir": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A05_40mm\\diagnosis_tasks\\0fd441778f1a4d67999204adcb9fbdc6\\display_reports\\r3\\20261116_100749_f0d29f2a",
+        "producer_hashes": {
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\agent.py": "9ffd9046633b7b503ddbae68204a588a46a1560a6657fe1f5da70d3bd8fcdf03",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\delivery.py": "2e0e7ac41e69a6223572dab995136cfeaba5ca89ac39d17d6de225eda3223355",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\internal_report.py": "8aa1b924a870f9888d24c7c4e3ad76777f10cc550c394ea0cdec04f1f9967aed",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\labels.py": "76310e01266031a1b5612dd7ce568f33acc77b53b78e759bfcfc0c9d2356e5ea",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\materials.py": "3e5b135c121fc32763ea042c355eb8b1d625f6739341ed70d968998016ecfc37",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\narrative.py": "7641eb6c750f34856488f793ddbd88d5aab7496b2b66e1f54e3dafd7bd081ff7",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\object_labels.py": "62a4a2b722b5c1514e5ec65f313696716c33dd57662fe595f82e0b2d625ea45e",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\pipeline.py": "bdf2589c5a1658724bb50f69460dcfdf1b7b0bba6f214c461da8a436668511c5",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\plots.py": "c03ee8fbc429e18218884308c44e42fd2b81da80fcd0eb7fcdf5e3d2cd6efd34",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\rain.py": "24564eb5c52098e081681c451bc1c621498804513b4299e8f5b5261ee4a089a0",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\render.py": "5b411326f3a6cc3488035761ad1643899d13b1a130eef87c39219686a3e5d1a7",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\scene.py": "3afb370cc0ba568b2a7a1e7a3000794170fc7e9c8d09767c589fd75de344e1a8",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\surface.py": "93220f7eeafc2bde808a00a261dd2030e7fd78aa81d91e4e0b14ac4d2f218ec6",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\__init__.py": "558c41869e14aa07e52b56254449ba970eca3fa8898f01e1c28ed2fdb38f46f5",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\causes_overview_v1.md": "9f5a468aa707ca01666cc5bb4d4f50948cba53df2d231b3de28dbb116c7dec66",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\event_example_lateral_v1.json": "5810c4b2faf150b36b8dc180cd057bb6a066c2ab1a560b8f06f7ee858819f8c1",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\event_example_outflow_v1.json": "624391eb86b5da9c604597435f7dbd279dd018841ba9f86dff25c94afc90d1b0",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\event_example_P7_v1.json": "9d8b6cd06facd0050c13c88ef17dbf96a848ee84555f523e0d63229c2c34a41a",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\event_example_v1.json": "9127c6b06d81733d8b364484ffd68ae8ed6de54a039abe5cda46a4d159f545ed",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\event_rewrite_v2.md": "cf25c14b93e7e885ced2ed7d34292a228056874af99c61fd36761aa2fd15bc62",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\intro_rewrite_v1.md": "743ccf6a353518006c20ad402d108e556859c54c93c347a3f66e85788fd27521",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\rain_fixed_v1.md": "3c95b99632e43db9e24d461d10fed0ff263b6c0bca7a6b2ec1057831425421fe",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\rain_template_v1.json": "305c1bde691ed85b632b02178353e7e24b88e6713bd5aecb13e1a9851b0cdef1",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\scene_fixed_v1.md": "8183aafbb123c547472b29bc0e841770943615805cd4c1e7395e0b047e96b37f",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\scene_template_v1.json": "98c6059fdc95e4829739cc471b3406b8718785f360a81fbad784973b761ff89a",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\surface_basis_v1.json": "3e8b20b7b7e681fd4788106c887b04a2b9709f4dd17639b459b3ac82224ac224",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\prompts\\surface_basis_v1.md": "d6f2471451d62cc0596a4d6b413368b31320e71a03fc418bf0a9cf71e5b84cd8",
+          "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\common\\llm.py": "8db0748f99dc983b8161af21b4e9f2ba0fc070952ad89f266401bd882e0bca9a"
+        },
+        "html_file": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A05_40mm\\diagnosis_tasks\\0fd441778f1a4d67999204adcb9fbdc6\\display_reports\\r3\\20261116_100749_f0d29f2a\\模拟诊断报告.html",
+        "html_sha256": "de8a60c75b84d4c3c577a7d49a3d2add8addc0d6054f51980c1f9454e0780548",
+        "materials_file": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A05_40mm\\diagnosis_tasks\\0fd441778f1a4d67999204adcb9fbdc6\\display_reports\\r3\\20261116_100749_f0d29f2a\\report_materials.json",
+        "quality_checks": {
+          "status": "passed",
+          "sections": 6,
+          "events": 2,
+          "embedded_images": 8,
+          "all_images_verified": true,
+          "numeric_policy": "supplied_fact_tokens",
+          "causal_policy": "current_diagnosis_statuses",
+          "verification_scope": "structure, source identity and references; not causal certification"
+        },
+        "elapsed_seconds": 135.172
+      },
+      "standalone_report": "E:\\SWMM_Agentic\\SWMM-Agentic4\\outputs\\example1tokens_1min_pilot_20261116\\reports\\report_40mm.html",
+      "report_usage": {
+        "configured_attempts": 2,
+        "prompt_tokens": 82601,
+        "completion_tokens": 23675
+      }
+    }
+  ]
+}

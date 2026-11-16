@@ -1,0 +1,832 @@
+{
+  "scope": "Actual provider usage, failures included, diagnosis and HTML separately. Event comparisons use node/time overlap, not event ID alone.",
+  "sampling_verification": {
+    "cases": [
+      {
+        "rain_mm": 14.0,
+        "run_5s": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1\\runs\\pilot4_20261116_adff44_A02_14mm",
+        "run_60s": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A02_14mm",
+        "changed_swmm_options": [
+          "REPORT_STEP"
+        ],
+        "routing_steps_5s": 5040,
+        "routing_steps_60s": 5040,
+        "saved_times_5s": 5041,
+        "saved_times_60s": 421,
+        "tables": [
+          {
+            "file": "nodes.tsv",
+            "rows_5s": 70574,
+            "rows_60s": 5894,
+            "matching_timestamp_values_identical": true,
+            "max_abs_differences": {
+              "depth_m": 0.0,
+              "flooding_Ls": 0.0
+            }
+          },
+          {
+            "file": "links.tsv",
+            "rows_5s": 65533,
+            "rows_60s": 5473,
+            "matching_timestamp_values_identical": true,
+            "max_abs_differences": {
+              "flow_Ls": 0.0,
+              "depth_m": 0.0
+            }
+          },
+          {
+            "file": "node_flooding.tsv",
+            "rows_5s": 70574,
+            "rows_60s": 5894,
+            "matching_timestamp_values_identical": true,
+            "max_abs_differences": {
+              "flow_Ls": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "rain_mm": 20.0,
+        "run_5s": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1\\runs\\pilot4_20261116_adff44_A03_20mm",
+        "run_60s": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A03_20mm",
+        "changed_swmm_options": [
+          "REPORT_STEP"
+        ],
+        "routing_steps_5s": 5042,
+        "routing_steps_60s": 5042,
+        "saved_times_5s": 5041,
+        "saved_times_60s": 421,
+        "tables": [
+          {
+            "file": "nodes.tsv",
+            "rows_5s": 70574,
+            "rows_60s": 5894,
+            "matching_timestamp_values_identical": true,
+            "max_abs_differences": {
+              "depth_m": 0.0,
+              "flooding_Ls": 0.0
+            }
+          },
+          {
+            "file": "links.tsv",
+            "rows_5s": 65533,
+            "rows_60s": 5473,
+            "matching_timestamp_values_identical": true,
+            "max_abs_differences": {
+              "flow_Ls": 0.0,
+              "depth_m": 0.0
+            }
+          },
+          {
+            "file": "node_flooding.tsv",
+            "rows_5s": 70574,
+            "rows_60s": 5894,
+            "matching_timestamp_values_identical": true,
+            "max_abs_differences": {
+              "flow_Ls": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "rain_mm": 40.0,
+        "run_5s": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1\\runs\\pilot4_20261116_adff44_A05_40mm",
+        "run_60s": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A05_40mm",
+        "changed_swmm_options": [
+          "REPORT_STEP"
+        ],
+        "routing_steps_5s": 5070,
+        "routing_steps_60s": 5070,
+        "saved_times_5s": 5041,
+        "saved_times_60s": 421,
+        "tables": [
+          {
+            "file": "nodes.tsv",
+            "rows_5s": 70574,
+            "rows_60s": 5894,
+            "matching_timestamp_values_identical": true,
+            "max_abs_differences": {
+              "depth_m": 0.0,
+              "flooding_Ls": 0.0
+            }
+          },
+          {
+            "file": "links.tsv",
+            "rows_5s": 65533,
+            "rows_60s": 5473,
+            "matching_timestamp_values_identical": true,
+            "max_abs_differences": {
+              "flow_Ls": 0.0,
+              "depth_m": 0.0
+            }
+          },
+          {
+            "file": "node_flooding.tsv",
+            "rows_5s": 70574,
+            "rows_60s": 5894,
+            "matching_timestamp_values_identical": true,
+            "max_abs_differences": {
+              "flow_Ls": 0.0
+            }
+          }
+        ]
+      }
+    ],
+    "original_example1_configuration_unchanged": true
+  },
+  "cases": [
+    {
+      "rain_mm": 14.0,
+      "first_5s": {
+        "input": 38390,
+        "output": 23403,
+        "total": 61793
+      },
+      "first_60s": {
+        "input": 28677,
+        "output": 21318,
+        "total": 49995
+      },
+      "first_input_reduction_pct": 25.300859598853865,
+      "first_total_reduction_pct": 19.09277749906947,
+      "diagnosis_usage_5s": {
+        "diagnosis_attempts": 3,
+        "diagnosis_completed": 2,
+        "diagnosis_failed": 1,
+        "prompt_tokens": 276078,
+        "completion_tokens": 55049
+      },
+      "diagnosis_usage_60s": {
+        "diagnosis_attempts": 2,
+        "diagnosis_completed": 2,
+        "diagnosis_failed": 0,
+        "prompt_tokens": 67950,
+        "completion_tokens": 33310
+      },
+      "diagnosis_total_5s": 331127,
+      "diagnosis_total_60s": 101260,
+      "diagnosis_total_reduction_pct": 69.41958825465757,
+      "diagnosis_input_reduction_pct": 75.38739052007043,
+      "html_tokens_5s": 49896,
+      "html_tokens_60s": 52220,
+      "with_html_total_5s": 381023,
+      "with_html_total_60s": 153480,
+      "facts_5s": {
+        "rainfall_total_mm": 14.0,
+        "rainfall_peak_mm_h": 25.6781,
+        "overflow_event_count": 1,
+        "overflow_nodes": [
+          "10"
+        ],
+        "overflow_volume_m3": 8.7,
+        "events": [
+          {
+            "event_id": "10:E001",
+            "node_id": "10",
+            "run_id": "pilot4_20261116_adff44_A02_14mm",
+            "model_name": "Example1",
+            "occurrence": 1,
+            "start": "2024-01-01 01:40:25",
+            "end": "2024-01-01 01:46:50",
+            "last_positive_time": "2024-01-01 01:46:45",
+            "peak_time": "2024-01-01 01:40:25",
+            "peak_flooding_Ls": 57.853,
+            "duration_minutes": 6.417,
+            "estimated_volume_m3": 8.7,
+            "positive_sample_count": 77,
+            "left_censored": false,
+            "right_censored": false,
+            "saved_step_seconds": 5.0,
+            "integration_method": "left_sample_rectangle"
+          }
+        ]
+      },
+      "facts_60s": {
+        "rainfall_total_mm": 14.0,
+        "rainfall_peak_mm_h": 25.6781,
+        "overflow_event_count": 1,
+        "overflow_nodes": [
+          "10"
+        ],
+        "overflow_volume_m3": 8.156,
+        "events": [
+          {
+            "event_id": "10:E001",
+            "node_id": "10",
+            "run_id": "pilot4_1min_20261116_cbb20d_A02_14mm",
+            "model_name": "Example1Tokens",
+            "occurrence": 1,
+            "start": "2024-01-01 01:41:00",
+            "end": "2024-01-01 01:47:00",
+            "last_positive_time": "2024-01-01 01:46:00",
+            "peak_time": "2024-01-01 01:41:00",
+            "peak_flooding_Ls": 36.698,
+            "duration_minutes": 6.0,
+            "estimated_volume_m3": 8.156,
+            "positive_sample_count": 6,
+            "left_censored": false,
+            "right_censored": false,
+            "saved_step_seconds": 60.0,
+            "integration_method": "left_sample_rectangle"
+          }
+        ]
+      },
+      "volume_relative_change_pct": -6.252873563218375,
+      "event_comparisons": [
+        {
+          "coarse_event": {
+            "event_id": "10:E001",
+            "node_id": "10",
+            "run_id": "pilot4_1min_20261116_cbb20d_A02_14mm",
+            "model_name": "Example1Tokens",
+            "occurrence": 1,
+            "start": "2024-01-01 01:41:00",
+            "end": "2024-01-01 01:47:00",
+            "last_positive_time": "2024-01-01 01:46:00",
+            "peak_time": "2024-01-01 01:41:00",
+            "peak_flooding_Ls": 36.698,
+            "duration_minutes": 6.0,
+            "estimated_volume_m3": 8.156,
+            "positive_sample_count": 6,
+            "left_censored": false,
+            "right_censored": false,
+            "saved_step_seconds": 60.0,
+            "integration_method": "left_sample_rectangle"
+          },
+          "fine_events": [
+            {
+              "event_id": "10:E001",
+              "node_id": "10",
+              "run_id": "pilot4_20261116_adff44_A02_14mm",
+              "model_name": "Example1",
+              "occurrence": 1,
+              "start": "2024-01-01 01:40:25",
+              "end": "2024-01-01 01:46:50",
+              "last_positive_time": "2024-01-01 01:46:45",
+              "peak_time": "2024-01-01 01:40:25",
+              "peak_flooding_Ls": 57.853,
+              "duration_minutes": 6.417,
+              "estimated_volume_m3": 8.7,
+              "positive_sample_count": 77,
+              "left_censored": false,
+              "right_censored": false,
+              "saved_step_seconds": 5.0,
+              "integration_method": "left_sample_rectangle"
+            }
+          ],
+          "mapping": "one_to_one",
+          "mechanisms": [
+            {
+              "fine_event": "10:E001",
+              "fine_statuses": {
+                "M1": "supported",
+                "M2": "supported",
+                "M3": "not_applicable",
+                "M5": "not_applicable",
+                "M6": "not_applicable"
+              },
+              "coarse_statuses": {
+                "M1": "supported",
+                "M2": "supported",
+                "M3": "not_applicable",
+                "M5": "not_applicable",
+                "M6": "not_applicable"
+              },
+              "status_changes": {}
+            }
+          ]
+        }
+      ],
+      "new_status": "completed",
+      "new_report": "E:\\SWMM_Agentic\\SWMM-Agentic4\\outputs\\example1tokens_1min_pilot_20261116\\reports\\report_14mm.html",
+      "old_task": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1\\runs\\pilot4_20261116_adff44_A02_14mm\\diagnosis_tasks\\3d0aa008f9b24075a1ed14e7af323b5d",
+      "new_task": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A02_14mm\\diagnosis_tasks\\ba9aedeb16be436fa13e7ca4d6e93b3e"
+    },
+    {
+      "rain_mm": 20.0,
+      "first_5s": {
+        "input": 55189,
+        "output": 20296,
+        "total": 75485
+      },
+      "first_60s": {
+        "input": 29915,
+        "output": 19154,
+        "total": 49069
+      },
+      "first_input_reduction_pct": 45.79535777057022,
+      "first_total_reduction_pct": 34.99503212558787,
+      "diagnosis_usage_5s": {
+        "diagnosis_attempts": 2,
+        "diagnosis_completed": 2,
+        "diagnosis_failed": 0,
+        "prompt_tokens": 180086,
+        "completion_tokens": 34225
+      },
+      "diagnosis_usage_60s": {
+        "diagnosis_attempts": 2,
+        "diagnosis_completed": 2,
+        "diagnosis_failed": 0,
+        "prompt_tokens": 72408,
+        "completion_tokens": 34304
+      },
+      "diagnosis_total_5s": 214311,
+      "diagnosis_total_60s": 106712,
+      "diagnosis_total_reduction_pct": 50.20694224748146,
+      "diagnosis_input_reduction_pct": 59.79254356252013,
+      "html_tokens_5s": 100511,
+      "html_tokens_60s": 61163,
+      "with_html_total_5s": 314822,
+      "with_html_total_60s": 167875,
+      "facts_5s": {
+        "rainfall_total_mm": 20.0,
+        "rainfall_peak_mm_h": 36.683,
+        "overflow_event_count": 1,
+        "overflow_nodes": [
+          "10"
+        ],
+        "overflow_volume_m3": 82.855,
+        "events": [
+          {
+            "event_id": "10:E001",
+            "node_id": "10",
+            "run_id": "pilot4_20261116_adff44_A03_20mm",
+            "model_name": "Example1",
+            "occurrence": 1,
+            "start": "2024-01-01 01:36:40",
+            "end": "2024-01-01 01:53:40",
+            "last_positive_time": "2024-01-01 01:53:35",
+            "peak_time": "2024-01-01 01:40:10",
+            "peak_flooding_Ls": 151.048,
+            "duration_minutes": 17.0,
+            "estimated_volume_m3": 82.855,
+            "positive_sample_count": 204,
+            "left_censored": false,
+            "right_censored": false,
+            "saved_step_seconds": 5.0,
+            "integration_method": "left_sample_rectangle"
+          }
+        ]
+      },
+      "facts_60s": {
+        "rainfall_total_mm": 20.0,
+        "rainfall_peak_mm_h": 36.683,
+        "overflow_event_count": 1,
+        "overflow_nodes": [
+          "10"
+        ],
+        "overflow_volume_m3": 83.333,
+        "events": [
+          {
+            "event_id": "10:E001",
+            "node_id": "10",
+            "run_id": "pilot4_1min_20261116_cbb20d_A03_20mm",
+            "model_name": "Example1Tokens",
+            "occurrence": 1,
+            "start": "2024-01-01 01:37:00",
+            "end": "2024-01-01 01:54:00",
+            "last_positive_time": "2024-01-01 01:53:00",
+            "peak_time": "2024-01-01 01:40:00",
+            "peak_flooding_Ls": 148.814,
+            "duration_minutes": 17.0,
+            "estimated_volume_m3": 83.333,
+            "positive_sample_count": 17,
+            "left_censored": false,
+            "right_censored": false,
+            "saved_step_seconds": 60.0,
+            "integration_method": "left_sample_rectangle"
+          }
+        ]
+      },
+      "volume_relative_change_pct": 0.5769114718483959,
+      "event_comparisons": [
+        {
+          "coarse_event": {
+            "event_id": "10:E001",
+            "node_id": "10",
+            "run_id": "pilot4_1min_20261116_cbb20d_A03_20mm",
+            "model_name": "Example1Tokens",
+            "occurrence": 1,
+            "start": "2024-01-01 01:37:00",
+            "end": "2024-01-01 01:54:00",
+            "last_positive_time": "2024-01-01 01:53:00",
+            "peak_time": "2024-01-01 01:40:00",
+            "peak_flooding_Ls": 148.814,
+            "duration_minutes": 17.0,
+            "estimated_volume_m3": 83.333,
+            "positive_sample_count": 17,
+            "left_censored": false,
+            "right_censored": false,
+            "saved_step_seconds": 60.0,
+            "integration_method": "left_sample_rectangle"
+          },
+          "fine_events": [
+            {
+              "event_id": "10:E001",
+              "node_id": "10",
+              "run_id": "pilot4_20261116_adff44_A03_20mm",
+              "model_name": "Example1",
+              "occurrence": 1,
+              "start": "2024-01-01 01:36:40",
+              "end": "2024-01-01 01:53:40",
+              "last_positive_time": "2024-01-01 01:53:35",
+              "peak_time": "2024-01-01 01:40:10",
+              "peak_flooding_Ls": 151.048,
+              "duration_minutes": 17.0,
+              "estimated_volume_m3": 82.855,
+              "positive_sample_count": 204,
+              "left_censored": false,
+              "right_censored": false,
+              "saved_step_seconds": 5.0,
+              "integration_method": "left_sample_rectangle"
+            }
+          ],
+          "mapping": "one_to_one",
+          "mechanisms": [
+            {
+              "fine_event": "10:E001",
+              "fine_statuses": {
+                "M1": "supported",
+                "M2": "supported",
+                "M3": "candidate",
+                "M5": "not_applicable",
+                "M6": "not_applicable"
+              },
+              "coarse_statuses": {
+                "M1": "supported",
+                "M2": "supported",
+                "M3": "not_applicable",
+                "M5": "not_applicable",
+                "M6": "not_applicable"
+              },
+              "status_changes": {
+                "M3": {
+                  "5s": "candidate",
+                  "60s": "not_applicable"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "new_status": "completed",
+      "new_report": "E:\\SWMM_Agentic\\SWMM-Agentic4\\outputs\\example1tokens_1min_pilot_20261116\\reports\\report_20mm.html",
+      "old_task": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1\\runs\\pilot4_20261116_adff44_A03_20mm\\diagnosis_tasks\\f97df86c54374755b65701ccdb4469fa",
+      "new_task": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A03_20mm\\diagnosis_tasks\\08399e8966d04ef8b2cf346dcaf76409"
+    },
+    {
+      "rain_mm": 40.0,
+      "first_5s": {
+        "input": 142531,
+        "output": 29079,
+        "total": 171610
+      },
+      "first_60s": {
+        "input": 45295,
+        "output": 28767,
+        "total": 74062
+      },
+      "first_input_reduction_pct": 68.22094842525486,
+      "first_total_reduction_pct": 56.84284132626304,
+      "diagnosis_usage_5s": {
+        "diagnosis_attempts": 2,
+        "diagnosis_completed": 2,
+        "diagnosis_failed": 0,
+        "prompt_tokens": 494603,
+        "completion_tokens": 48827
+      },
+      "diagnosis_usage_60s": {
+        "diagnosis_attempts": 4,
+        "diagnosis_completed": 3,
+        "diagnosis_failed": 1,
+        "prompt_tokens": 285893,
+        "completion_tokens": 92779
+      },
+      "diagnosis_total_5s": 543430,
+      "diagnosis_total_60s": 378672,
+      "diagnosis_total_reduction_pct": 30.318164252985667,
+      "diagnosis_input_reduction_pct": 42.19747959474569,
+      "html_tokens_5s": 557173,
+      "html_tokens_60s": 106276,
+      "with_html_total_5s": 1100603,
+      "with_html_total_60s": 484948,
+      "facts_5s": {
+        "rainfall_total_mm": 40.0,
+        "rainfall_peak_mm_h": 73.366,
+        "overflow_event_count": 3,
+        "overflow_nodes": [
+          "10",
+          "15"
+        ],
+        "overflow_volume_m3": 665.1329999999999,
+        "events": [
+          {
+            "event_id": "10:E001",
+            "node_id": "10",
+            "run_id": "pilot4_20261116_adff44_A05_40mm",
+            "model_name": "Example1",
+            "occurrence": 1,
+            "start": "2024-01-01 01:28:55",
+            "end": "2024-01-01 02:13:25",
+            "last_positive_time": "2024-01-01 02:13:20",
+            "peak_time": "2024-01-01 01:40:05",
+            "peak_flooding_Ls": 545.747,
+            "duration_minutes": 44.5,
+            "estimated_volume_m3": 512.502,
+            "positive_sample_count": 534,
+            "left_censored": false,
+            "right_censored": false,
+            "saved_step_seconds": 5.0,
+            "integration_method": "left_sample_rectangle"
+          },
+          {
+            "event_id": "15:E001",
+            "node_id": "15",
+            "run_id": "pilot4_20261116_adff44_A05_40mm",
+            "model_name": "Example1",
+            "occurrence": 1,
+            "start": "2024-01-01 01:33:45",
+            "end": "2024-01-01 01:34:05",
+            "last_positive_time": "2024-01-01 01:34:00",
+            "peak_time": "2024-01-01 01:33:45",
+            "peak_flooding_Ls": 41.694,
+            "duration_minutes": 0.333,
+            "estimated_volume_m3": 0.453,
+            "positive_sample_count": 4,
+            "left_censored": false,
+            "right_censored": false,
+            "saved_step_seconds": 5.0,
+            "integration_method": "left_sample_rectangle"
+          },
+          {
+            "event_id": "15:E002",
+            "node_id": "15",
+            "run_id": "pilot4_20261116_adff44_A05_40mm",
+            "model_name": "Example1",
+            "occurrence": 2,
+            "start": "2024-01-01 01:34:30",
+            "end": "2024-01-01 01:51:20",
+            "last_positive_time": "2024-01-01 01:51:15",
+            "peak_time": "2024-01-01 01:40:05",
+            "peak_flooding_Ls": 311.188,
+            "duration_minutes": 16.833,
+            "estimated_volume_m3": 152.178,
+            "positive_sample_count": 202,
+            "left_censored": false,
+            "right_censored": false,
+            "saved_step_seconds": 5.0,
+            "integration_method": "left_sample_rectangle"
+          }
+        ]
+      },
+      "facts_60s": {
+        "rainfall_total_mm": 40.0,
+        "rainfall_peak_mm_h": 73.366,
+        "overflow_event_count": 2,
+        "overflow_nodes": [
+          "10",
+          "15"
+        ],
+        "overflow_volume_m3": 666.6120000000001,
+        "events": [
+          {
+            "event_id": "10:E001",
+            "node_id": "10",
+            "run_id": "pilot4_1min_20261116_cbb20d_A05_40mm",
+            "model_name": "Example1Tokens",
+            "occurrence": 1,
+            "start": "2024-01-01 01:29:00",
+            "end": "2024-01-01 02:14:00",
+            "last_positive_time": "2024-01-01 02:13:00",
+            "peak_time": "2024-01-01 01:40:00",
+            "peak_flooding_Ls": 543.677,
+            "duration_minutes": 45.0,
+            "estimated_volume_m3": 513.783,
+            "positive_sample_count": 45,
+            "left_censored": false,
+            "right_censored": false,
+            "saved_step_seconds": 60.0,
+            "integration_method": "left_sample_rectangle"
+          },
+          {
+            "event_id": "15:E001",
+            "node_id": "15",
+            "run_id": "pilot4_1min_20261116_cbb20d_A05_40mm",
+            "model_name": "Example1Tokens",
+            "occurrence": 1,
+            "start": "2024-01-01 01:34:00",
+            "end": "2024-01-01 01:52:00",
+            "last_positive_time": "2024-01-01 01:51:00",
+            "peak_time": "2024-01-01 01:40:00",
+            "peak_flooding_Ls": 308.881,
+            "duration_minutes": 18.0,
+            "estimated_volume_m3": 152.829,
+            "positive_sample_count": 18,
+            "left_censored": false,
+            "right_censored": false,
+            "saved_step_seconds": 60.0,
+            "integration_method": "left_sample_rectangle"
+          }
+        ]
+      },
+      "volume_relative_change_pct": 0.22236154272907704,
+      "event_comparisons": [
+        {
+          "coarse_event": {
+            "event_id": "10:E001",
+            "node_id": "10",
+            "run_id": "pilot4_1min_20261116_cbb20d_A05_40mm",
+            "model_name": "Example1Tokens",
+            "occurrence": 1,
+            "start": "2024-01-01 01:29:00",
+            "end": "2024-01-01 02:14:00",
+            "last_positive_time": "2024-01-01 02:13:00",
+            "peak_time": "2024-01-01 01:40:00",
+            "peak_flooding_Ls": 543.677,
+            "duration_minutes": 45.0,
+            "estimated_volume_m3": 513.783,
+            "positive_sample_count": 45,
+            "left_censored": false,
+            "right_censored": false,
+            "saved_step_seconds": 60.0,
+            "integration_method": "left_sample_rectangle"
+          },
+          "fine_events": [
+            {
+              "event_id": "10:E001",
+              "node_id": "10",
+              "run_id": "pilot4_20261116_adff44_A05_40mm",
+              "model_name": "Example1",
+              "occurrence": 1,
+              "start": "2024-01-01 01:28:55",
+              "end": "2024-01-01 02:13:25",
+              "last_positive_time": "2024-01-01 02:13:20",
+              "peak_time": "2024-01-01 01:40:05",
+              "peak_flooding_Ls": 545.747,
+              "duration_minutes": 44.5,
+              "estimated_volume_m3": 512.502,
+              "positive_sample_count": 534,
+              "left_censored": false,
+              "right_censored": false,
+              "saved_step_seconds": 5.0,
+              "integration_method": "left_sample_rectangle"
+            }
+          ],
+          "mapping": "one_to_one",
+          "mechanisms": [
+            {
+              "fine_event": "10:E001",
+              "fine_statuses": {
+                "M1": "supported",
+                "M2": "supported",
+                "M3": "not_applicable",
+                "M5": "not_applicable",
+                "M6": "not_applicable"
+              },
+              "coarse_statuses": {
+                "M1": "supported",
+                "M2": "supported",
+                "M3": "candidate",
+                "M5": "not_applicable",
+                "M6": "not_applicable"
+              },
+              "status_changes": {
+                "M3": {
+                  "5s": "not_applicable",
+                  "60s": "candidate"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "coarse_event": {
+            "event_id": "15:E001",
+            "node_id": "15",
+            "run_id": "pilot4_1min_20261116_cbb20d_A05_40mm",
+            "model_name": "Example1Tokens",
+            "occurrence": 1,
+            "start": "2024-01-01 01:34:00",
+            "end": "2024-01-01 01:52:00",
+            "last_positive_time": "2024-01-01 01:51:00",
+            "peak_time": "2024-01-01 01:40:00",
+            "peak_flooding_Ls": 308.881,
+            "duration_minutes": 18.0,
+            "estimated_volume_m3": 152.829,
+            "positive_sample_count": 18,
+            "left_censored": false,
+            "right_censored": false,
+            "saved_step_seconds": 60.0,
+            "integration_method": "left_sample_rectangle"
+          },
+          "fine_events": [
+            {
+              "event_id": "15:E001",
+              "node_id": "15",
+              "run_id": "pilot4_20261116_adff44_A05_40mm",
+              "model_name": "Example1",
+              "occurrence": 1,
+              "start": "2024-01-01 01:33:45",
+              "end": "2024-01-01 01:34:05",
+              "last_positive_time": "2024-01-01 01:34:00",
+              "peak_time": "2024-01-01 01:33:45",
+              "peak_flooding_Ls": 41.694,
+              "duration_minutes": 0.333,
+              "estimated_volume_m3": 0.453,
+              "positive_sample_count": 4,
+              "left_censored": false,
+              "right_censored": false,
+              "saved_step_seconds": 5.0,
+              "integration_method": "left_sample_rectangle"
+            },
+            {
+              "event_id": "15:E002",
+              "node_id": "15",
+              "run_id": "pilot4_20261116_adff44_A05_40mm",
+              "model_name": "Example1",
+              "occurrence": 2,
+              "start": "2024-01-01 01:34:30",
+              "end": "2024-01-01 01:51:20",
+              "last_positive_time": "2024-01-01 01:51:15",
+              "peak_time": "2024-01-01 01:40:05",
+              "peak_flooding_Ls": 311.188,
+              "duration_minutes": 16.833,
+              "estimated_volume_m3": 152.178,
+              "positive_sample_count": 202,
+              "left_censored": false,
+              "right_censored": false,
+              "saved_step_seconds": 5.0,
+              "integration_method": "left_sample_rectangle"
+            }
+          ],
+          "mapping": "merged",
+          "mechanisms": [
+            {
+              "fine_event": "15:E001",
+              "fine_statuses": {
+                "M1": "supported",
+                "M2": "candidate",
+                "M3": "not_applicable",
+                "M5": "not_applicable",
+                "M6": "not_applicable"
+              },
+              "coarse_statuses": {
+                "M1": "supported",
+                "M2": "supported",
+                "M3": "candidate",
+                "M5": "not_applicable",
+                "M6": "not_applicable"
+              },
+              "status_changes": {
+                "M2": {
+                  "5s": "candidate",
+                  "60s": "supported"
+                },
+                "M3": {
+                  "5s": "not_applicable",
+                  "60s": "candidate"
+                }
+              }
+            },
+            {
+              "fine_event": "15:E002",
+              "fine_statuses": {
+                "M1": "supported",
+                "M2": "supported",
+                "M3": "candidate",
+                "M5": "not_applicable",
+                "M6": "not_applicable"
+              },
+              "coarse_statuses": {
+                "M1": "supported",
+                "M2": "supported",
+                "M3": "candidate",
+                "M5": "not_applicable",
+                "M6": "not_applicable"
+              },
+              "status_changes": {}
+            }
+          ]
+        }
+      ],
+      "new_status": "completed",
+      "new_report": "E:\\SWMM_Agentic\\SWMM-Agentic4\\outputs\\example1tokens_1min_pilot_20261116\\reports\\report_40mm.html",
+      "old_task": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1\\runs\\pilot4_20261116_adff44_A05_40mm\\diagnosis_tasks\\3e556d0278fa4cba806b39a74903cced",
+      "new_task": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A05_40mm\\diagnosis_tasks\\0fd441778f1a4d67999204adcb9fbdc6"
+    }
+  ],
+  "totals": {
+    "diagnosis_total_5s": 1088868,
+    "diagnosis_total_60s": 586644,
+    "with_html_total_5s": 1796448,
+    "with_html_total_60s": 806303,
+    "first_input_5s": 236110,
+    "first_input_60s": 103887,
+    "first_total_5s": 308888,
+    "first_total_60s": 173126,
+    "first_input_reduction_pct": 56.0005929439668,
+    "first_total_reduction_pct": 43.95185309885784,
+    "diagnosis_total_reduction_pct": 46.12349706300488,
+    "with_html_total_reduction_pct": 55.116819412529615
+  }
+}

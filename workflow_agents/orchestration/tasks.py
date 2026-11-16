@@ -24,7 +24,7 @@ def prepare_task(root, model_name, run_id, question, task_id=''):
     context_events = manifest if initial else [
         {'event_id': r['event_id'], 'node_id': r['object_id'], 'facts': r['value']['event']}
         for r in rows if r.get('metric_name') == 'event_context' and r.get('value', {}).get('event')]
-    rows, context_derivation = prepare_context_rows(root, package, context_events)
+    rows, context_derivation = prepare_context_rows(root, package, context_events, history_scope=scope)
     if scope['event_id'] and not any(r.get('event_id') == scope['event_id'] for r in rows):
         raise ValueError('Event not present in current evidence')
     task_id = uuid4().hex

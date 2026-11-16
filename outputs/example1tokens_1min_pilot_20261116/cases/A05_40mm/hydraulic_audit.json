@@ -1,0 +1,13 @@
+{
+  "runoff_continuity_error_pct": -0.006,
+  "routing_continuity_error_pct": 0.0,
+  "nonconverging_steps_pct": 0.0,
+  "warnings": [
+    "WARNING 02: maximum depth increased for Node 21",
+    "WARNING 02: maximum depth increased for Node 22"
+  ],
+  "review_status": "recorded_not_independent_quality_acceptance",
+  "simulation_end": "2024-01-01 07:00:00",
+  "source_volume_m3": 666.6118814153998,
+  "coupling_volume_error_m3": 7.958078640513122e-13
+}

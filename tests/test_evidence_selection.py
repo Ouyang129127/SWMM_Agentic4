@@ -10,6 +10,7 @@ from unittest.mock import AsyncMock, patch
 from workflow_agents.evidence.evidence_selection import EVENT_GROUPS, SELECTION_VERSION, lookup_evidence, select_initial_evidence
 from workflow_agents.orchestration.investigation import advance_investigation
 from workflow_agents.diagnosis.service import build_diagnosis_prompt
+from workflow_agents.diagnosis.shared_transport import restore_shared_evidence
 from workflow_agents.verification.reference_checks import check_references
 from workflow_agents.common.hashing import sha256_file
 
@@ -148,7 +149,7 @@ class SelectionTests(unittest.TestCase):
         prompt['visible_evidence'][0]['value']['series'][0]['nodes']['N1']['head'] = 999
         self.assertEqual(json.dumps(series), before)
 
-    def test_expanded_scope_is_sent_as_complete_original_json(self):
+    def test_expanded_scope_roundtrips_complete_evidence(self):
         series = [{'time': str(i), 'nodes': {f'N{j}': {'head_m': j + i / 3,
                   'lateral_inflow_Ls': None if j == 2 else j, 'head_method': 'native_output'} for j in range(32)},
                   'links': {f'L{j}': {'signed_model_flow_Ls': -j * i, 'depth_m': .3} for j in range(31)}}
@@ -167,7 +168,7 @@ class SelectionTests(unittest.TestCase):
                  'evidence_overview': {}, 'observations': []}
         prompt = build_diagnosis_prompt(state, records)
         self.assertEqual(json.dumps(records, sort_keys=True), original)
-        restored = prompt['visible_evidence']
+        restored = restore_shared_evidence(prompt)
         self.assertEqual({r['evidence_id']: r for r in restored}, {r['evidence_id']: r for r in records})
         supplied = next(r for r in prompt['visible_evidence'] if r['evidence_id'] == 'P')
         self.assertIsInstance(supplied['value']['series'], list)

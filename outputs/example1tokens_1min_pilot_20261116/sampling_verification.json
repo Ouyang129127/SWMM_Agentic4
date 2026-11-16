@@ -1,0 +1,134 @@
+{
+  "cases": [
+    {
+      "rain_mm": 14.0,
+      "run_5s": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1\\runs\\pilot4_20261116_adff44_A02_14mm",
+      "run_60s": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A02_14mm",
+      "changed_swmm_options": [
+        "REPORT_STEP"
+      ],
+      "routing_steps_5s": 5040,
+      "routing_steps_60s": 5040,
+      "saved_times_5s": 5041,
+      "saved_times_60s": 421,
+      "tables": [
+        {
+          "file": "nodes.tsv",
+          "rows_5s": 70574,
+          "rows_60s": 5894,
+          "matching_timestamp_values_identical": true,
+          "max_abs_differences": {
+            "depth_m": 0.0,
+            "flooding_Ls": 0.0
+          }
+        },
+        {
+          "file": "links.tsv",
+          "rows_5s": 65533,
+          "rows_60s": 5473,
+          "matching_timestamp_values_identical": true,
+          "max_abs_differences": {
+            "flow_Ls": 0.0,
+            "depth_m": 0.0
+          }
+        },
+        {
+          "file": "node_flooding.tsv",
+          "rows_5s": 70574,
+          "rows_60s": 5894,
+          "matching_timestamp_values_identical": true,
+          "max_abs_differences": {
+            "flow_Ls": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "rain_mm": 20.0,
+      "run_5s": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1\\runs\\pilot4_20261116_adff44_A03_20mm",
+      "run_60s": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A03_20mm",
+      "changed_swmm_options": [
+        "REPORT_STEP"
+      ],
+      "routing_steps_5s": 5042,
+      "routing_steps_60s": 5042,
+      "saved_times_5s": 5041,
+      "saved_times_60s": 421,
+      "tables": [
+        {
+          "file": "nodes.tsv",
+          "rows_5s": 70574,
+          "rows_60s": 5894,
+          "matching_timestamp_values_identical": true,
+          "max_abs_differences": {
+            "depth_m": 0.0,
+            "flooding_Ls": 0.0
+          }
+        },
+        {
+          "file": "links.tsv",
+          "rows_5s": 65533,
+          "rows_60s": 5473,
+          "matching_timestamp_values_identical": true,
+          "max_abs_differences": {
+            "flow_Ls": 0.0,
+            "depth_m": 0.0
+          }
+        },
+        {
+          "file": "node_flooding.tsv",
+          "rows_5s": 70574,
+          "rows_60s": 5894,
+          "matching_timestamp_values_identical": true,
+          "max_abs_differences": {
+            "flow_Ls": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "rain_mm": 40.0,
+      "run_5s": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1\\runs\\pilot4_20261116_adff44_A05_40mm",
+      "run_60s": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1Tokens\\runs\\pilot4_1min_20261116_cbb20d_A05_40mm",
+      "changed_swmm_options": [
+        "REPORT_STEP"
+      ],
+      "routing_steps_5s": 5070,
+      "routing_steps_60s": 5070,
+      "saved_times_5s": 5041,
+      "saved_times_60s": 421,
+      "tables": [
+        {
+          "file": "nodes.tsv",
+          "rows_5s": 70574,
+          "rows_60s": 5894,
+          "matching_timestamp_values_identical": true,
+          "max_abs_differences": {
+            "depth_m": 0.0,
+            "flooding_Ls": 0.0
+          }
+        },
+        {
+          "file": "links.tsv",
+          "rows_5s": 65533,
+          "rows_60s": 5473,
+          "matching_timestamp_values_identical": true,
+          "max_abs_differences": {
+            "flow_Ls": 0.0,
+            "depth_m": 0.0
+          }
+        },
+        {
+          "file": "node_flooding.tsv",
+          "rows_5s": 70574,
+          "rows_60s": 5894,
+          "matching_timestamp_values_identical": true,
+          "max_abs_differences": {
+            "flow_Ls": 0.0
+          }
+        }
+      ]
+    }
+  ],
+  "original_example1_configuration_unchanged": true
+}

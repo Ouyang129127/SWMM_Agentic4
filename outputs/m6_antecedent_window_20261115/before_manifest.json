@@ -1,0 +1,9 @@
+{
+  "workflow_agents/diagnosis/prompts.py": "4e797f031e16f82c68d35f1e8389a6fe12c59cdba7b43a586362f5c438a398e8",
+  "workflow_agents/diagnosis/contract.py": "d0b77dcd434cca061cfdb648f63550341fc7a28c82e9c934f32ed436fe084168",
+  "workflow_agents/diagnosis/series_transport.py": "62e5590ad64fa32e54a874e616b0fd9be3162800209d2690279ec44c449fc931",
+  "workflow_agents/evidence/diagnostic_context.py": "19bb01c6b9173b8664febfb57aeb9d65ced6481c3fb12aaa37b83d95b0e9c59a",
+  "workflow_agents/evidence/evidence_selection.py": "b2e7a9a3a56f5f49a12ba74f15985ffb8c9443705ea450103ee9bc0ac491081f",
+  "workflow_agents/orchestration/tasks.py": "cebf276ab5407f2c4af0be7081218f2e60e5f18853404d937a0a8b090cf2215c",
+  "docs/diagnosis_rules_v2.md": "342af6bb5d89862206d8df0a7fdbc252f08068ec2a0ed18be7ed2dc38d4fb5e2"
+}

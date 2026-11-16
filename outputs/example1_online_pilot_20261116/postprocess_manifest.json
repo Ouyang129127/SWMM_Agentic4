@@ -1,0 +1,57 @@
+{
+  "purpose": "Readability correction after completed simulations/diagnoses",
+  "source": "E:\\SWMM_Agentic\\SWMM-Agentic4\\workflow_agents\\reporting\\plots.py",
+  "source_before": "79c2ffaef98e7046a2df6e5390746df86c2a7a09c4dbace120f39f0d09de2214",
+  "source_after": "c03ee8fbc429e18218884308c44e42fd2b81da80fcd0eb7fcdf5e3d2cd6efd34",
+  "new_model_calls": 0,
+  "cases": [
+    {
+      "run_id": "pilot4_20261116_adff44_A02_14mm",
+      "old_html": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1\\runs\\pilot4_20261116_adff44_A02_14mm\\diagnosis_tasks\\3d0aa008f9b24075a1ed14e7af323b5d\\display_reports\\r2\\20261116_092735_b3ac2c82\\模拟诊断报告.html",
+      "new_html": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1\\runs\\pilot4_20261116_adff44_A02_14mm\\diagnosis_tasks\\3d0aa008f9b24075a1ed14e7af323b5d\\display_reports\\r2\\20261116_093149_f3061036\\模拟诊断报告.html",
+      "quality_checks": {
+        "status": "passed",
+        "sections": 6,
+        "events": 1,
+        "embedded_images": 7,
+        "all_images_verified": true,
+        "numeric_policy": "supplied_fact_tokens",
+        "causal_policy": "current_diagnosis_statuses",
+        "verification_scope": "structure, source identity and references; not causal certification"
+      },
+      "model_calls": 0
+    },
+    {
+      "run_id": "pilot4_20261116_adff44_A03_20mm",
+      "old_html": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1\\runs\\pilot4_20261116_adff44_A03_20mm\\diagnosis_tasks\\f97df86c54374755b65701ccdb4469fa\\display_reports\\r2\\20261116_092602_fa9d764c\\模拟诊断报告.html",
+      "new_html": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1\\runs\\pilot4_20261116_adff44_A03_20mm\\diagnosis_tasks\\f97df86c54374755b65701ccdb4469fa\\display_reports\\r2\\20261116_093151_ba15df64\\模拟诊断报告.html",
+      "quality_checks": {
+        "status": "passed",
+        "sections": 6,
+        "events": 1,
+        "embedded_images": 7,
+        "all_images_verified": true,
+        "numeric_policy": "supplied_fact_tokens",
+        "causal_policy": "current_diagnosis_statuses",
+        "verification_scope": "structure, source identity and references; not causal certification"
+      },
+      "model_calls": 0
+    },
+    {
+      "run_id": "pilot4_20261116_adff44_A05_40mm",
+      "old_html": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1\\runs\\pilot4_20261116_adff44_A05_40mm\\diagnosis_tasks\\3e556d0278fa4cba806b39a74903cced\\display_reports\\r2\\20261116_092745_2dfd698f\\模拟诊断报告.html",
+      "new_html": "E:\\SWMM_Agentic\\SWMM-Agentic4\\models\\Example1\\runs\\pilot4_20261116_adff44_A05_40mm\\diagnosis_tasks\\3e556d0278fa4cba806b39a74903cced\\display_reports\\r2\\20261116_093154_dccd07b3\\模拟诊断报告.html",
+      "quality_checks": {
+        "status": "passed",
+        "sections": 6,
+        "events": 3,
+        "embedded_images": 9,
+        "all_images_verified": true,
+        "numeric_policy": "supplied_fact_tokens",
+        "causal_policy": "current_diagnosis_statuses",
+        "verification_scope": "structure, source identity and references; not causal certification"
+      },
+      "model_calls": 0
+    }
+  ]
+}
